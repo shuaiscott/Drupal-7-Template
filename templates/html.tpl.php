@@ -22,6 +22,8 @@
   <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
+  
+  <script src="http://byuweb.github.io/Global-Assets/js/modernizr-lab.min.js"></script>
   <?php print $scripts; ?>
 </head>
 <body class="<?php // print $classes; ?>" <?php // print $attributes;?>>
