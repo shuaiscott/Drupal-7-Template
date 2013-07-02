@@ -3,9 +3,6 @@
  * BYU theme page to generate the markup for a single page.
  */
 ?>
-
-<div id="page">
-
   <header id="main-header" role="banner">
 
     <?php if ($logo): ?>
@@ -17,7 +14,28 @@
             <a href="<?php print $front_page; ?>" id="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
           </h1>
     <?php endif; ?>
+	
+	<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
 	  
+	<div id="search-container" role="search">
+	<!--This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).--> 
+	   <form id="basic-search" action="http://home.byu.edu/home/search" role="form" style="display: none;">
+		 <input id="search" type="search" name="search">
+		 <input id="search-submit" type="submit" value="Search">
+	   </form>
+
+		<!--This container holds the Google custom search, if enabled--> 
+	   <div class="gcse-wrapper">
+		   <div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id0" class="gstl_0 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti0" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background-image: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif); background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat;" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st0" style="" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb0">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><input type="image" src="http://www.google.com/uds/css/v2/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="http://www.google.com/uds/css/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+	   </div>
+	</div>
+	  
+	<a href="#" class="menu-button">Menu</a>  
+	  
+</header>
+	
+	
+	
 	<div class="nav-container">
 		<nav id="primary-nav" class="wrapper" role="navigation">
 <!--		Primary menu goes here.-->
@@ -70,7 +88,7 @@
 	
 	?>
 
-  </header>
+  
 
   <div id="main">
 
@@ -164,7 +182,5 @@
 			</div>
 		</div>
 	</footer>
-
-</div><!-- /#page -->
 
 <?php print render($page['bottom']); ?>
