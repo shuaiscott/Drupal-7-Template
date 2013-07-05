@@ -84,8 +84,6 @@
     $sidebar_right = render($page['sidebar_right']);
 	?>
 
-  <div id="main">
-
 	  <div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebar' : ($sidebar_left || $sidebar_right ? 'two-sidebar' : '')) ?>" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -121,10 +119,6 @@
       </aside><!-- /.sidebars -->
     <?php endif; ?>
 
-  </div><!-- /#main -->
-
-  
-  
 <footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">

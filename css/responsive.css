@@ -6174,6 +6174,13 @@ a.mybyu, a.sign-in, .open #search-button {
     float: left;
     width: 23%;
   }
+
+  /* line 212, ../sass/responsive.scss */
+  .one-sidebar #main-content {
+    float: left;
+    margin-right: 20px;
+    width: 700px;
+  }
 }
 /* From h5bp */
 /* ==========================================================================
