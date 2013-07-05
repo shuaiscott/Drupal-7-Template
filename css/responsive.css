@@ -5867,7 +5867,7 @@ html[xmlns] .slides {
   }
 }
 /* line 1, ../sass/_drupal-specific.scss */
-.toolbar-drawer nav-container {
+.toolbar-drawer .nav-container {
   top: 155px;
 }
 
@@ -6114,42 +6114,39 @@ a.mybyu, a.sign-in, .open #search-button {
     text-align: center;
   }
   /* line 168, ../sass/responsive.scss */
-  #footer-bottom a {
-    display: inline-block;
-    text-indent: -999em;
-  }
-  /* line 173, ../sass/responsive.scss */
   #footer-bottom a#copyright {
     text-indent: 0em;
   }
-  /* line 177, ../sass/responsive.scss */
+  /* line 170, ../sass/responsive.scss */
   #footer-bottom a#lds, #footer-bottom a#ldsbc, #footer-bottom a#byui, #footer-bottom a#byuh {
     background: transparent url("../img/footer_sprite.png") no-repeat;
     opacity: 0.7;
+    display: inline-block;
+    text-indent: -999em;
   }
-  /* line 180, ../sass/responsive.scss */
+  /* line 175, ../sass/responsive.scss */
   #footer-bottom a#lds:hover, #footer-bottom a#ldsbc:hover, #footer-bottom a#byui:hover, #footer-bottom a#byuh:hover {
     opacity: 1;
   }
-  /* line 183, ../sass/responsive.scss */
+  /* line 178, ../sass/responsive.scss */
   #footer-bottom a#lds {
     background-position: 0px -8px;
     height: 50px;
     width: 150px;
   }
-  /* line 189, ../sass/responsive.scss */
+  /* line 184, ../sass/responsive.scss */
   #footer-bottom a#ldsbc {
     background-position: -407px -8px;
     height: 55px;
     width: 70px;
   }
-  /* line 195, ../sass/responsive.scss */
+  /* line 190, ../sass/responsive.scss */
   #footer-bottom a#byui {
     background-position: -206px -8px;
     height: 42px;
     width: 72px;
   }
-  /* line 201, ../sass/responsive.scss */
+  /* line 196, ../sass/responsive.scss */
   #footer-bottom a#byuh {
     background-position: -308px -8px;
     height: 42px;
@@ -6158,21 +6155,21 @@ a.mybyu, a.sign-in, .open #search-button {
 }
 /* ------------ Landscape of Tablet(iPad) and anything larger ----------- */
 @media screen and (min-width: 60em) {
-  /* line 213, ../sass/responsive.scss */
+  /* line 208, ../sass/responsive.scss */
   .one-sidebar #main-content {
     float: left;
     margin-right: 2%;
     width: 73%;
   }
 
-  /* line 214, ../sass/responsive.scss */
+  /* line 209, ../sass/responsive.scss */
   .two-sidebars #main-content {
     float: left;
     margin-right: 2%;
     width: 48%;
   }
 
-  /* line 215, ../sass/responsive.scss */
+  /* line 210, ../sass/responsive.scss */
   .sidebar {
     float: left;
     width: 23%;

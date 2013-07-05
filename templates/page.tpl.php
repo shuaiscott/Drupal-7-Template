@@ -101,6 +101,13 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+	
+	 <?php
+	 if ($sidebar_left): ?>
+      <aside class="sidebar">
+        <?php print $sidebar_left; ?>
+      </aside><!-- /.sidebars -->
+    <?php endif; ?>
 		
       <?php print render($page['content']); ?>
 		
@@ -108,10 +115,9 @@
     </div><!-- /#content -->
 
     <?php
-	 if ($sidebar_left || $sidebar_right): ?>
+	 if ($sidebar_right): ?>
       <aside class="sidebar">
-        <?php print $sidebar_left; ?>
-        <?php print $sidebar_second; ?>
+        <?php print $sidebar_right; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
 
@@ -122,62 +128,27 @@
 <footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
-				<?php print render($page['footer']); ?>	
-				
-				
-				<div class="col alpha">	
-					<h2>Footer Column 1</h2>				
-					<a href="">Link 1</a>
-					<a href="">Link 2</a>
-					<a href="">Link 3</a>
-					<a href="">Link 4</a>
-				</div>
-				<div class="col">
-					<h2>Footer Column 2</h2>
-					<a href="">Link 1</a>
-					<a href="">Link 2</a>
-					<a href="">Link 3</a>
-					<a href="">Link 4</a>
-				</div>
-				
-				<div class="col double">
-					<h2>Footer Double Column</h2>
-					<div class="left alpha">
-						<a href="">Left Link 1</a>
-						<a href="">Left Link 2</a>
-						<a href="">Left Link 3</a>
-						<a href="">Left Link 4</a>
-						</div>
-						
-						<div class="right omega">
-						<a href="">Right Link 1</a>
-						<a href="">Right Link 2</a>
-						<a href="">Right Link 3</a>
-						<a href="">Right Link 4</a>
-					</div>
-				</div>
-								
-					
-				<div class="col omega">
-					<h2>Footer Column 4</h2>
-					<a href="">Link 1</a>
-					<a href="">Link 2</a>
-					<a href="">Link 3</a>
-					<a href="">Link 4</a>
-				</div>
-				
+				<?php print render($page['footer']); ?>		
 			</div>
 		</div>
 		
 		<div id="footer-bottom">
 			<div class="wrapper">
-			<p><a id="byui" href="http://byui.edu/">BYU-Idaho</a> <a id="byuh" href="http://byuh.edu/">BYU-Hawaii</a>
-			   <a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a> 
-			   <a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
-			</p>
-			<p><a id="copyright" href="http://home.byu.edu/home/copyright">Copyright© 2013, All Rights Reserved</a></p>
+			<?php 
+			if (!render($page['copyright'])): //If there is no specific content in the copyright area, display default ?> 
+				<p>
+					<a id="byui"  href="http://byui.edu/">BYU-Idaho</a>
+					<a id="byuh"  href="http://byuh.edu/">BYU-Hawaii</a>
+					<a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a> 
+					<a id="lds"   href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
+				</p>
+				<p><a id="copyright" href="http://home.byu.edu/home/copyright">Copyright© 2013, All Rights Reserved</a></p>
+			<?php else: 
+				print render($page['copyright']);
+			endif; ?>
 			</div>
 		</div>
+	
 	</footer>
 
 <?php print render($page['bottom']); ?>
