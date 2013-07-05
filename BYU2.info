@@ -23,12 +23,15 @@ core        = 7.x
 ; First we remove the system's menu styling since Zen has its own.
 stylesheets[all][] = system.menus.css
 
-; Then we add our own stylesheets.
+; STYLESHEETS
 stylesheets[all][] = css/base.css
 stylesheets[all][] = css/fonts.css
 stylesheets[screen and (min-width:200px)][] = css/responsive.css
 
-scripts[] = js/init.js
+; SCRIPTS
+;scripts[] = js/init.js
+scripts[] = js/script.min.js
+;scripts[] = js/fonts.min.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
