@@ -62,12 +62,7 @@
 						'attributes' => array(
 							'class' => array(/*'links', 'inline', 'clearfix'*/),
 						),
-						'heading' => array(
-							'text' => $secondary_menu_heading,
-							'level' => 'h2',
-							'class' => array('element-invisible'),
-						),
-					)); ?>
+				)); ?>
 			<?php endif; ?>
 		</nav>
 		

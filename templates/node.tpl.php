@@ -85,7 +85,7 @@
 ?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
+  <?php if ($title_prefix || $title_suffix || $display_submitted || !$page && $title): ?>
     <header>
       <?php print render($title_prefix); ?>
       <?php if (!$page && $title): ?>
@@ -100,9 +100,7 @@
         </p>
       <?php endif; ?>
 
-      <?php if ($unpublished): ?>
-        <p class="unpublished"><?php print t('Unpublished'); ?></p>
-      <?php endif; ?>
+
     </header>
   <?php endif; ?>
 
