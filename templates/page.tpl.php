@@ -84,10 +84,10 @@
     $sidebar_right = render($page['sidebar_right']);
 	?>
 
-	  <div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebar' : ($sidebar_left || $sidebar_right ? 'two-sidebar' : '')) ?>" role="main">
+	  <div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebars' : ($sidebar_left || $sidebar_right ? 'one-sidebar' : '')) ?>" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
+     
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
@@ -106,9 +106,11 @@
         <?php print $sidebar_left; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
-		
-      <?php print render($page['content']); ?>
-		
+	
+	  <div id="main-content">
+		<?php print render($page['content']); ?>
+	  </div>
+	  
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
 
