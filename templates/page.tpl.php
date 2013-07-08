@@ -105,14 +105,17 @@
 	  </div>
 	  
       <?php print $feed_icons; ?>
-    </div><!-- /#content -->
-
-    <?php
+      
+       <?php
 	 if ($sidebar_right): ?>
       <aside class="sidebar">
         <?php print $sidebar_right; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
+      
+    </div><!-- /#content -->
+
+
 
 <footer role="contentinfo">
 		<div id="footer-links">
