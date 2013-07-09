@@ -232,6 +232,7 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   if ($form_id == 'search_block_form') {
     $form['#id'] = t('basic-search');
     $form['search_block_form']['#id'] = t('search'); // Change the text on the label element
+    $form['search_block_form']['#id'] = t('search'); // Change the text on the label element
     $form['search_block_form']['#name'] = t('search'); // Change the text on the label element
 	//
 // Alternative (HTML5) placeholder attribute instead of using the javascript

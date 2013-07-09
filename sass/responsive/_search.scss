@@ -1,31 +1,32 @@
-/**
-* All search box definitions will go in here
+/*!
+
+* Search
 *
 */
 
 @import "compass";
 @import "shared/colors";
 @import "shared/mixins";
-@import "bootstrap/variables";
+@import "shared/variables";
 
 
-$content-width:100%;
-$search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
-$search-buffer:10px;
 
-#search-container {
-	display: inline-block;
+/* Small width */
+#search-menu {
+	height: auto;
+	padding: 5px 3% 5px 75px;
+	overflow: hidden;
+	@include box-sizing(border-box);
+}
+
+.boxsizing #search-container {
 	padding: 0;
-	position: absolute;
-	right: $search-buffer;
-	top: 5.25px;
-	width: $search-width;
 	height: 32px;
+	position: relative;
 	@include border-radius(15px);
 	@include vertical-gradient($blue5,$blue4);
 	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 
-/** Google Search Form resets **/
 	.gcse-wrapper {
 		background: none;
 		.gsc-control-cse {
@@ -33,17 +34,7 @@ $search-buffer:10px;
 			table td .gsc-input-box {
 				background: none;
 				padding: 0;
-
-				input.gsc-input {
-					border: 0;
-					@include box-shadow(none);
-					height: 20px !important;
-
-
-					&::selection {
-						border: 0;
-					}
-				}
+				input.gsc-input {}
 			}
 			table td .gsc-input-box-hover, table td .gsc-input-box-focus {
 				@include box-shadow(none);
@@ -61,47 +52,64 @@ $search-buffer:10px;
 			}
 		}
 	}
+
+	.gsc-input-box {
+		padding-right:0 !important;
+		height:auto;
+	}
+
+
 	/** Styling for both search forms **/
 	#basic-search, .gcse-wrapper {
 		margin: 0;
-		width: $search-width;
-		position:absolute;
 		top:0;
 		left:0;
+		padding:0;
+		@include box-sizing(border-box);
+	}
 
-		#search, .gsib_a .gsc-input {
-			@include border-radius(15px);
-			width: ($search-width - 60) !important;
-			border: 0 !important;
-			padding: 6px 8px 6px 14px !important;
-			background-position:14px 50% !important;
-		}
+	#basic-search {	padding-right:43px;	}
+	.gcse-wrapper {	width:100%;	}
 
-		#search-submit {
-			background: url(../img/search_box_icon.png) 8px 8px no-repeat;
-			overflow: hidden;
-			text-indent: -1000px;
-			margin: 0;
-			padding-left:0;
-		}
+	#search-submit {
+		background: url(../img/search_box_icon.png) 8px 8px no-repeat;
+		overflow: hidden;
+		text-indent: -1000px;
+		margin: 0;
+		padding-left:0;
+		width:34px;
+		top:1px;
+	}
 
-		#search-submit {width: 20px;}
+	#basic-search #search, input.gsc-input {
+		border: 0 !important;
+		padding: 6px 8px 6px 14px !important;
+		background-position:14px 50% !important;
+		height: 32px;
+
+		@include box-sizing(border-box);
+		@include box-shadow(none);
+		@include border-radius(15px);
+
+		&::selection {
+			border: 0;
+		}	
+	}
+
+	input.gsc-input {
+		position: relative;
+		top: 1px;
+		height: 30px !important;
 	}
 }
 
 
-#header-top a.sign-in {
-	position: absolute;
-	right: $search-width + 12px;
-}
+/*** Medium width ***/
+@media all and (min-width:$med-width) {
 
-
-/* 1024 px */
-@media all and (min-width: 1024px) {
-	$content-width:1024px;
-
-	#search-container {
-		right: 50%;
-		margin-right: -($content-width / 2);
+	#search-menu {
+		padding-left: 37%;
+		text-align: right;
 	}
+
 }

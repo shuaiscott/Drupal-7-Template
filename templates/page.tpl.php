@@ -16,15 +16,17 @@
 		<?php endif; ?>
 	
 		<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
-
-		<div id="search-container" role="search">	
-			<?php  print render(module_invoke('search', 'block_view')); ?>		
-		</div>
 	  
-		<a href="#" class="menu-button">Menu</a>  
+		<a href="#primary-nav" class="menu-button">Menu</a>  
 		
 	</div>
 </header>
+
+<div id="search-menu">	
+	<div id="search-container" role="search">	
+		<?php  print render(module_invoke('search', 'block_view')); ?>		
+	</div>
+</div>
 	
 <div class="nav-container">
 		<nav id="primary-nav" role="navigation">

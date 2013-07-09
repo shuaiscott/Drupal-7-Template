@@ -1,0 +1,55 @@
+/*!
+
+* Content 
+*
+*/
+
+
+@import "shared/variables";
+@import "shared/colors";
+@import "shared/mixins";
+
+
+@media all and (min-width: $med-width) {
+
+	#content {
+		padding: 1em 9% 4em;
+	}
+
+}
+
+
+@media all and (min-width: $full-width) {
+
+	.one-sidebar, .two-sidebars {
+		#main-content, .sidebar {
+			float: left;
+		}
+	}
+
+	.one-sidebar {
+		#main-content { 
+			margin-right:5%; 
+			width:58.7%;
+		}
+
+		.sidebar { 
+			width:36.3%
+		}
+	}
+	
+
+
+	.two-sidebars {
+		#main-content { 
+			margin-right:5%;
+			margin-left: 5%;
+			width:48%;
+		}
+
+		.sidebar {
+			width: 21%;
+			margin:0;
+		}
+	}
+}

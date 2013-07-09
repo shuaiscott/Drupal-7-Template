@@ -35,6 +35,7 @@
 	$search['actions'] = '<input id="search-submit" type="submit" value="Search">';
 	print $search['search_block_form'];
 	print $search['actions']; 
+	print $search['hidden']; 
   ?>
 
   <?php //print $search_form; ?>

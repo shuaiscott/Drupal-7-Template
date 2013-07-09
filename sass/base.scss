@@ -5,17 +5,12 @@
 @import "compass";
 @import "shared/colors";
 @import "shared/mixins";
-@import "bootstrap/variables";
+@import "shared/variables";
 
 @import "base/normalize"; // Great place to start
 @import "base/h5bp"; // Good defaults from HTML5 Boilerplate
 @import "base/prettify";
 @import "base/basics";
-
-
-
-
-
 
 $sans-font-stack: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
 $serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
@@ -51,14 +46,17 @@ p, pre { margin: 10px 0; }
 code {color:#d14}
 
 a {
-  transition: background .1s ease;
+  @include transition( background .1s ease );
 }
 
 
 
 
 
-
+/** Positioning **/
+#main-header, #search-menu, #content, #page-footer, .nav-container {
+  position: relative;
+}
 
 
 
@@ -89,19 +87,33 @@ a {
   background-color:$blue1;
   border-bottom: 1px solid $blue3;
   padding:.35em 0 .45em;
+
   a.byu, a.byulink {
     @include ir();
+    display: inline-block;
+    height: 26px;
+    width: 90px;
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+    .svg & {
+      background-image: url($asset-base + 'img/byu-logo-sm.svg');
+    }
   }
+
   a.parentlink {
     text-transform: uppercase;
     font-size: 15px;
-    display: block;
-    padding: 12px 8px 2px;
+    display: inline-block;
+    padding: 6px 8px 2px;
     color: $blue8;
     line-height: 1.2;
+    height: 26px;
+    vertical-align: top;
   }
-  h2 { margin:0; line-height: 26px; }
+  h2 { 
+    margin:0;
+    margin-right: 100px; 
+    line-height: 26px;
+  }
   a  { display:block;}
 }
 
@@ -147,14 +159,19 @@ $searchPadding: 10px;
 $sidePadding:5px;
 
 /* Search box styling for mobile */
-#search-container {
-	width: 100%;
+#search-menu {
+  width: 100%;
   position:relative;
   display: block;
   background-color:$blue0;
   border-top:   1px solid $blue3;
   border-bottom:1px solid $blue3;
   height: 36px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+}
+
+#search-container {
 
   textarea:hover,
   input:hover,
@@ -410,7 +427,7 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
 
 
 // Footer
-body > footer {
+#page-footer {
   background-color:#eeebe9;
   border-top:1px solid #fff;
   border-bottom:2px solid transparent;
