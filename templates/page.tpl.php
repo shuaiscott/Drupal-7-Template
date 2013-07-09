@@ -91,33 +91,18 @@
     <?php endif; ?>
 	
 	  <div id="main-content">
-		<?php print render($page['content']); ?>
-		<?php print $feed_icons; ?>  
+		<?php print render($page['content']); ?> 
 	  </div>
 	  
-<<<<<<< HEAD
-	 <?php
-=======
-      <?php print $feed_icons; ?>
-      
-       <?php
->>>>>>> 86aed17836b048353273debea7cdf86cd127a480
-	 if ($sidebar_right): ?>
+	 <?php if ($sidebar_right): ?>
       <aside class="sidebar">
         <?php print $sidebar_right; ?>
       </aside><!-- /.sidebars -->
-<<<<<<< HEAD
-    <?php endif; ?> 
-	  
-      
-    </div><!-- /#content -->
-=======
     <?php endif; ?>
       
     </div><!-- /#content -->
-
-
->>>>>>> 86aed17836b048353273debea7cdf86cd127a480
+   
+    </div><!-- /#content -->
 
 <footer role="contentinfo">
 		<div id="footer-links">
@@ -143,6 +128,7 @@
 			</div>
 		</div>
 	
+	</footer>
 	</footer>
 
 <?php print render($page['bottom']); ?>
