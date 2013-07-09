@@ -4653,11 +4653,10 @@ body {
   }
   /* line 227, ../sass/responsive/_nav.scss */
   #primary-nav > ul {
-    width: 940px;
-    margin: 0 auto;
+    margin: 0;
     position: relative;
   }
-  /* line 232, ../sass/responsive/_nav.scss */
+  /* line 231, ../sass/responsive/_nav.scss */
   #primary-nav .mega {
     height: 415px;
     position: absolute;
@@ -4669,11 +4668,11 @@ body {
     -o-border-radius: 0 0 3px 3px;
     border-radius: 0 0 3px 3px;
   }
-  /* line 239, ../sass/responsive/_nav.scss */
+  /* line 238, ../sass/responsive/_nav.scss */
   #primary-nav .mega ul.links {
     margin-left: 1%;
   }
-  /* line 241, ../sass/responsive/_nav.scss */
+  /* line 240, ../sass/responsive/_nav.scss */
   #primary-nav .sub {
     background-color: #fff;
     border-bottom: 3px solid #369;
@@ -4684,91 +4683,91 @@ body {
     position: absolute;
     width: 222px;
   }
-  /* line 250, ../sass/responsive/_nav.scss */
+  /* line 249, ../sass/responsive/_nav.scss */
   #primary-nav .sub a {
     border: none;
   }
-  /* line 251, ../sass/responsive/_nav.scss */
+  /* line 250, ../sass/responsive/_nav.scss */
   #primary-nav .sub .links {
     width: 100%;
   }
-  /* line 253, ../sass/responsive/_nav.scss */
+  /* line 252, ../sass/responsive/_nav.scss */
   #primary-nav li.hover .mega, #primary-nav li.hover .sub, #primary-nav .highlight, #primary-nav .featured, #primary-nav hr {
     display: block;
   }
-  /* line 255, ../sass/responsive/_nav.scss */
+  /* line 254, ../sass/responsive/_nav.scss */
   #primary-nav hr {
     border: none;
     border-top: 1px solid #ddd;
   }
-  /* line 259, ../sass/responsive/_nav.scss */
+  /* line 258, ../sass/responsive/_nav.scss */
   #primary-nav .featured {
     font-weight: bold;
   }
-  /* line 260, ../sass/responsive/_nav.scss */
+  /* line 259, ../sass/responsive/_nav.scss */
   #primary-nav .links {
     float: left;
     width: 220px;
   }
-  /* line 263, ../sass/responsive/_nav.scss */
+  /* line 262, ../sass/responsive/_nav.scss */
   #primary-nav .links.double {
     width: 400px;
   }
-  /* line 266, ../sass/responsive/_nav.scss */
+  /* line 265, ../sass/responsive/_nav.scss */
   #primary-nav .links.double .featured .sublinks {
     padding-left: 5%;
   }
-  /* line 268, ../sass/responsive/_nav.scss */
+  /* line 267, ../sass/responsive/_nav.scss */
   #primary-nav .links.double .left {
     float: left;
     width: 50%;
   }
-  /* line 273, ../sass/responsive/_nav.scss */
+  /* line 272, ../sass/responsive/_nav.scss */
   #primary-nav .links .sublinks {
     padding-bottom: 0 25px 0 .25em;
   }
-  /* line 275, ../sass/responsive/_nav.scss */
+  /* line 274, ../sass/responsive/_nav.scss */
   #primary-nav .links .sublinks li a:before {
     content: '\25B8';
     padding-right: 4px;
     font-size: 10px;
     list-style-type: none;
   }
-  /* line 283, ../sass/responsive/_nav.scss */
+  /* line 282, ../sass/responsive/_nav.scss */
   #primary-nav .highlight {
     float: left;
     padding-left: 3%;
     width: 208px;
   }
-  /* line 287, ../sass/responsive/_nav.scss */
+  /* line 286, ../sass/responsive/_nav.scss */
   #primary-nav .highlight a {
     padding: 0;
     color: #003366;
   }
-  /* line 290, ../sass/responsive/_nav.scss */
+  /* line 289, ../sass/responsive/_nav.scss */
   #primary-nav .highlight a:hover {
     color: #001948;
     text-decoration: underline;
   }
 
-  /* line 298, ../sass/responsive/_nav.scss */
+  /* line 297, ../sass/responsive/_nav.scss */
   #secondary-nav {
     position: absolute;
     bottom: 42px;
     right: 9px;
   }
-  /* line 304, ../sass/responsive/_nav.scss */
+  /* line 303, ../sass/responsive/_nav.scss */
   #secondary-nav li.hover .sub {
     display: block;
     position: absolute;
     left: auto;
   }
-  /* line 309, ../sass/responsive/_nav.scss */
+  /* line 308, ../sass/responsive/_nav.scss */
   #secondary-nav a {
     display: inline-block;
     color: #d1e4f6;
   }
-  /* line 312, ../sass/responsive/_nav.scss */
+  /* line 311, ../sass/responsive/_nav.scss */
   #secondary-nav a:hover {
     background: transparent;
     color: #fff;
@@ -4776,13 +4775,13 @@ body {
 }
 /*   Small adjustments for portrait mode and when the screen is wider than max body width  */
 @media screen and (min-width: 48em) and (max-width: 57.5em) {
-  /* line 325, ../sass/responsive/_nav.scss */
+  /* line 324, ../sass/responsive/_nav.scss */
   #primary-nav .mega {
     width: 700px;
   }
 }
 @media screen and (min-width: 940px) {
-  /* line 329, ../sass/responsive/_nav.scss */
+  /* line 328, ../sass/responsive/_nav.scss */
   #secondary-nav {
     right: 50%;
     margin-right: -470px;

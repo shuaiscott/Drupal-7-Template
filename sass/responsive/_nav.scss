@@ -225,8 +225,7 @@ body.sideNav {
     padding-left: 2em;
     @extend %tab-nav;
 	>ul{
-		width: 940px;
-		margin: 0 auto;
+		margin: 0;
 		position: relative;
 	}
 	.mega {

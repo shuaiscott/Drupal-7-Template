@@ -3,16 +3,16 @@
  * BYU theme page to generate the markup for a single page.
  */
 ?>
-  <header id="main-header" role="banner">
-	  <div id="header-top" class="wrapper">
+<header id="main-header" role="banner">
+	<div id="header-top" class="wrapper">
 		<div id="logo">
 			<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a></h2>
 		</div>
 	  
 		<?php if ($site_name): ?>
-			  <h1>
+			<h1>
 				<a href="<?php print $front_page; ?>" id="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-			  </h1>
+			</h1>
 		<?php endif; ?>
 	
 		<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
@@ -26,83 +26,71 @@
 	</div>
 </header>
 	
-	
-	
-	<div class="nav-container">
+<div class="nav-container">
 		<nav id="primary-nav" role="navigation">
-<!--		Primary menu goes here.-->
-			<?php if ($main_menu): ?>
-				<?php
-				print theme('links__system_main_menu', array(
-				  'links' => $main_menu,
-				  'attributes' => array(
-					'class' => array(''),
-				  ),
-				)); ?> 
-			<?php endif; ?>
-
-			<?php // print render($page['navigation']); ?>
+			<?php 
+				if ($main_menu):
+					print theme('links__system_main_menu', array(
+					  'links' => $main_menu,
+					  'attributes' => array(
+						'class' => array(''),
+					  ),
+					)); 
+				endif; 
+			?>
 		</nav>
 		
 		<nav id="secondary-nav" role="navigation">
-<!--		Secondary Menu goes here.-->
-			<?php if ($secondary_menu): ?>
-				<?php print theme('links__system_secondary_menu', array(
-						'links' => $secondary_menu,
-						'attributes' => array(
-							'class' => array(/*'links', 'inline', 'clearfix'*/),
-						),
-				)); ?>
-			<?php endif; ?>
+			<?php if ($secondary_menu):
+				print theme('links__system_secondary_menu', array(
+					'links' => $secondary_menu,
+					'attributes' => array(
+						'class' => array(/*'links', 'inline', 'clearfix'*/),
+					),
+				));
+			endif; ?>
 		</nav>
-		
-	</div>
+</div>
 
-    <?php 
-	
-	// print render($page['header']); 
-	
-	// Render the sidebars to see if there's anything in them.
-    $sidebar_left  = render($page['sidebar_left']);
-    $sidebar_right = render($page['sidebar_right']);
-	?>
+<?php 
+// Render the sidebars to see if there's anything in them.
+$sidebar_left  = render($page['sidebar_left']);
+$sidebar_right = render($page['sidebar_right']);
+?>
 
-	  <div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebars' : ($sidebar_left || $sidebar_right ? 'one-sidebar' : '')) ?>" role="main">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-     
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
+<div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebars' : ($sidebar_left || $sidebar_right ? 'one-sidebar' : '')) ?>" role="main">
+	<?php print render($page['highlighted']); ?>
+	<?php print $breadcrumb; ?>
+
+	<?php print render($title_prefix); ?>
+	<?php if ($title): ?>
+	  <h1 class="title" id="page-title"><?php print $title; ?></h1>
+	<?php endif; ?>
+	<?php print render($title_suffix); ?>
+	<?php print $messages; ?>
+	<?php print render($tabs); ?>
+	<?php print render($page['help']); ?>
+	<?php if ($action_links): ?>
+		<ul class="action-links"><?php print render($action_links); ?></ul>
+	<?php endif; ?>
 	
-	 <?php
-	 if ($sidebar_left): ?>
-      <aside class="sidebar">
-        <?php print $sidebar_left; ?>
-      </aside><!-- /.sidebars -->
+	 <?php if ($sidebar_left): ?>
+		<aside class="sidebar">
+			<?php print $sidebar_left; ?>
+		</aside><!-- /.sidebars -->
     <?php endif; ?>
 	
-	  <div id="main-content">
+	<div id="main-content">
 		<?php print render($page['content']); ?> 
-	  </div>
+	</div>
 	  
-	 <?php if ($sidebar_right): ?>
-      <aside class="sidebar">
-        <?php print $sidebar_right; ?>
-      </aside><!-- /.sidebars -->
-    <?php endif; ?>
+	<?php if ($sidebar_right): ?>
+		<aside class="sidebar">
+			<?php print $sidebar_right; ?>
+		</aside><!-- /.sidebars -->
+	<?php endif; ?>
       
-    </div><!-- /#content -->
-   
-    </div><!-- /#content -->
+</div>
 
 <footer role="contentinfo">
 		<div id="footer-links">
@@ -128,7 +116,5 @@
 			</div>
 		</div>
 	
-	</footer>
-	</footer>
-
+</footer>
 <?php print render($page['bottom']); ?>
