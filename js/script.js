@@ -30,7 +30,7 @@ var init = false;
 
 
 // Document ready
-$(function(){
+(function($){
 
 	getWidth();
 	$(window).resize(getWidth);
@@ -49,7 +49,7 @@ $(function(){
 	});
 
 
-});
+})(jQuery);
 
 
 /* Func: getWidth
@@ -191,8 +191,6 @@ function hideAllMenus() {
 function endsWith(str, suffix) {
 	return str.indexOf(suffix, str.length - suffix.length) !== -1;
 }
-
-
 
 
 // usage: log('inside coolFunc',this,arguments);

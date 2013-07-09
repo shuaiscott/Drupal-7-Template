@@ -223,4 +223,32 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
   //}
 }
-// */
+  
+/**
+ * 
+ * 
+ */
+   function BYU2_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+    $form['#id'] = t('basic-search');
+    $form['search_block_form']['#id'] = t('search'); // Change the text on the label element
+    $form['search_block_form']['#name'] = t('search'); // Change the text on the label element
+	//
+// Alternative (HTML5) placeholder attribute instead of using the javascript
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search this site');
+
+    $form['actions']['submit']['#id'] = t('search-submit'); // Change the text on the submit button
+    $form['actions']['submit']['#value'] = t('Search'); // Change the text on the submit button
+    
+//
+//    // Add extra attributes to the text box
+//    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
+//    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+//	
+//    // Prevent user from searching the default text
+//    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
+//
+//    // Alternative (HTML5) placeholder attribute instead of using the javascript
+//    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+  }
+} 

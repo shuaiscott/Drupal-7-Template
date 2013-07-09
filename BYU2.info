@@ -20,18 +20,16 @@ core        = 7.x
 ; CSS2.1 media types: http://www.w3.org/TR/CSS21/media.html#media-types
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
 
-; First we remove the system's menu styling since Zen has its own.
+; First we remove the system's menu styling since Zen	 has its own.
 stylesheets[all][] = system.menus.css
 
 ; STYLESHEETS
 stylesheets[all][] = css/base.css
-stylesheets[all][] = css/fonts.css
-stylesheets[screen and (min-width:200px)][] = css/responsive.css
+stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
 ; SCRIPTS
-;scripts[] = js/init.js
-scripts[] = js/script.min.js
-;scripts[] = js/fonts.min.js
+scripts[] = js/modernizr.js
+scripts[] = js/init.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

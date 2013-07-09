@@ -17,18 +17,8 @@
 	
 		<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
 
-		<div id="search-container" role="search">
-			<!--This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).--> 
-			   <form id="basic-search" action="http://home.byu.edu/home/search" role="form" style="display: none;">
-				 <input id="search" type="search" name="search">
-				 <input id="search-submit" type="submit" value="Search">
-			   </form>
-
-				<!--This container holds the Google custom search, if enabled--> 
-				<div class="gcse-wrapper">
-				  <gcse:search></gcse:search>
-				</div>
-				
+		<div id="search-container" role="search">	
+			<?php  print render(module_invoke('search', 'block_view')); ?>		
 		</div>
 	  
 		<a href="#" class="menu-button">Menu</a>  
@@ -39,7 +29,7 @@
 	
 	
 	<div class="nav-container">
-		<nav id="primary-nav" class="wrapper" role="navigation">
+		<nav id="primary-nav" role="navigation">
 <!--		Primary menu goes here.-->
 			<?php if ($main_menu): ?>
 				<?php
@@ -102,17 +92,18 @@
 	
 	  <div id="main-content">
 		<?php print render($page['content']); ?>
+		<?php print $feed_icons; ?>  
 	  </div>
 	  
-      <?php print $feed_icons; ?>
-    </div><!-- /#content -->
-
-    <?php
+	 <?php
 	 if ($sidebar_right): ?>
       <aside class="sidebar">
         <?php print $sidebar_right; ?>
       </aside><!-- /.sidebars -->
-    <?php endif; ?>
+    <?php endif; ?> 
+	  
+      
+    </div><!-- /#content -->
 
 <footer role="contentinfo">
 		<div id="footer-links">
