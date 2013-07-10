@@ -94,13 +94,13 @@ $sidebar_right = render($page['sidebar_right']);
       
 </div>
 
-<footer role="contentinfo">
+<footer id="page-footer" role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
 				<?php print render($page['footer']); ?>		
 			</div>
 		</div>
-		
+
 		<div id="footer-bottom">
 			<div class="wrapper">
 			<?php 
