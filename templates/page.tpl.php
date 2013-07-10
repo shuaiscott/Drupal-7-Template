@@ -17,14 +17,14 @@
 	
 		<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
 	  
-		<a href="#primary-nav" class="menu-button">Menu</a>  
 		
 	</div>
 </header>
 
 <div id="search-menu">	
 	<div id="search-container" role="search">	
-		<?php  print render(module_invoke('search', 'block_view')); ?>		
+		<?php  print render(module_invoke('search', 'block_view')); ?>
+		<a href="#primary-nav" class="menu-button">Menu</a>  
 	</div>
 </div>
 	
