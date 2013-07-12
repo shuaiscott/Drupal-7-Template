@@ -1,200 +1,139 @@
-// Global Variables
-var init = false;
-		small = 300,
-		full_menu = 768,
-		full = 1024,
+/*! BYU-Templates - v2.0.0  */
 
-		// Add breakpoints with jRespond
-		jRes = jRespond([
-    {
-        label: 'tiny',
-        enter: 0,
-        exit: small - 1
-    },
-    {
-        label: 'small',
-        enter: small,
-        exit: full_menu - 1
-    },
-    {
-        label: 'full_menu',
-        enter: full_menu,
-        exit: full - 1
-    },
-    {
-        label: 'full',
-        enter: full,
-        exit: 10000
-    }
-]);
-
-
-// Document ready
-(function($){
-
-	getWidth();
-	$(window).resize(getWidth);
-
-	loadSearch();
-
-
-	jRes.addFunc({
-		breakpoint: ['small', 'full_menu', 'full'],
-		enter: function() {
-			if( !init ) {
-				init = true;
-				activateMenus();
-			}
-		}
-	});
-
-
-})(jQuery);
-
-
-/* Func: getWidth
- * Desc: Get the current width of the browser window
- * Args: none
- */
 function getWidth() {
-	var w = $(window).width();
-	log(w);
-	return w;
+    var w = jQuery(window).width();
+    return log(w), w
 }
 
-
-/* Func: ActivateMenus
- * Desc: Get the menus going
- * Args: none
- */
 function activateMenus() {
-	$('#header-top').delegate('.menu-button', 'click', function () {
-		$('body').toggleClass('sideNav');
-	});
-
-	$('nav li:has(.mega, .sub) > a').click(function (e) {
-		e.preventDefault();
-		var li = $(this).parent();
-		// Only close menu if user clicked to open it
-		if (li.hasClass('hover') && clickOpened) {
-			li.removeClass('hover');
-		}
-		else {
-			li.addClass('hover');
-			$('nav li').not(li).removeClass('hover');
-			clickOpened = true;
-		}
-		return false;
-	});
-
-	$('nav li:has(.mega, .sub)').click(function (e) {
-		e.stopPropagation();
-	});
-
-	// Menu config
-	var byuMenuConfig = {
-		sensitivity: 10,
-		interval: 75,
-		over: rollOver, // function = onMouseOver callback (REQUIRED)
-		timeout: 350, // number = milliseconds delay before onMouseOut
-		out: rollOut // function = onMouseOut callback (REQUIRED)
-	};
-	//$('#secondary-nav > ul > li, #primary-nav > ul > li').hoverIntent(byuMenuConfig);
-	$('nav.no-js').removeClass('no-js');
-
-	/* Positions menu divs */
-	$('nav li .sub').each(function () {
-		var mega = $(this);
-		var left = mega.parent().position().left;
-		if (left > mega.parent().parent().outerWidth() - mega.outerWidth())
-			mega.css('right', 0);
-	});
-
-//Listener for if screen is resized to close sideNav
-$(window).resize(function (){
-if ($(window).width() > 768){
-	$('body').removeClass('sideNav');
-}
-});
-
+    jQuery("#search-menu").delegate(".menu-button", "click", function (e) {
+        e.stopPropagation(), e.preventDefault(), jQuery("body").toggleClass("sideNav")
+    }), jQuery("nav li:has(.mega, .sub) > a").click(function (e) {
+        e.preventDefault();
+        var li = $(this).parent();
+        return li.hasClass("hover") && clickOpened ? li.removeClass("hover") : (li.addClass("hover"), $("nav li").not(li).removeClass("hover"), clickOpened = !0), !1
+    }), jQuery("nav li:has(.mega, .sub)").click(function (e) {
+        e.stopPropagation()
+    }), jQuery("nav.no-js").removeClass("no-js"), jQuery("nav li .sub").each(function () {
+        var mega = $(this),
+            left = mega.parent().position().left;
+        left > mega.parent().parent().outerWidth() - mega.outerWidth() && mega.css("right", 0)
+    }), jQuery(window).resize(function () {
+        $(window).width() > 768 && $("body").removeClass("sideNav")
+    })
 }
 
-/**
- * function set display to none if the Google CSE loads via jQuery
- */
 function hideSearch() {
-	$('#basic-search').hide();
+    jQuery("#basic-search").hide()
 }
 
-
-/**
-* Loads the Google Custom Search
-*/
-function loadSearch(){
-		log('Load search');
-		window.__gcse = {
-			callback: hideSearch
-		};
-
-		(function() {
-			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-			hideSearch();
-		})();
+function loadSearch() {
+    log("Load search"), window.__gcse = {
+        callback: hideSearch
+    },
+    function () {
+        var cx = "009932716493032633443:hlqjz33kfkc",
+            gcse = document.createElement("script");
+        gcse.type = "text/javascript", gcse.async = !0, gcse.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//www.google.com/cse/cse.js?cx=" + cx;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gcse, s), hideSearch()
+    }()
 }
 
+function setupNavPosition() {}
 
-/** Func: SetPrimaryNavPosition
- * Desc: Move the nav around so it works in the sidebar
- * Args: none
- */
-function setupNavPosition() {
-	//$('#main-header').append('<div class="nav-container"></div>');
-	//$('#secondary-nav, #primary-nav').detach().appendTo('.nav-container');
+function rollOver() {
+    $(this).hasClass("hover") || (clickOpened = !1, $(this).addClass("hover"), $("nav li").not(this).removeClass("hover"), $(document).click(hideAllMenus))
 }
 
-
-/** Func: RollOver
-* Desc: Show a dropdown menu on rollover. Called by the hoverIntent function.
-* Args: @evt	- Event object. Automatically generated.
-*/
-function rollOver(evt) {
-	if (!$(this).hasClass('hover')) {
-		clickOpened = false;
-		$(this).addClass('hover');
-		$('nav li').not(this).removeClass('hover');
-		$(document).click(hideAllMenus);
-	}
-}
-
-/** Func: RollOut
-* Desc: Hide a dropdown menu on rollout. Called by the hoverIntent function.
-* Args: -
-*/
 function rollOut() {
-	$(this).removeClass('hover');
+    $(this).removeClass("hover")
 }
 
-/** Func: HideAllMenus
-* Desc: Hide all dropdown menus. Bound to click action.
-* Args: -
-*/
 function hideAllMenus() {
-	$('nav li').removeClass('hover');
-	$(document).unbind('click');
+    $("nav li").removeClass("hover"), $(document).unbind("click")
 }
 
 function endsWith(str, suffix) {
-	return str.indexOf(suffix, str.length - suffix.length) !== -1;
-}
+    return -1 !== str.indexOf(suffix, str.length - suffix.length)
+}! function ($) {
+    "use strict";
 
+    function clearMenus() {
+        $(".dropdown-backdrop").remove(), $(toggle).each(function () {
+            getParent($(this)).removeClass("open")
+        })
+    }
 
-// usage: log('inside coolFunc',this,arguments);
-// paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-window.log=function(){log.history=log.history||[];log.history.push(arguments);if(this.console){console.log(Array.prototype.slice.call(arguments));}};
-// catch all document.write() calls
-(function(doc){var write=doc.write;doc.write=function(q){log('document.write():',arguments);if(/docwriteregexwhitelist/.test(q))write.apply(doc,arguments);};})(document);
+    function getParent($this) {
+        var $parent, selector = $this.attr("data-target");
+        return selector || (selector = $this.attr("href"), selector = selector && /#/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, "")), $parent = selector && $(selector), $parent && $parent.length || ($parent = $this.parent()), $parent
+    }
+    var toggle = "[data-toggle=dropdown]",
+        Dropdown = function (element) {
+            var $el = $(element).on("click.dropdown.data-api", this.toggle);
+            $("html").on("click.dropdown.data-api", function () {
+                $el.parent().removeClass("open")
+            })
+        };
+    Dropdown.prototype = {
+        constructor: Dropdown,
+        toggle: function () {
+            var $parent, isActive, $this = $(this);
+            if (!$this.is(".disabled, :disabled")) return $parent = getParent($this), isActive = $parent.hasClass("open"), clearMenus(), isActive || ("ontouchstart" in document.documentElement && $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on("click", clearMenus), $parent.toggleClass("open")), $this.focus(), !1
+        },
+        keydown: function (e) {
+            var $this, $items, $parent, isActive, index;
+            if (/(38|40|27)/.test(e.keyCode) && ($this = $(this), e.preventDefault(), e.stopPropagation(), !$this.is(".disabled, :disabled"))) {
+                if ($parent = getParent($this), isActive = $parent.hasClass("open"), !isActive || isActive && 27 == e.keyCode) return 27 == e.which && $parent.find(toggle).focus(), $this.click();
+                $items = $("[role=menu] li:not(.divider):visible a", $parent), $items.length && (index = $items.index($items.filter(":focus")), 38 == e.keyCode && index > 0 && index--, 40 == e.keyCode && index < $items.length - 1 && index++, ~index || (index = 0), $items.eq(index).focus())
+            }
+        }
+    };
+    var old = $.fn.dropdown;
+    $.fn.dropdown = function (option) {
+        return this.each(function () {
+            var $this = $(this),
+                data = $this.data("dropdown");
+            data || $this.data("dropdown", data = new Dropdown(this)), "string" == typeof option && data[option].call($this)
+        })
+    }, $.fn.dropdown.Constructor = Dropdown, $.fn.dropdown.noConflict = function () {
+        return $.fn.dropdown = old, this
+    }, $(document).on("click.dropdown.data-api", clearMenus).on("click.dropdown.data-api", ".dropdown form", function (e) {
+        e.stopPropagation()
+    }).on("click.dropdown.data-api", toggle, Dropdown.prototype.toggle).on("keydown.dropdown.data-api", toggle + ", [role=menu]", Dropdown.prototype.keydown)
+}(window.jQuery),
+/*! 
+
+* @fileOverview Plugins.js
+* @version 1.0
+* 
+* @author BYU Web Community
+* @see https://github.com/byuweb/
+* @see https://github.com/byuweb/byu-responsive-dev/
+* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/plugins.js
+*
+* This is where you should include any custom plugins needed for this site.
+*/
+window.log = function () {
+    log.history = log.history || [], log.history.push(arguments), this.console && console.log(Array.prototype.slice.call(arguments))
+},
+function (doc) {
+    var write = doc.write;
+    doc.write = function (q) {
+        log("document.write():", arguments), /docwriteregexwhitelist/.test(q) && write.apply(doc, arguments)
+    }
+}(document),
+/*! 
+
+* @fileOverview Script.js
+* @version 2.0
+* 
+* @author BYU Web Community
+* @see https://github.com/byuweb/
+* @see https://github.com/byuweb/byu-responsive-dev/
+* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
+*/
+jQuery(function () {
+    getWidth(), jQuery(window).resize(getWidth), loadSearch(), activateMenus()
+});
