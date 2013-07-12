@@ -14,9 +14,22 @@
 				<a href="<?php print $front_page; ?>" id="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
 			</h1>
 		<?php endif; ?>
-	
-		<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>  
-	  
+		
+		
+		
+		<?php if (module_exists('cas')): ?>
+			<?php if (user_is_logged_in()): ?>
+				<a href="caslogout" class="sign-in button">Sign Out</a>
+			<?php else: ?>
+				<a href="cas" class="sign-in button">Sign in</a>
+			<?php endif; ?>
+		<?php else: ?>
+			<?php if (user_is_logged_in()): ?>
+				<a href="logout" class="sign-in button">Sign out</a>
+			<?php else: ?>
+				<a href="user" class="sign-in button">Sign in</a>
+			<?php endif; ?>			
+		<?php endif; ?>
 		
 	</div>
 </header>
