@@ -14,9 +14,7 @@
 				<a href="<?php print $front_page; ?>" id="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
 			</h1>
 		<?php endif; ?>
-		
-		
-		
+
 		<?php if (module_exists('cas')): ?>
 			<?php if (user_is_logged_in()): ?>
 				<a href="caslogout" class="sign-in button">Sign Out</a>
@@ -36,7 +34,7 @@
 
 <div id="search-menu">	
 	<div id="search-container" role="search">	
-		<?php  print render(module_invoke('search', 'block_view')); ?>
+		<?php print $search_box ?>
 		<a href="#primary-nav" class="menu-button">Menu</a>  
 	</div>
 </div>

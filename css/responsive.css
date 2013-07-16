@@ -4578,7 +4578,6 @@ ul.primary li {
   -o-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   text-shadow: white 1px 1px 0;
-  border: 1px solid #bbbbbb;
   border-bottom: 0;
   margin: 0.5em 0 0 3px;
   /* LTR */
@@ -4586,7 +4585,6 @@ ul.primary li {
 
 /* line 53, ../sass/_drupal-specific.scss */
 ul.primary li.active {
-  border-bottom: 1px solid white;
   margin-bottom: -1px;
   /* Overlap the ul's border. */
 }

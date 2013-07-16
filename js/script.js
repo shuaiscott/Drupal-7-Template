@@ -33,11 +33,13 @@ function loadSearch() {
     },
     function () {
         var cx = "009932716493032633443:hlqjz33kfkc",
-            gcse = document.createElement("script");
-        gcse.type = "text/javascript", gcse.async = !0, gcse.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//www.google.com/cse/cse.js?cx=" + cx;
+        gcse = document.createElement("script");
+        gcse.type = "text/javascript", 
+		gcse.async = !0,
+		gcse.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//www.google.com/cse/cse.js?cx=" + cx;
         var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(gcse, s), hideSearch()
-    }()
+        s.parentNode.insertBefore(gcse, s),
+	}()
 }
 
 function setupNavPosition() {}
