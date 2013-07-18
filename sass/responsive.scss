@@ -3,21 +3,31 @@
 */
 
 @import "compass";
-
 @import "shared/colors";
 @import "shared/mixins";
 @import "shared/variables";
 
+
+
+
+
+
+
+
+
+
 /*!
+
 	Twitter Bootstrap (Scss version)
+
 */
 /*	
 	Loaded first, so it can be overrridden easily.
 	Only uncomment the stuff that you really need */
 
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+	@import "bootstrap/variables";
+	@import "bootstrap/mixins";
 
 // CSS Reset
 //  @import "reset";
@@ -66,26 +76,94 @@
 //	@import "bootstrap/hero-unit";
 
 // Utility classes
-@import "bootstrap/utilities"; // Has to be last to override when necessary
+	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
-/* FontAwesome */
+
+
+
+
+/*
+
+FontAwesome
+
+*/
 @import "responsive/font-awesome";
 
-/*! BYU Styles */
+
+
+
+
+/*!
+
+BYU Styles 
+
+*/
 @import "responsive/bootstrap-override";
 @import "responsive/header-footer";
 @import "responsive/breadcrumb";
 @import "responsive/search";
 @import "responsive/nav";
 
-@import "drupal-specific";
-
-@import "responsive/slider";
 @import "responsive/anythingslider";
-@import "responsive/flexslider";
+@import "responsive/slider";
 
 @import "responsive/content";
 @import "responsive/type";
 
-/*! h5bp print styles */
+
+@import "drupal-specific";
+
+
+
+/*** Larger width ***/
+@media all and ( min-width:$larger-width ) {
+	$display_width:1008px;
+	$side_padding: 12px;
+
+	#primary-nav {
+		width: $display_width;
+		margin:0 auto;
+		padding-left: 0;
+		.mega {
+			width: 100%;
+		}
+	}
+
+	#primary-nav, #secondary-nav {
+		a {
+			padding-left: $side_padding;
+			padding-right: $side_padding;
+		}
+	}
+
+	#logo {
+		padding-left: $side_padding;
+	}
+
+	#header-top {
+		max-width: $display_width;
+		margin-right: auto;
+	}
+
+	#search-menu, #secondary-nav {
+		right:50%;
+		margin-right: -$display_width/2;
+	}
+
+	#footer-links .wrapper {
+		max-width: $larger-width * .91;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 8%;
+	}
+
+}
+
+
+
+/*!
+h5bp print styles 
+*/
 @import "responsive/print";
+
+

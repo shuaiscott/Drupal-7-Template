@@ -1,4 +1,9 @@
-.toolbar-drawer .nav-container {top: 175px}
+body.toolbar-drawer{
+	padding-top:65px;
+	.nav-container {top: (96+65px);}
+}
+
+
 
 /* Page control tabs Styling */
 

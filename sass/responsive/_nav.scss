@@ -8,6 +8,8 @@
 @import "shared/colors";
 @import "shared/mixins";
 
+$break-large:48em; //768px
+
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -246,7 +248,7 @@ body.sideNav {
 
 
 /*** Large width ***/
-@media all and ( min-width: $full-width ) {
+@media all and ( min-width: $large-width ) {
 
 }
 
@@ -304,7 +306,9 @@ body.sideNav {
 		right: 3%;
 		background-color: transparent;
 		z-index: 3;
-		.menu-button { display: none; }
+		.menu-button {
+			display: none;
+		}
 	}
 
 
@@ -493,3 +497,49 @@ body.sideNav {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+/*** Larger width ***/
+@media all and ( min-width:$larger-width ) {
+	$display_width:1008px;
+	$side_padding: 12px;
+
+	#primary-nav {
+		width: $display_width;
+		margin:0 auto;
+		padding-left: 0;
+		.mega {
+			width: 100%;
+		}
+	}
+
+	#primary-nav, #secondary-nav {
+		a {
+			padding-left: $side_padding;
+			padding-right: $side_padding;
+		}
+	}
+
+	#logo {
+		padding-left: $side_padding;
+	}
+
+	#header-top {
+		max-width: $display_width;
+		margin-right: auto;
+	}
+
+	#search-menu, #secondary-nav {
+		right:50%;
+		margin-right: -$display_width/2;
+	}
+}
+

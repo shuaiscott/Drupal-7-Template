@@ -1,8 +1,6 @@
-/*! BYU-Templates - v2.0.0  */
-
 function getWidth() {
-    var w = jQuery(window).width();
-    return log(w), w
+    var e = jQuery(window).width();
+    return log(e), e
 }
 
 function activateMenus() {
@@ -10,14 +8,14 @@ function activateMenus() {
         e.stopPropagation(), e.preventDefault(), jQuery("body").toggleClass("sideNav")
     }), jQuery("nav li:has(.mega, .sub) > a").click(function (e) {
         e.preventDefault();
-        var li = $(this).parent();
-        return li.hasClass("hover") && clickOpened ? li.removeClass("hover") : (li.addClass("hover"), $("nav li").not(li).removeClass("hover"), clickOpened = !0), !1
+        var t = $(this).parent();
+        return t.hasClass("hover") && clickOpened ? t.removeClass("hover") : (t.addClass("hover"), $("nav li").not(t).removeClass("hover"), clickOpened = !0), !1
     }), jQuery("nav li:has(.mega, .sub)").click(function (e) {
         e.stopPropagation()
     }), jQuery("nav.no-js").removeClass("no-js"), jQuery("nav li .sub").each(function () {
-        var mega = $(this),
-            left = mega.parent().position().left;
-        left > mega.parent().parent().outerWidth() - mega.outerWidth() && mega.css("right", 0)
+        var e = $(this),
+            t = e.parent().position().left;
+        t > e.parent().parent().outerWidth() - e.outerWidth() && e.css("right", 0)
     }), jQuery(window).resize(function () {
         $(window).width() > 768 && $("body").removeClass("sideNav")
     })
@@ -27,19 +25,20 @@ function hideSearch() {
     jQuery("#basic-search").hide()
 }
 
-function loadSearch() {
-    log("Load search"), window.__gcse = {
-        callback: hideSearch
-    },
-    function () {
-        var cx = "009932716493032633443:hlqjz33kfkc",
-        gcse = document.createElement("script");
-        gcse.type = "text/javascript", 
-		gcse.async = !0,
-		gcse.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//www.google.com/cse/cse.js?cx=" + cx;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(gcse, s),
-	}()
+	
+window.__gcse = {
+  parsetags: 'explicit',
+  callback: hideSearch();
+};
+	
+function loadSearch() {		
+	var cx = "009932716493032633443:hlqjz33kfkc",
+		gcse = document.createElement("script");
+	gcse.type = "text/javascript";
+	gcse.async = true;
+	gcse.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//www.google.com/cse/cse.js?cx=" + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
 }
 
 function setupNavPosition() {}
@@ -56,86 +55,62 @@ function hideAllMenus() {
     $("nav li").removeClass("hover"), $(document).unbind("click")
 }
 
-function endsWith(str, suffix) {
-    return -1 !== str.indexOf(suffix, str.length - suffix.length)
-}! function ($) {
+function endsWith(e, t) {
+    return -1 !== e.indexOf(t, e.length - t.length)
+}! function (e) {
     "use strict";
 
-    function clearMenus() {
-        $(".dropdown-backdrop").remove(), $(toggle).each(function () {
-            getParent($(this)).removeClass("open")
+    function t() {
+        e(".dropdown-backdrop").remove(), e(r).each(function () {
+            n(e(this)).removeClass("open")
         })
     }
 
-    function getParent($this) {
-        var $parent, selector = $this.attr("data-target");
-        return selector || (selector = $this.attr("href"), selector = selector && /#/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, "")), $parent = selector && $(selector), $parent && $parent.length || ($parent = $this.parent()), $parent
+    function n(t) {
+        var n, r = t.attr("data-target");
+        return r || (r = t.attr("href"), r = r && /#/.test(r) && r.replace(/.*(?=#[^\s]*$)/, "")), n = r && e(r), n && n.length || (n = t.parent()), n
     }
-    var toggle = "[data-toggle=dropdown]",
-        Dropdown = function (element) {
-            var $el = $(element).on("click.dropdown.data-api", this.toggle);
-            $("html").on("click.dropdown.data-api", function () {
-                $el.parent().removeClass("open")
+    var r = "[data-toggle=dropdown]",
+        i = function (t) {
+            var n = e(t).on("click.dropdown.data-api", this.toggle);
+            e("html").on("click.dropdown.data-api", function () {
+                n.parent().removeClass("open")
             })
         };
-    Dropdown.prototype = {
-        constructor: Dropdown,
+    i.prototype = {
+        constructor: i,
         toggle: function () {
-            var $parent, isActive, $this = $(this);
-            if (!$this.is(".disabled, :disabled")) return $parent = getParent($this), isActive = $parent.hasClass("open"), clearMenus(), isActive || ("ontouchstart" in document.documentElement && $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on("click", clearMenus), $parent.toggleClass("open")), $this.focus(), !1
+            var r, i, s = e(this);
+            if (!s.is(".disabled, :disabled")) return r = n(s), i = r.hasClass("open"), t(), i || ("ontouchstart" in document.documentElement && e('<div class="dropdown-backdrop"/>').insertBefore(e(this)).on("click", t), r.toggleClass("open")), s.focus(), !1
         },
-        keydown: function (e) {
-            var $this, $items, $parent, isActive, index;
-            if (/(38|40|27)/.test(e.keyCode) && ($this = $(this), e.preventDefault(), e.stopPropagation(), !$this.is(".disabled, :disabled"))) {
-                if ($parent = getParent($this), isActive = $parent.hasClass("open"), !isActive || isActive && 27 == e.keyCode) return 27 == e.which && $parent.find(toggle).focus(), $this.click();
-                $items = $("[role=menu] li:not(.divider):visible a", $parent), $items.length && (index = $items.index($items.filter(":focus")), 38 == e.keyCode && index > 0 && index--, 40 == e.keyCode && index < $items.length - 1 && index++, ~index || (index = 0), $items.eq(index).focus())
+        keydown: function (t) {
+            var i, s, o, u, a;
+            if (/(38|40|27)/.test(t.keyCode) && (i = e(this), t.preventDefault(), t.stopPropagation(), !i.is(".disabled, :disabled"))) {
+                if (o = n(i), u = o.hasClass("open"), !u || u && 27 == t.keyCode) return 27 == t.which && o.find(r).focus(), i.click();
+                s = e("[role=menu] li:not(.divider):visible a", o), s.length && (a = s.index(s.filter(":focus")), 38 == t.keyCode && a > 0 && a--, 40 == t.keyCode && a < s.length - 1 && a++, ~a || (a = 0), s.eq(a).focus())
             }
         }
     };
-    var old = $.fn.dropdown;
-    $.fn.dropdown = function (option) {
+    var s = e.fn.dropdown;
+    e.fn.dropdown = function (t) {
         return this.each(function () {
-            var $this = $(this),
-                data = $this.data("dropdown");
-            data || $this.data("dropdown", data = new Dropdown(this)), "string" == typeof option && data[option].call($this)
+            var n = e(this),
+                r = n.data("dropdown");
+            r || n.data("dropdown", r = new i(this)), "string" == typeof t && r[t].call(n)
         })
-    }, $.fn.dropdown.Constructor = Dropdown, $.fn.dropdown.noConflict = function () {
-        return $.fn.dropdown = old, this
-    }, $(document).on("click.dropdown.data-api", clearMenus).on("click.dropdown.data-api", ".dropdown form", function (e) {
+    }, e.fn.dropdown.Constructor = i, e.fn.dropdown.noConflict = function () {
+        return e.fn.dropdown = s, this
+    }, e(document).on("click.dropdown.data-api", t).on("click.dropdown.data-api", ".dropdown form", function (e) {
         e.stopPropagation()
-    }).on("click.dropdown.data-api", toggle, Dropdown.prototype.toggle).on("keydown.dropdown.data-api", toggle + ", [role=menu]", Dropdown.prototype.keydown)
-}(window.jQuery),
-/*! 
-
-* @fileOverview Plugins.js
-* @version 1.0
-* 
-* @author BYU Web Community
-* @see https://github.com/byuweb/
-* @see https://github.com/byuweb/byu-responsive-dev/
-* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/plugins.js
-*
-* This is where you should include any custom plugins needed for this site.
-*/
-window.log = function () {
+    }).on("click.dropdown.data-api", r, i.prototype.toggle).on("keydown.dropdown.data-api", r + ", [role=menu]", i.prototype.keydown)
+}(window.jQuery), window.log = function () {
     log.history = log.history || [], log.history.push(arguments), this.console && console.log(Array.prototype.slice.call(arguments))
 },
-function (doc) {
-    var write = doc.write;
-    doc.write = function (q) {
-        log("document.write():", arguments), /docwriteregexwhitelist/.test(q) && write.apply(doc, arguments)
+function (e) {
+    var t = e.write;
+    e.write = function (n) {
+        log("document.write():", arguments), /docwriteregexwhitelist/.test(n) && t.apply(e, arguments)
     }
-}(document),
-/*! 
-
-* @fileOverview Script.js
-* @version 2.0
-* 
-* @author BYU Web Community
-* @see https://github.com/byuweb/
-* @see https://github.com/byuweb/byu-responsive-dev/
-* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
-*/
-jQuery(function () {
+}(document), jQuery(function () {
     getWidth(), jQuery(window).resize(getWidth), loadSearch(), activateMenus()
-});
+})

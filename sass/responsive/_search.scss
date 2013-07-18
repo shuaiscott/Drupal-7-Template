@@ -34,7 +34,10 @@
 			table td .gsc-input-box {
 				background: none;
 				padding: 0;
-				input.gsc-input {}
+
+				input.gsc-input {
+
+				}
 			}
 			table td .gsc-input-box-hover, table td .gsc-input-box-focus {
 				@include box-shadow(none);
@@ -68,8 +71,12 @@
 		@include box-sizing(border-box);
 	}
 
-	#basic-search {	padding-right:43px;	}
-	.gcse-wrapper {	width:100%;	}
+	#basic-search {
+		padding-right:43px;	
+	}
+	.gcse-wrapper {
+		width:100%;
+	}
 
 	#search-submit {
 		background: url(../img/search_box_icon.png) 8px 8px no-repeat;
@@ -104,6 +111,21 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** Medium width ***/
 @media all and (min-width:$med-width) {
 
@@ -113,3 +135,16 @@
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

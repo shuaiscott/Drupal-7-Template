@@ -226,6 +226,7 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
  */
  
 function BYU2_preprocess_page(&$variables){
+//Creates the variables to be used in the template (it is a view and should not have logic.)
   $variables['search_box'] = drupal_render(drupal_get_form('search_block_form'));
 }
  
@@ -236,11 +237,13 @@ function BYU2_preprocess_page(&$variables){
  */
    function BYU2_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
-//    $form['search_block_form']['#id'] = t('search'); // Change the text on the label element
+    $form['#id'] = t('basic-search'); // Change the text on the label element
+    $form['#prefix'] = t(''); // Change the text on the label element
+    $form['#suffix']= t(''); // Change the text on the label element
 //    $form['search_block_form']['#name'] = t('search');
 //
-// Alternative (HTML5) placeholder attribute instead of using the javascript
-    $form['search_block_form']['#attributes']['placeholder'] = t('Search this site');
+//	Alternative (HTML5) placeholder attribute instead of using the javascript
+//    $form['search_block_form']['#attributes']['placeholder'] = t('Search this site');
 //
 //    $form['actions']['submit']['#id'] = t('search-submit'); // Change the text on the submit button
 //    $form['actions']['submit']['#value'] = t('Search'); // Change the text on the submit button
