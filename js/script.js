@@ -21,17 +21,37 @@ function activateMenus() {
     })
 }
 
-function hideSearch() {
-    jQuery("#basic-search").hide()
+var hideSearch = function() {
+
+	if (document.readyState == 'complete') {
+    // Document is ready when CSE element is initialized.
+    // Render an element with both search box and search results in div with id 'test'.
+    jQuery("#basic-search").hide();
+    google.search.cse.element.render(
+        {
+          div: "test",
+          tag: 'search'
+         });
+  } else {
+    // Document is not ready yet, when CSE element is initialized.
+    google.setOnLoadCallback(function() {
+       // Render an element with both search box and search results in div with id 'test'.
+		google.search.cse.element.render(
+            {	
+              div: "test",
+              tag: 'search'
+            });
+    }, true);
+  }
 }
 
-	
 window.__gcse = {
-  parsetags: 'explicit',
-  callback: hideSearch();
+  parsetags: 'callback',
+  callback: hideSearch
 };
 	
-function loadSearch() {		
+function loadSearch() {
+
 	var cx = "009932716493032633443:hlqjz33kfkc",
 		gcse = document.createElement("script");
 	gcse.type = "text/javascript";
