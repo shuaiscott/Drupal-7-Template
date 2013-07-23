@@ -241,10 +241,7 @@ $sidePadding:5px;
     position: relative;
     padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
     padding-left:$sidePadding;
-    padding-top:4px;
-    label {
-      color: #fff;
-    }
+    label { color: #fff; }
   }
 
 
@@ -259,7 +256,7 @@ $sidePadding:5px;
     display: block;
     width:$searchButtonWidth;
     position: absolute;
-    top:4px;
+    top:0px;
     right:$sidePadding;
     &:hover, &:active {
       right:$sidePadding + 2;
