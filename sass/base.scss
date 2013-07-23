@@ -242,6 +242,9 @@ $sidePadding:5px;
     padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
     padding-left:$sidePadding;
     padding-top:4px;
+    label {
+      color: #fff;
+    }
   }
 
 
@@ -506,6 +509,10 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
   background-color:#e5e2df;
   border-top:1px solid #fff;
   padding-bottom:1.5em;
+  
+  a, a:link, a:visited {
+    color: $brown0;
+  }
  }
 
 

@@ -18,7 +18,7 @@ stylesheets[screen and (min-width:300px)][] = css/responsive.css
 ; SCRIPTS
 scripts[] = js/modernizr.js
 scripts[] = js/jRespond.min.js
-scripts[] = js/script.min.js
+scripts[] = js/script.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

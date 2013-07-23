@@ -3,6 +3,7 @@
 */
 
 @import "compass";
+
 @import "shared/colors";
 @import "shared/mixins";
 @import "shared/variables";
@@ -17,9 +18,7 @@
 
 
 /*!
-
 	Twitter Bootstrap (Scss version)
-
 */
 /*	
 	Loaded first, so it can be overrridden easily.
@@ -110,9 +109,7 @@ BYU Styles
 @import "responsive/content";
 @import "responsive/type";
 
-
 @import "drupal-specific";
-
 
 
 /*** Larger width ***/

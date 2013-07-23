@@ -8,7 +8,6 @@
 @import "shared/colors";
 @import "shared/mixins";
 
-$break-large:48em; //768px
 
 html {
 	overflow-x: hidden;
@@ -35,6 +34,7 @@ body {
 }
 
 body.sideNav {
+	min-height:1600px;
 
 	#main-header, #search-menu, #content, #page-footer {
 		left:75%;
@@ -110,13 +110,14 @@ body.sideNav {
 %sidenav {
 	font-size: 1.2em;
 		a {
-		color: #fff;
+		color: $blue10;
 		padding: 1em 5%;
 		display: block;
 		@include text-shadow(0px -1px 0px #000);
 		&:hover {
 			text-decoration: none;
-			background-color: $blue0;
+			background-color: transparent;
+			color: #fff;
 		}
 	}
 	> ul {
@@ -169,6 +170,20 @@ body.sideNav {
 	.mega, .sub { @extend %submenu; }
 	li.hover .mega, li.hover .sub { @extend %activemenu;}
 	.highlight, .featured, hr { display: none; }
+	a {
+		border-bottom: 1px solid transparent;
+		@include transition(border-color, 0.2s ease);
+		&:hover {
+			border-bottom-color: $blue7;
+		}
+		 &.current {
+		 	border-bottom-color: $blue5;
+		 }
+	}
+
+	.hover a:hover, .hover a.current {
+		border-bottom-color: transparent;
+	}
 }
 
 /* Secondary Nav */
@@ -286,6 +301,13 @@ body.sideNav {
 	$search-width: 250px;
 	$menu-height:36px;
 
+	body.sideNav {
+		min-height: auto;
+		#main-header, #content, #page-footer, #search-menu {
+			left:auto;
+		}
+	}
+
 	#header-top {
 		height: $header-top-height;
 		margin-right: 3%;
@@ -308,6 +330,7 @@ body.sideNav {
 		z-index: 3;
 		.menu-button {
 			display: none;
+			color: $blue0;
 		}
 	}
 
@@ -317,7 +340,7 @@ body.sideNav {
 		display: block;
 		top: $header-top-height;
 		min-height: $menu-height;
-		height: $menu-height;
+		//height: $menu-height + 1;
 		z-index: 5;
 		background-color: $blue0;
 		border-top: 1px solid $blue3;
@@ -507,39 +530,5 @@ body.sideNav {
 
 
 
-/*** Larger width ***/
-@media all and ( min-width:$larger-width ) {
-	$display_width:1008px;
-	$side_padding: 12px;
 
-	#primary-nav {
-		width: $display_width;
-		margin:0 auto;
-		padding-left: 0;
-		.mega {
-			width: 100%;
-		}
-	}
-
-	#primary-nav, #secondary-nav {
-		a {
-			padding-left: $side_padding;
-			padding-right: $side_padding;
-		}
-	}
-
-	#logo {
-		padding-left: $side_padding;
-	}
-
-	#header-top {
-		max-width: $display_width;
-		margin-right: auto;
-	}
-
-	#search-menu, #secondary-nav {
-		right:50%;
-		margin-right: -$display_width/2;
-	}
-}
 
