@@ -40,19 +40,14 @@
 </div>
 	
 <div class="nav-container">
-		<nav id="primary-nav" role="navigation">
-			<?php 
+		<nav id="primary-nav" role="navigation">	
+			<?php
 				if ($main_menu):
-					print drupal_render(menu_tree(variable_get('menu_main_links_source', 'main-menu')));
-					
-					
-					
-//					print theme('links__system_main_menu', array(
-//					  'links' => $main_menu,
-//					  'attributes' => array(
-//						'class' => array(''),
-//					  ),
-//					)); 
+					if (module_exists('byu_megamenu')) {
+						print _renderMainMenu();
+					} else {
+						print drupal_render(menu_tree(variable_get('menu_main_links_source', 'main-menu')));
+					}
 				endif; 
 			?>
 		</nav>
@@ -60,13 +55,6 @@
 		<nav id="secondary-nav" role="navigation">
 			<?php if ($secondary_menu):
 				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
-
-//				print theme('links__system_secondary_menu', array(
-//					'links' => $secondary_menu,
-//					'attributes' => array(
-//						'class' => array(/*'links', 'inline', 'clearfix'*/),
-//					),
-//				));
 			endif; ?>
 		</nav>
 </div>
