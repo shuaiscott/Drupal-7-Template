@@ -9,7 +9,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 22, ../sass/base/_normalize.scss */
 article,
 aside,
 details,
@@ -28,7 +28,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 32, ../sass/base/_normalize.scss */
 audio,
 canvas,
 video {
@@ -39,7 +39,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 41, ../sass/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -48,7 +48,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 50, ../sass/base/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -65,7 +65,7 @@ audio:not([controls]) {
  * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 68, ../sass/base/_normalize.scss */
 html {
   background: #fff;
   /* 1 */
@@ -82,7 +82,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 80, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 80, ../sass/base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -93,7 +93,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 92, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 92, ../sass/base/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -101,7 +101,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 101, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 101, ../sass/base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -114,7 +114,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 114, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 114, ../sass/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -123,7 +123,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 123, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 123, ../sass/base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -131,7 +131,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 132, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 132, ../sass/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -140,7 +140,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 140, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 140, ../sass/base/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -148,7 +148,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 148, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 148, ../sass/base/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -158,7 +158,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 158, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 158, ../sass/base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -167,7 +167,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 170, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 170, ../sass/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -179,7 +179,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 179, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 179, ../sass/base/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -187,7 +187,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 187, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 187, ../sass/base/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -195,7 +195,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 195, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 195, ../sass/base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -203,7 +203,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 204, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 204, ../sass/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -212,12 +212,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 211, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 211, ../sass/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 215, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 215, ../sass/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -228,7 +228,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 227, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 227, ../sass/base/_normalize.scss */
 img {
   border: 0;
 }
@@ -236,7 +236,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 235, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 235, ../sass/base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -247,7 +247,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 247, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 247, ../sass/base/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -258,7 +258,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 259, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 259, ../sass/base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -269,7 +269,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 270, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 270, ../sass/base/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -282,7 +282,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 284, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 284, ../sass/base/_normalize.scss */
 button,
 input,
 select,
@@ -299,7 +299,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 296, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 296, ../sass/base/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -311,7 +311,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 308, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 308, ../sass/base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -324,7 +324,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 323, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 323, ../sass/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -338,7 +338,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 333, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 333, ../sass/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -348,7 +348,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 343, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 343, ../sass/base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -362,7 +362,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 354, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 354, ../sass/base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -376,7 +376,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 367, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 367, ../sass/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -385,7 +385,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 376, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 376, ../sass/base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -396,7 +396,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 386, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 386, ../sass/base/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -410,7 +410,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 399, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_normalize.scss */
+/* line 399, ../sass/base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -426,7 +426,7 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 17, ../sass/base/_h5bp.scss */
 html,
 button,
 input,
@@ -435,7 +435,7 @@ textarea {
   color: #222;
 }
 
-/* line 21, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 21, ../sass/base/_h5bp.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -446,13 +446,13 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 32, ../sass/base/_h5bp.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 37, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 37, ../sass/base/_h5bp.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -461,7 +461,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 46, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 46, ../sass/base/_h5bp.scss */
 hr {
   display: block;
   height: 1px;
@@ -474,7 +474,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 59, ../sass/base/_h5bp.scss */
 img {
   vertical-align: middle;
 }
@@ -482,7 +482,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 67, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 67, ../sass/base/_h5bp.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -492,7 +492,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 77, ../sass/base/_h5bp.scss */
 textarea {
   resize: vertical;
 }
@@ -500,7 +500,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 85, ../sass/base/_h5bp.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -517,7 +517,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 120, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 120, ../sass/base/_h5bp.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -526,7 +526,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 128, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 128, ../sass/base/_h5bp.scss */
 .ir:before {
   content: "";
   display: block;
@@ -537,7 +537,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 139, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 139, ../sass/base/_h5bp.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -546,7 +546,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 148, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 148, ../sass/base/_h5bp.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -562,7 +562,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 165, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 165, ../sass/base/_h5bp.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -576,7 +576,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 178, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 178, ../sass/base/_h5bp.scss */
 .invisible {
   visibility: hidden;
 }
@@ -592,7 +592,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 195, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 195, ../sass/base/_h5bp.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -601,7 +601,7 @@ textarea {
   /* 2 */
 }
 
-/* line 200, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 200, ../sass/base/_h5bp.scss */
 .clearfix:after {
   clear: both;
 }
@@ -610,7 +610,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 209, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+/* line 209, ../sass/base/_h5bp.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -620,7 +620,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 220, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 220, ../sass/base/_h5bp.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -629,18 +629,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 228, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 228, ../sass/base/_h5bp.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 232, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 232, ../sass/base/_h5bp.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 236, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 236, ../sass/base/_h5bp.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -648,33 +648,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 246, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 246, ../sass/base/_h5bp.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 251, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 251, ../sass/base/_h5bp.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 256, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 256, ../sass/base/_h5bp.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 261, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 261, ../sass/base/_h5bp.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 265, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 265, ../sass/base/_h5bp.scss */
   img {
     max-width: 100% !important;
   }
@@ -683,7 +683,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 275, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 275, ../sass/base/_h5bp.scss */
   p,
   h2,
   h3 {
@@ -691,60 +691,60 @@ textarea {
     widows: 3;
   }
 
-  /* line 281, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_h5bp.scss */
+  /* line 281, ../sass/base/_h5bp.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-/* line 1, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 1, ../sass/base/_prettify.scss */
 .com {
   color: #93a1a1;
 }
 
-/* line 2, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 2, ../sass/base/_prettify.scss */
 .lit {
   color: #195f91;
 }
 
-/* line 3, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 3, ../sass/base/_prettify.scss */
 .pun, .opn, .clo {
   color: #93a1a1;
 }
 
-/* line 4, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 4, ../sass/base/_prettify.scss */
 .fun {
   color: #dc322f;
 }
 
-/* line 5, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 5, ../sass/base/_prettify.scss */
 .str, .atv {
   color: #D14;
 }
 
-/* line 6, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 6, ../sass/base/_prettify.scss */
 .kwd, .prettyprint .tag {
   color: #1e347b;
 }
 
-/* line 7, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 7, ../sass/base/_prettify.scss */
 .typ, .atn, .dec, .var {
   color: teal;
 }
 
-/* line 8, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 8, ../sass/base/_prettify.scss */
 .pln {
   color: #48484c;
 }
 
-/* line 10, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 10, ../sass/base/_prettify.scss */
 .prettyprint {
   padding: 8px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
 
-/* line 15, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 15, ../sass/base/_prettify.scss */
 .prettyprint.linenums {
   -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
   -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
@@ -752,13 +752,13 @@ textarea {
 }
 
 /* Specify class=linenums on a pre to get line numbering */
-/* line 22, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 22, ../sass/base/_prettify.scss */
 ol.linenums {
   margin: 0 0 0 33px;
   /* IE indents via margin-left */
 }
 
-/* line 25, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_prettify.scss */
+/* line 25, ../sass/base/_prettify.scss */
 ol.linenums li {
   padding-left: 12px;
   color: #bebec5;
@@ -767,34 +767,34 @@ ol.linenums li {
 }
 
 /*** Base tags ***/
-/* line 6, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 6, ../sass/base/_basics.scss */
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 7, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 7, ../sass/base/_basics.scss */
 body em {
   font-style: italic;
 }
 
-/* line 8, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 8, ../sass/base/_basics.scss */
 body strong {
   font-weight: bold;
 }
 
-/* line 9, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 9, ../sass/base/_basics.scss */
 body, select, input, textarea {
   color: #444;
 }
 
-/* line 10, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 10, ../sass/base/_basics.scss */
 p a {
   text-decoration: underline;
 }
 
 /* Blockquotes */
-/* line 12, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 12, ../sass/base/_basics.scss */
 blockquote {
   margin: 1.5em 10px;
   padding: .5em 10px;
@@ -804,7 +804,7 @@ blockquote {
   position: relative;
 }
 
-/* line 20, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 20, ../sass/base/_basics.scss */
 blockquote:before {
   color: #bbb;
   content: "\201C";
@@ -817,7 +817,7 @@ blockquote:before {
   left: 1px;
 }
 
-/* line 31, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 31, ../sass/base/_basics.scss */
 blockquote:after {
   color: #bbb;
   content: "\201D";
@@ -826,74 +826,74 @@ blockquote:after {
   vertical-align: -0.45em;
 }
 
-/* line 32, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 32, ../sass/base/_basics.scss */
 blockquote :first-child {
   display: inline;
 }
 
 /* Links */
-/* line 36, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 36, ../sass/base/_basics.scss */
 a, a:link {
   color: #336699;
   text-decoration: none;
 }
 
-/* line 37, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 37, ../sass/base/_basics.scss */
 a:hover {
   color: #002255;
   text-decoration: underline;
 }
 
-/* line 38, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 38, ../sass/base/_basics.scss */
 a:active {
   color: #c00;
 }
 
-/* line 39, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 39, ../sass/base/_basics.scss */
 a:visited {
   color: #539;
 }
 
 /* Images */
-/* line 42, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 42, ../sass/base/_basics.scss */
 img {
   max-width: 100%;
 }
 
 /* Tables */
-/* line 45, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 45, ../sass/base/_basics.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0 0 9px;
 }
 
-/* line 46, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 46, ../sass/base/_basics.scss */
 table, td, th {
   border: 1px solid #ddd;
 }
 
-/* line 47, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 47, ../sass/base/_basics.scss */
 td, th {
   padding: .125em .5em;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 48, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 48, ../sass/base/_basics.scss */
 td {
   border-left: 1px dotted #eee;
   border-right: 1px dotted #eee;
 }
 
-/* line 49, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 49, ../sass/base/_basics.scss */
 th {
   background: #f9f9f9;
   border-right: 1px solid #e9e9e9;
   border-left: 1px solid #e9e9e9;
 }
 
-/* line 50, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 50, ../sass/base/_basics.scss */
 table caption {
   color: #888;
   text-align: left;
@@ -901,101 +901,101 @@ table caption {
   font-style: italic;
 }
 
-/* line 51, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 51, ../sass/base/_basics.scss */
 tfoot {
   font-weight: bold;
 }
-/* line 52, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 52, ../sass/base/_basics.scss */
 tfoot td {
   color: #666;
   border-top-color: #666;
 }
 
-/* line 53, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 53, ../sass/base/_basics.scss */
 td, td img {
   vertical-align: top;
 }
 
 /* Lists */
-/* line 57, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 57, ../sass/base/_basics.scss */
 ol {
   list-style-type: decimal;
   margin-left: 2em;
 }
-/* line 58, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 58, ../sass/base/_basics.scss */
 ol ol {
   list-style-type: lower-alpha;
 }
-/* line 59, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 59, ../sass/base/_basics.scss */
 ol ol ol {
   list-style-type: lower-roman;
 }
-/* line 60, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 60, ../sass/base/_basics.scss */
 ol ol ol ol {
   list-style-type: decimal;
 }
-/* line 61, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 61, ../sass/base/_basics.scss */
 ol ol ol ol ol {
   list-style-type: lower-alpha;
 }
-/* line 62, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 62, ../sass/base/_basics.scss */
 ol ol ol ol ol ol {
   list-style-type: lower-roman;
 }
 
-/* line 63, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 63, ../sass/base/_basics.scss */
 ul {
   list-style-type: disc;
   margin-left: 2em;
 }
-/* line 64, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 64, ../sass/base/_basics.scss */
 ul ul {
   list-style-type: circle;
 }
-/* line 65, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 65, ../sass/base/_basics.scss */
 ul ul ul {
   list-style-type: disc;
 }
-/* line 66, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 66, ../sass/base/_basics.scss */
 ul ul ul ul {
   list-style-type: circle;
 }
-/* line 67, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 67, ../sass/base/_basics.scss */
 ul ul ul ul ul {
   list-style-type: disc;
 }
-/* line 68, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 68, ../sass/base/_basics.scss */
 ul ul ul ul ul ul {
   list-style-type: circle;
 }
 
-/* line 69, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 69, ../sass/base/_basics.scss */
 ul ul {
   margin-top: .25em;
   margin-bottom: .25em;
 }
 
-/* line 70, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 70, ../sass/base/_basics.scss */
 nav ul, nav ul ul {
   list-style: none;
 }
 
-/* line 71, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 71, ../sass/base/_basics.scss */
 nav ul, nav li {
   margin: 0;
 }
 
-/* line 72, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 72, ../sass/base/_basics.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 73, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 73, ../sass/base/_basics.scss */
 dd {
   padding: 0 0 .75em 1em;
 }
 
-/* line 74, C:/wamp/www/WebComDev/sites/all/themes/byu2/sass/base/_basics.scss */
+/* line 74, ../sass/base/_basics.scss */
 dl, menu, ol, ul {
   padding: 0;
 }
@@ -1265,7 +1265,11 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-left: 5px;
   padding-top: 4px;
 }
-/* line 249, ../sass/base.scss */
+/* line 245, ../sass/base.scss */
+#search-container #basic-search label {
+  color: #fff;
+}
+/* line 252, ../sass/base.scss */
 #search-container #search-submit {
   background-image: url(../img/search_box_icon.png);
   background-position: 50% 50%;
@@ -1279,11 +1283,11 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   top: 4px;
   right: 5px;
 }
-/* line 261, ../sass/base.scss */
+/* line 264, ../sass/base.scss */
 #search-container #search-submit:hover, #search-container #search-submit:active {
   right: 7px;
 }
-/* line 266, ../sass/base.scss */
+/* line 269, ../sass/base.scss */
 #search-container .gsc-search-button, #search-container .gsc-search-button-v2 {
   background-color: #628cb6;
   background-image: none;
@@ -1291,12 +1295,12 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   position: relative;
   top: 1px;
 }
-/* line 272, ../sass/base.scss */
+/* line 275, ../sass/base.scss */
 #search-container .gsc-search-button:hover, #search-container .gsc-search-button:active, #search-container .gsc-search-button-v2:hover, #search-container .gsc-search-button-v2:active {
   margin: 0;
   margin-right: -2px;
 }
-/* line 279, ../sass/base.scss */
+/* line 282, ../sass/base.scss */
 #search-container #basic-search #search, #search-container input.gsc-input {
   margin-bottom: 0;
   vertical-align: top;
@@ -1311,18 +1315,18 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   display: block;
   width: 100%;
 }
-/* line 290, ../sass/base.scss */
+/* line 293, ../sass/base.scss */
 #search-container input.gsc-input {
   background-position: 14px 50% !important;
 }
-/* line 295, ../sass/base.scss */
+/* line 298, ../sass/base.scss */
 #search-container .gsc-input-box {
   padding-right: 20px !important;
   position: relative;
 }
 
 /*** Navigation ***/
-/* line 320, ../sass/base.scss */
+/* line 323, ../sass/base.scss */
 .nav-container a {
   font-size: 14px;
   padding: .5em 0;
@@ -1331,135 +1335,135 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 327, ../sass/base.scss */
+/* line 330, ../sass/base.scss */
 .nav-container a:hover, .nav-container a:active {
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 333, ../sass/base.scss */
+/* line 336, ../sass/base.scss */
 .nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a {
   font-weight: normal;
   padding-left: 10%;
 }
-/* line 338, ../sass/base.scss */
+/* line 341, ../sass/base.scss */
 .nav-container .featured, .nav-container .highlight {
   display: none;
 }
-/* line 342, ../sass/base.scss */
+/* line 345, ../sass/base.scss */
 .nav-container .sublinks {
   list-style: none;
   font-size: 13px;
 }
-/* line 345, ../sass/base.scss */
+/* line 348, ../sass/base.scss */
 .nav-container .sublinks a {
   padding-left: 15%;
 }
 
-/* line 351, ../sass/base.scss */
+/* line 354, ../sass/base.scss */
 #primary-nav, #secondary-nav {
   border-top: 1px solid #ddd;
   padding: 10px 0;
 }
 
 /*** Main Content ***/
-/* line 373, ../sass/base.scss */
+/* line 376, ../sass/base.scss */
 .wrapper {
   margin: 0;
 }
 
-/* line 375, ../sass/base.scss */
+/* line 378, ../sass/base.scss */
 #content {
   padding: 1em 5% 2em;
 }
-/* line 377, ../sass/base.scss */
+/* line 380, ../sass/base.scss */
 #content h1 {
   color: #002255;
 }
 
-/* line 383, ../sass/base.scss */
+/* line 386, ../sass/base.scss */
 #feature {
   margin: -1em -5.55% 0;
 }
-/* line 385, ../sass/base.scss */
+/* line 388, ../sass/base.scss */
 #feature ul {
   list-style: none;
   margin: 0;
   padding-bottom: 20px;
 }
-/* line 390, ../sass/base.scss */
+/* line 393, ../sass/base.scss */
 #feature li {
   display: none;
 }
-/* line 392, ../sass/base.scss */
+/* line 395, ../sass/base.scss */
 #feature li.feature {
   display: block;
 }
-/* line 396, ../sass/base.scss */
+/* line 399, ../sass/base.scss */
 #feature .feature-image {
   text-align: center;
 }
 
-/* line 401, ../sass/base.scss */
+/* line 404, ../sass/base.scss */
 .feature-description {
   margin: 0 5%;
 }
-/* line 403, ../sass/base.scss */
+/* line 406, ../sass/base.scss */
 .feature-description h2 {
   font-size: 18px;
   line-height: 20px;
   margin: 20px 0px 10px;
 }
 
-/* line 413, ../sass/base.scss */
+/* line 416, ../sass/base.scss */
 .breadcrumb {
   display: none;
 }
 
-/* line 422, ../sass/base.scss */
+/* line 425, ../sass/base.scss */
 #calendar h2 {
   margin-bottom: 0;
 }
 
-/* line 425, ../sass/base.scss */
+/* line 428, ../sass/base.scss */
 .day a, .day span {
   display: block;
 }
-/* line 426, ../sass/base.scss */
+/* line 429, ../sass/base.scss */
 .day span.date {
   margin-right: .33em;
   display: inline;
   font-weight: normal;
 }
 
-/* line 432, ../sass/base.scss */
+/* line 435, ../sass/base.scss */
 #calendars {
   margin: 0;
   padding: .5em 0 0;
 }
 
-/* line 437, ../sass/base.scss */
+/* line 440, ../sass/base.scss */
 #calendar, #news {
   border-top: 4px solid #f7f7f7;
   margin-top: 1px;
   padding-bottom: 1em;
 }
 
-/* line 442, ../sass/base.scss */
+/* line 445, ../sass/base.scss */
 #calendar, #news, #feature {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 443, ../sass/base.scss */
+/* line 446, ../sass/base.scss */
 ul#calendars {
   list-style: none;
 }
 
-/* line 444, ../sass/base.scss */
+/* line 447, ../sass/base.scss */
 .day {
   padding: .75em 0 0;
 }
 
-/* line 445, ../sass/base.scss */
+/* line 448, ../sass/base.scss */
 a.baseline, #calendar > strong, a.more {
   font-weight: bold;
   margin-top: 1.5em;
@@ -1467,98 +1471,102 @@ a.baseline, #calendar > strong, a.more {
   display: block;
 }
 
-/* line 453, ../sass/base.scss */
+/* line 456, ../sass/base.scss */
 .news-item {
   padding: .25em 0 0;
 }
 
-/* line 454, ../sass/base.scss */
+/* line 457, ../sass/base.scss */
 .briefs-item {
   padding: .1em 0 0;
 }
 
-/* line 455, ../sass/base.scss */
+/* line 458, ../sass/base.scss */
 #briefs-container {
   border-bottom: 1px solid #eee;
   padding-bottom: .75em;
   margin-bottom: .5em;
 }
 
-/* line 463, ../sass/base.scss */
+/* line 466, ../sass/base.scss */
 #page-footer {
   background-color: #eeebe9;
   border-top: 1px solid #fff;
   border-bottom: 2px solid transparent;
 }
-/* line 467, ../sass/base.scss */
+/* line 470, ../sass/base.scss */
 #page-footer a, #page-footer a:link, #page-footer a:visited {
-  color: #807b73;
+  color: #6b6761;
   display: block;
   padding: .35em 1%;
   font-size: .95em;
 }
-/* line 472, ../sass/base.scss */
+/* line 475, ../sass/base.scss */
 #page-footer a:hover, #page-footer a:active, #page-footer a:focus {
-  color: #66625c;
+  color: #595650;
 }
-/* line 474, ../sass/base.scss */
+/* line 477, ../sass/base.scss */
 #page-footer h2 {
-  color: #66625c;
+  color: #595650;
   margin-top: 1.5em;
   font-size: 1em;
   border-bottom: 1px solid #cccac6;
 }
-/* line 479, ../sass/base.scss */
+/* line 482, ../sass/base.scss */
 #page-footer h3 {
   font-weight: normal;
-  color: #66625c;
+  color: #595650;
   font-size: .95em;
   margin: 1em 0 0;
 }
-/* line 484, ../sass/base.scss */
+/* line 487, ../sass/base.scss */
 #page-footer p {
-  color: #807b73;
+  color: #6b6761;
   font-size: .95em;
 }
-/* line 487, ../sass/base.scss */
+/* line 490, ../sass/base.scss */
 #page-footer .wrapper {
   margin: 9px 5%;
 }
 
-/* line 492, ../sass/base.scss */
+/* line 495, ../sass/base.scss */
 #footer-links {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5em;
 }
-/* line 495, ../sass/base.scss */
+/* line 498, ../sass/base.scss */
 #footer-links div.alpha {
   margin-top: 0;
   border-top: none;
 }
-/* line 497, ../sass/base.scss */
+/* line 500, ../sass/base.scss */
 #footer-links .addthis_default_style a {
   clear: left;
   padding: 0;
 }
-/* line 499, ../sass/base.scss */
+/* line 502, ../sass/base.scss */
 #footer-links .addthis_toolbox a {
   padding-left: 0;
 }
-/* line 501, ../sass/base.scss */
+/* line 504, ../sass/base.scss */
 #footer-links .addthis_toolbox a span {
   padding-right: 10px;
   margin: 0;
 }
 
-/* line 505, ../sass/base.scss */
+/* line 508, ../sass/base.scss */
 #footer-bottom {
   background-color: #e5e2df;
   border-top: 1px solid #fff;
   padding-bottom: 1.5em;
 }
+/* line 513, ../sass/base.scss */
+#footer-bottom a, #footer-bottom a:link, #footer-bottom a:visited {
+  color: #595650;
+}
 
 @media all and (max-width: 939px) {
-  /* line 513, ../sass/base.scss */
+  /* line 520, ../sass/base.scss */
   .feature-description {
     border-left: none !important;
     background-color: transparent !important;
