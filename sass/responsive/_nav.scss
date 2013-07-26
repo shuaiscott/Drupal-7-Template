@@ -427,7 +427,7 @@ body.sideNav {
 
 		.mega {
 			@extend %tab-nav-submenu;
-			min-height:400px;
+			min-height:450px;
 			position: absolute;
 			padding: 1em 0 2em;
 			width: 97.95%;
@@ -464,7 +464,7 @@ body.sideNav {
 			float:left;
 			width:220px;
 			&.double {
-				width: 46%;
+				width: 42%;
 				.featured {
 					.sublinks { padding-left: 5%; }
 				}

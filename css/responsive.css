@@ -4376,7 +4376,7 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
   }
   /* line 428, ../sass/responsive/_nav.scss */
   #primary-nav .mega {
-    min-height: 400px;
+    min-height: 450px;
     position: absolute;
     padding: 1em 0 2em;
     width: 97.95%;
@@ -4432,7 +4432,7 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
   }
   /* line 466, ../sass/responsive/_nav.scss */
   #primary-nav .links.double {
-    width: 46%;
+    width: 42%;
   }
   /* line 469, ../sass/responsive/_nav.scss */
   #primary-nav .links.double .featured .sublinks {
