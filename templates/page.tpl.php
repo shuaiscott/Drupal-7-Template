@@ -35,8 +35,8 @@
 <div id="search-menu">	
 	<div id="search-container" role="search">	
 		<?php print $search_box ?>
-		<a href="#primary-nav" class="menu-button">Menu</a>  
 	</div>
+	<a href="#primary-nav" class="menu-button">Menu</a>  
 </div>
 	
 <div class="nav-container">
@@ -104,7 +104,7 @@ $sidebar_right = render($page['sidebar_right']);
 			<div class="wrapper">
 				<?php print render($page['footer']); ?>		
 			</div>
-		</div>
+		</di
 
 		<div id="footer-bottom">
 			<div class="wrapper">
@@ -116,7 +116,6 @@ $sidebar_right = render($page['sidebar_right']);
 					<a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a> 
 					<a id="lds"   href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
 				</p>
-				<p><a id="copyright" href="http://home.byu.edu/home/copyright">Copyright© 2013, All Rights Reserved</a></p>
 			<?php else: 
 				print render($page['copyright']);
 			endif; ?>

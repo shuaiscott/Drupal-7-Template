@@ -23,9 +23,9 @@ $serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
 
 /*** Type ***/
 
-$baseSize:16; // 16px
-$fontSize:13; // 14px
-$lineHeight:18; // 20px
+$baseSize:16;
+$fontSize:13;
+$lineHeight:18;
 
 body, button, input, select, textarea {
   color: #444;
@@ -78,7 +78,7 @@ a {
   position: relative;
   h1 {
     font-size: 2.2em;
-    margin: .5em 5% .25em;
+    margin: 0 5% .25em;
     a { color: #fff; }
   }
   a.sign-in {
@@ -88,9 +88,7 @@ a {
   }
 }
 
-#logo {
-  background-color:$blue1;
-  border-bottom: 1px solid $blue3;
+#logo, #byu-bar {
   padding:.35em 0 .45em;
 
   a.byu, a.byulink {
@@ -111,7 +109,7 @@ a {
     padding: 6px 8px 2px;
     color: $blue8;
     line-height: 1.2;
-    height: 26px;
+    min-height: 26px;
     vertical-align: top;
   }
   h2 { 
@@ -241,7 +239,9 @@ $sidePadding:5px;
     position: relative;
     padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
     padding-left:$sidePadding;
-    label { color: #fff; }
+    label {
+      color: #fff;
+    }
   }
 
 
@@ -354,6 +354,38 @@ $sidePadding:5px;
 }
 
 
+/* Sidebar nav */
+nav.sidebar {
+  display: none;
+}
+
+
+.sidebar-navigation {
+
+  nav.sidebar {
+    border-top: 1px solid #ddd;
+    display: block;
+    padding-top: .5em;
+    margin-top:1em;
+
+    a {
+      padding: .2em 0;
+      display: block;
+      color: $blue2;
+      &:hover {
+        text-decoration: underline;
+        background-color: #eeebe9;
+        color: $blue0;
+      }
+    }
+    .current a {
+      color: #666;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 
 
@@ -506,7 +538,7 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
   background-color:#e5e2df;
   border-top:1px solid #fff;
   padding-bottom:1.5em;
-  
+
   a, a:link, a:visited {
     color: $brown0;
   }
@@ -520,3 +552,6 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
     @include box-shadow(none !important);
   }
 }
+
+
+@import "responsive/byu-bar";

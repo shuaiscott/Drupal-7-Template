@@ -110,7 +110,7 @@ body.sideNav {
 %sidenav {
 	font-size: 1.2em;
 		a {
-		color: $blue10;
+		color: $blue9;
 		padding: 1em 5%;
 		display: block;
 		@include text-shadow(0px -1px 0px #000);
@@ -154,9 +154,10 @@ body.sideNav {
 		&:hover { color: #fff; }
 	}
 	ul {
-	.sublinks{ padding-left: 5%;}
 		padding: 0;
-		margin: 0;
+		margin: 0;		
+		.sublinks a { 
+			padding-left: 15%;}
 	}
 	li { border: none; }
 }
@@ -171,19 +172,18 @@ body.sideNav {
 	li.hover .mega, li.hover .sub { @extend %activemenu;}
 	.highlight, .featured, hr { display: none; }
 	a {
-		border-bottom: 1px solid transparent;
-		@include transition(border-color, 0.2s ease);
-		&:hover {
-			border-bottom-color: $blue7;
+		&.current, &:hover {
+			color:#fff;
+			background-color: $blue2;
+			@include background-image( linear-gradient($blue4, $blue2 1px, $blue1) );
 		}
-		 &.current {
-		 	border-bottom-color: $blue5;
-		 }
 	}
 
-	.hover a:hover, .hover a.current {
-		border-bottom-color: transparent;
+	.mega a:hover {
+		background-color: $blue1;
+		@include background-image( linear-gradient($blue4, $blue1 1px, $blue0 ) );
 	}
+	
 }
 
 /* Secondary Nav */
@@ -199,6 +199,39 @@ body.sideNav {
 		&.hover .sub { @extend %activemenu; }
 	}
 }
+
+
+
+
+/* Sidebar nav */
+.sidebar-navigation {
+
+	nav.sidebar {
+		background-color: $blue8;
+		padding: .5em 0 1em;
+		margin: 3em -5.55% -2em;
+		border-top: 1px solid $blue7;
+
+		a {
+			padding: .4em 5%;
+			font-weight: bold;
+			border: 1px solid transparent;
+			border-right: none;
+			&:hover {
+				text-decoration: none;
+				background-color: $blue9;
+				color: $blue0;
+			}
+		}
+		.current a {
+			background-color: rgba(white, .35);
+			color: $blue0;
+		}
+	}
+}
+
+
+
 
 
 
@@ -252,20 +285,20 @@ body.sideNav {
 		}
 	}
 
-}
-
-
-
-
-
-
-
-
-
-/*** Large width ***/
-@media all and ( min-width: $large-width ) {
+	#content.sidebar-navigation {
+		nav.sidebar {
+			margin: 4em -11% -4em;
+			a {
+				padding-left: 9%;
+				padding-right: 9%;
+			}
+		}
+	}
 
 }
+
+
+
 
 
 
@@ -300,6 +333,11 @@ body.sideNav {
 	$header-top-height: 96px;
 	$search-width: 250px;
 	$menu-height:36px;
+
+
+	#main-header {
+		background-size: 100% 96px;
+	}
 
 	body.sideNav {
 		min-height: auto;
@@ -378,9 +416,11 @@ body.sideNav {
 					background: #fff;
 					color: $blue0;
 					@include text-shadow(none);
+					@include transition(background-color, 0.05s ease);
 				}
 				ul a:hover {
-					background: $blue2;
+					background: $blue8;
+					color: $blue0;
 				}
 			}
 		}
@@ -425,14 +465,19 @@ body.sideNav {
 			position: relative;
 		}
 
+		li.hover ul {
+			a:hover {
+				@include border-radius(3px);
+			}
+		}
+
 		.mega {
 			@extend %tab-nav-submenu;
-			min-height:450px;
+			min-height:400px;
 			position: absolute;
 			padding: 1em 0 2em;
 			width: 97.95%;
 			@include border-radius(0 0 3px 3px);
-			ul.links { margin-left: 1%; }
 		}
 		.sub { 
 			background-color: #fff;
@@ -447,6 +492,7 @@ body.sideNav {
 			.links { width: 100%; }
 		}
 
+
 		li.hover .mega, 
 		li.hover .sub, 
 		.highlight, 
@@ -459,12 +505,23 @@ body.sideNav {
 			border-top: 1px solid #ddd;
 		}
 
-		.featured { font-weight: bold; }
-		.links {
+		.mega li.featured {
+			margin-bottom: 1em;
+			padding-top: .5em;
+			padding-bottom: 1em;
+			border-bottom: 1px solid #ddd;
+			a {
+				font-weight: bold;
+			} 
+		}
+		.mega .links {
 			float:left;
-			width:220px;
+			width:34%;
+			margin-left: 3%;
+			margin-right: 3%;
 			&.double {
-				width: 42%;
+				width: 44%;
+				margin-right: 0;
 				.featured {
 					.sublinks { padding-left: 5%; }
 				}
@@ -488,10 +545,17 @@ body.sideNav {
 			float: left;
 			padding-left: 2%;
 			width: 24%;
+
+			img {
+				margin-bottom: 15px;
+			}
+
 			a {
 				padding: 0;
 				color: $blue2;
 				&:hover {
+					background-color: transparent;
+					background-image: none;
 					color: $blue0;
 					text-decoration: underline;
 				}
@@ -519,11 +583,53 @@ body.sideNav {
 			}
 		}
 	}
+
+
+
+	#content.sidebar-navigation {
+		@include background-image(
+			linear-gradient(90deg, $blue8 0px, $blue8 219px, $blue7 219px, $blue7 220px, transparent 220px)
+			);
+		background-size: 220px 100%;
+		background-repeat: no-repeat;
+		padding-left:  280px;
+		padding-right: 70px;
+
+		nav.sidebar {
+			padding: 1.5em 0;
+			width: 220px;
+			position: absolute;
+			background-color: transparent;
+			top:0;
+			left:0;
+			margin:0;
+			border: none;
+			a {
+				padding: .3em 1em .4em 1.5em;
+			}
+			.current a {
+				background-color: white;
+				border-color: $blue7;
+			}
+		}
+	}
+
+
 }
 
 
 
 
+
+
+
+
+
+
+/*** Large width ***/
+@media all and ( min-width: $large-width ) {
+
+}
 
 
 
