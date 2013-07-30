@@ -225,38 +225,86 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
 }
  */
  
+/**
+ * Creates the variables to be used in the template (page.tpl.php is a view and should not have logic.)
+ * @param array $variables
+ */
 function BYU2_preprocess_page(&$variables){
-//Creates the variables to be used in the template (it is a view and should not have logic.)
   $variables['search_box'] = drupal_render(drupal_get_form('search_block_form'));
 }
  
-  
-/**
- * 
- * 
+/** 
+ * Return a themed breadcrumb trail. -- Copied and from Zen core
+ *
+ * @param $variables
+ *   - title: An optional string to be used as a navigational heading to give
+ *     context for breadcrumb links to screen-reader users.
+ *   - title_attributes_array: Array of HTML attributes for the title. It is
+ *     flattened into a string within the theme function.
+ *   - breadcrumb: An array containing the breadcrumb links.
+ * @return
+ *   A string containing the breadcrumb output.
  */
-   function BYU2_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'search_block_form') {
-    $form['#id'] = t('basic-search'); // Change the text on the label element
-    $form['#prefix'] = t(''); // Change the text on the label element
-    $form['#suffix']= t(''); // Change the text on the label element
-//    $form['search_block_form']['#name'] = t('search');
-//
-//	Alternative (HTML5) placeholder attribute instead of using the javascript
-//    $form['search_block_form']['#attributes']['placeholder'] = t('Search this site');
-//
-//    $form['actions']['submit']['#id'] = t('search-submit'); // Change the text on the submit button
-//    $form['actions']['submit']['#value'] = t('Search'); // Change the text on the submit button
-    
-//
-//    // Add extra attributes to the text box
-//    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
-//    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
-//	
-//    // Prevent user from searching the default text
-//    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
-//
-//    // Alternative (HTML5) placeholder attribute instead of using the javascript
-//    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+
+function byu_breadcrumb($variables) {
+	global $base_path;
+	global $theme_path;
+  $breadcrumb = $variables['breadcrumb'];
+  // Determine if we are to display the breadcrumb.
+  $show_breadcrumb = theme_get_setting('zen_breadcrumb');
+  $front = drupal_is_front_page();
+  if ($show_breadcrumb == 'yes' && $front == FALSE || $show_breadcrumb == 'admin' && arg(0) == 'admin' ) {
+
+    // Optionally get rid of the homepage link.
+    $show_breadcrumb_home = theme_get_setting('zen_breadcrumb_home');
+    $home = array_shift($breadcrumb);
+    $site_name = variable_get('site_name');
+    if ($show_breadcrumb_home) {
+		array_unshift($breadcrumb,str_replace("Home",$site_name,$home));
+    }
+
+    // Return the breadcrumb with separators.
+    if (!empty($breadcrumb)) {
+      //$breadcrumb_separator = theme_get_setting('zen_breadcrumb_separator'); //I think this can be removed. WE don't want users changing this.
+	  $breadcrumb_separator = ' › ';
+      $trailing_separator = $title = '';
+      if (theme_get_setting('zen_breadcrumb_title')) {
+        $item = menu_get_item();
+        if (!empty($item['tab_parent'])) {
+          $title = check_plain($item['title']); // If we are on a non-default tab, use the tab's title.
+        }
+        else {
+          $title = drupal_get_title();
+        }
+        if ($title) {
+          $trailing_separator = $breadcrumb_separator;
+        }
+      }
+      elseif (theme_get_setting('zen_breadcrumb_trailing')) {
+        $trailing_separator = $breadcrumb_separator;
+      }
+
+      // Provide a navigational heading to give context for breadcrumb links to
+      // screen-reader users.
+      if (empty($variables['title'])) {
+        $variables['title'] = t('You are here');
+      }
+      // Unless overridden by a preprocess function, make the heading invisible.
+      if (!isset($variables['title_attributes_array']['class'])) {
+        $variables['title_attributes_array']['class'][] = 'element-invisible';
+      }
+      $heading = '<h2' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</h2>';
+
+	  // Style breadcrumb so that only the last two appear on the page; the rest will be shown in a div like on lds.org
+	  $finalBreadcrumb = array_slice($breadcrumb,-1,1);
+	  array_pop($breadcrumb);
+	  array_unshift($breadcrumb,"<a href=\"http://byu.edu\">BYU Home</a>");
+	  if(empty($finalBreadcrumb[0])) { // Sometimes, the home page isn't loaded into the breadcrumb. this is my fix for that.
+		$finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
+	  }
+	  
+      return $heading . '<div id="breadcrumb-home"><a href="#"><img alt="home" src="' . $base_path . $theme_path . '/img/home.png"></a><div class="bread-drop">' . implode("", $breadcrumb) . '</div></div>' . $breadcrumb_separator .  implode($breadcrumb_separator, $finalBreadcrumb) . $trailing_separator . $title;
+    }
   }
-} 
+  return ''; // Otherwise, return an empty string.
+}
