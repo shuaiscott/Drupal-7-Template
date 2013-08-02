@@ -1,4 +1,4 @@
-name        = BYU2
+﻿name        = BYU2
 screenshot  = screenshot.png
 description = Drupal Theme for Brigham Young University websites. Name BYU2. Not -responsive. Not built off of Zen.
 core        = 7.x
@@ -19,6 +19,7 @@ stylesheets[screen and (min-width:300px)][] = css/responsive.css
 scripts[] = js/modernizr.js
 scripts[] = js/jRespond.min.js
 scripts[] = js/script.js
+scripts[] = js/bootstrap/bootstrap-dropdown.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
