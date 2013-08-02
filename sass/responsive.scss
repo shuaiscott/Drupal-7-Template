@@ -10,13 +10,6 @@
 
 
 
-
-
-
-
-
-
-
 /*!
 	Twitter Bootstrap (Scss version)
 */
@@ -77,14 +70,11 @@
 // Utility classes
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
-
-
-
+// Drupal Definitions
+	@import "drupal-specific";
 
 /*
-
 FontAwesome
-
 */
 @import "responsive/font-awesome";
 
@@ -109,7 +99,7 @@ BYU Styles
 @import "responsive/content";
 @import "responsive/type";
 
-@import "drupal-specific";
+
 
 
 /*** Larger width ***/
