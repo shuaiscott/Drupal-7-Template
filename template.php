@@ -246,18 +246,76 @@ function BYU2_preprocess_page(&$variables){
  *   A string containing the breadcrumb output.
  */
 
-function byu_breadcrumb($variables) {
+function byu2_breadcrumb($variables) {
 	global $base_path;
 	global $theme_path;
-  $breadcrumb = $variables['breadcrumb'];
-  // Determine if we are to display the breadcrumb.
-  $show_breadcrumb = theme_get_setting('zen_breadcrumb');
-  $front = drupal_is_front_page();
-  if ($show_breadcrumb == 'yes' && $front == FALSE || $show_breadcrumb == 'admin' && arg(0) == 'admin' ) {
+  $breadcrumb = $variables['breadcrumb']; //This is a variable for your page.tpl.php 
+  $breadcrumb_separator = ' › ';
+  if(!drupal_is_front_page()){
+	//echo var_dump(menu_get_item());
+	
+	
+// This builds breadcrumbs according to URL
 
-    // Optionally get rid of the homepage link.
-    $show_breadcrumb_home = theme_get_setting('zen_breadcrumb_home');
-    $home = array_shift($breadcrumb);
+/*$links = array();
+  $path = '';
+
+  // Get URL arguments
+  $arguments = explode('/', request_uri());
+
+  // Remove empty values
+  foreach ($arguments as $key => $value) {
+    if (empty($value)) {
+      unset($arguments[$key]);
+    }
+  }
+  $arguments = array_values($arguments);
+
+  // Add 'Home' link
+  $links[] = l(t('Home'), '<front>');
+
+  // Add other links
+  if (!empty($arguments)) {
+    foreach ($arguments as $key => $value) {
+      // Don't make last breadcrumb a link
+      if ($key == (count($arguments) - 1)) {
+        $links[] = drupal_get_title();
+      } else {
+        if (!empty($path)) {
+          $path .= '/'. $value;
+        } else {
+          $path .= $value;
+        }
+        $links[] = l(drupal_ucfirst($value), $path);
+      }
+    }
+  }
+
+  // Set custom breadcrumbs
+  drupal_set_breadcrumb($links);
+
+  // Get custom breadcrumbs
+  $breadcrumb = drupal_get_breadcrumb();
+
+  // Hide breadcrumbs if only 'Home' exists
+  if (count($breadcrumb) > 1) {
+    return '<div class="breadcrumb">'. implode(' &rsaquo; ', $breadcrumb) .'</div>';
+  }	*/
+	
+
+// if we're not on front page, show breadcrumb
+// get path to current page and put into array
+// if path is greater than 2 levels, create dropdown div
+// remove the top levels and put into div
+// create second array
+// remove last 2 elements and put into new array
+// cycle through first array and print to dropdown div
+// print separator
+// print page above
+// print separator
+// show current page title
+   
+    /*$home = array_shift($breadcrumb);
     $site_name = variable_get('site_name');
     if ($show_breadcrumb_home) {
 		array_unshift($breadcrumb,str_replace("Home",$site_name,$home));
@@ -265,9 +323,8 @@ function byu_breadcrumb($variables) {
 
     // Return the breadcrumb with separators.
     if (!empty($breadcrumb)) {
-      //$breadcrumb_separator = theme_get_setting('zen_breadcrumb_separator'); //I think this can be removed. WE don't want users changing this.
 	  $breadcrumb_separator = ' › ';
-      $trailing_separator = $title = '';
+     // $trailing_separator = $title = '';
       if (theme_get_setting('zen_breadcrumb_title')) {
         $item = menu_get_item();
         if (!empty($item['tab_parent'])) {
@@ -293,7 +350,7 @@ function byu_breadcrumb($variables) {
       if (!isset($variables['title_attributes_array']['class'])) {
         $variables['title_attributes_array']['class'][] = 'element-invisible';
       }
-      $heading = '<h2' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</h2>';
+      $heading = '<h2' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</h2>';*/
 
 	  // Style breadcrumb so that only the last two appear on the page; the rest will be shown in a div like on lds.org
 	  $finalBreadcrumb = array_slice($breadcrumb,-1,1);
@@ -303,8 +360,18 @@ function byu_breadcrumb($variables) {
 		$finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
 	  }
 	  
-      return $heading . '<div id="breadcrumb-home"><a href="#"><img alt="home" src="' . $base_path . $theme_path . '/img/home.png"></a><div class="bread-drop">' . implode("", $breadcrumb) . '</div></div>' . $breadcrumb_separator .  implode($breadcrumb_separator, $finalBreadcrumb) . $trailing_separator . $title;
+	   // Build the breadcrumb trail.
+      $output = '<ul class="breadcrumb">';
+      $output .= '<li><div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i>';
+	  $output .= '<span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>';
+	  $output .= '<ul class="dropdown-menu"><li>' . implode($breadcrumb_separator . '</li><li>', $breadcrumb) . '</li></ul>';
+	  $output .= '<i class="divider icon-angle-right"></i></div></li>';
+      $output .= '<li>' . implode($breadcrumb_separator . '</li><li>', $finalBreadcrumb) . '<i class="divider icon-angle-right"></i></li>';      
+	  $output .= '<li class="active">' . drupal_get_title() . '</li>';
+	  $output .= '</ul>';
+	  //echo var_dump($finalBreadcrumb);
+      //return $heading . '<div id="breadcrumb-home"><a href="#"><img alt="home" src="' . $base_path . $theme_path . '/img/home.png"></a><div class="bread-drop">' . implode("", $breadcrumb) . '</div></div>' . $breadcrumb_separator .  implode($breadcrumb_separator, $finalBreadcrumb) . $trailing_separator . $title;
+      return $output;
     }
   }
-  return ''; // Otherwise, return an empty string.
-}
+
