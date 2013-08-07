@@ -229,8 +229,14 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
  * Creates the variables to be used in the template (page.tpl.php is a view and should not have logic.)
  * @param array $variables
  */
-function BYU2_preprocess_page(&$variables){
+function byu2_preprocess_page(&$variables){
   $variables['search_box'] = drupal_render(drupal_get_form('search_block_form'));
+}
+
+function  byu2_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+    $form['#id'] = 'basic-search'; // Change the text on the label element
+  }
 }
  
 /** 
