@@ -270,7 +270,7 @@ function byu2_breadcrumb($variables) {
 		array_pop($breadcrumb);
 		array_unshift($breadcrumb,"<a href=\"http://byu.edu\">BYU Home</a>");
 		if(empty($finalBreadcrumb[0])) { // Sometimes, the home page isn't loaded into the breadcrumb. this is my fix for that.
-			finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
+			$finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
 		}
 	  
 		// Build the breadcrumb trail.
