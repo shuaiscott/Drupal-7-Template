@@ -29,15 +29,10 @@
  * @see template_preprocess_search_block_form()
  */
 ?>
-  <?php
-  //var_dump($search);
-//	print '<!-- This is Drupal\'s Search Form -->';
-//	print $search_form;
-	
+  <?php	
 	$search['search_block_form'] = '<input id="search" type="search" name="search_block_form">'; 
 	$search['actions'] = '<input id="search-submit" type="submit" value="Search">';
 	
-	print '<!-- This is my Search Form -->';
 	print $search['search_block_form'];
 	print $search['actions']; 
 	print $search['hidden']; 
