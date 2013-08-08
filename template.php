@@ -240,7 +240,7 @@ function  byu2_form_alter(&$form, &$form_state, $form_id) {
 }
  
 /** 
- * Return a themed breadcrumb trail. -- Copied and from Zen core
+ * Return a themed breadcrumb trail.
  *
  * @param $variables
  *   - title: An optional string to be used as a navigational heading to give
@@ -255,96 +255,34 @@ function  byu2_form_alter(&$form, &$form_state, $form_id) {
 function byu2_breadcrumb($variables) {
 	global $base_path;
 	global $theme_path;
-  $breadcrumb = $variables['breadcrumb']; //This is a variable for your page.tpl.php 
-  $breadcrumb_separator = ' › ';
-  if(!drupal_is_front_page()){
-	//echo var_dump($breadcrumb);
+	$breadcrumb = $variables['breadcrumb']; //This is a variable for your page.tpl.php 
+	$breadcrumb_separator = ' › ';
+	if(!drupal_is_front_page()){
 	
-	
-// This builds breadcrumbs according to URL
-
-/*$links = array();
-  $path = '';
-
-  // Get URL arguments
-  $arguments = explode('/', request_uri());
-
-  // Remove empty values
-  foreach ($arguments as $key => $value) {
-    if (empty($value)) {
-      unset($arguments[$key]);
-    }
-  }
-  $arguments = array_values($arguments);
-
-  // Add 'Home' link
-  $links[] = l(t('Home'), '<front>');
-
-  // Add other links
-  if (!empty($arguments)) {
-    foreach ($arguments as $key => $value) {
-      // Don't make last breadcrumb a link
-      if ($key == (count($arguments) - 1)) {
-        $links[] = drupal_get_title();
-      } else {
-        if (!empty($path)) {
-          $path .= '/'. $value;
-        } else {
-          $path .= $value;
-        }
-        $links[] = l(drupal_ucfirst($value), $path);
-      }
-    }
-  }
-
-  // Set custom breadcrumbs
-  drupal_set_breadcrumb($links);
-
-  // Get custom breadcrumbs
-  $breadcrumb = drupal_get_breadcrumb();
-
-  // Hide breadcrumbs if only 'Home' exists
-  if (count($breadcrumb) > 1) {
-    return '<div class="breadcrumb">'. implode(' &rsaquo; ', $breadcrumb) .'</div>';
-  }	*/
-	
-
-// if we're not on front page, show breadcrumb
-// get path to current page and put into array
-// if path is greater than 2 levels, create dropdown div
-// remove the top levels and put into div
-// create second array
-// remove last 2 elements and put into new array
-// cycle through first array and print to dropdown div
-// print separator
-// print page above
-// print separator
-// show current page title
-   
-    $home = array_shift($breadcrumb);
-    $site_name = variable_get('site_name');
-	array_unshift($breadcrumb,str_replace("Home",$site_name,$home));
+		// Replace "Home" with the name of the website
+		$home = array_shift($breadcrumb);
+		$site_name = variable_get('site_name');
+		array_unshift($breadcrumb,str_replace("Home",$site_name,$home));
     
 
-	  // Style breadcrumb so that only the last two appear on the page; the rest will be shown in a div like on lds.org
-	  $finalBreadcrumb = array_slice($breadcrumb,-1,1);
-	  array_pop($breadcrumb);
-	  array_unshift($breadcrumb,"<a href=\"http://byu.edu\">BYU Home</a>");
-	  if(empty($finalBreadcrumb[0])) { // Sometimes, the home page isn't loaded into the breadcrumb. this is my fix for that.
-		$finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
-	  }
+		// Style breadcrumb so that only the last two appear on the page; the rest will be shown in a div like on lds.org
+		$finalBreadcrumb = array_slice($breadcrumb,-1,1);
+		array_pop($breadcrumb);
+		array_unshift($breadcrumb,"<a href=\"http://byu.edu\">BYU Home</a>");
+		if(empty($finalBreadcrumb[0])) { // Sometimes, the home page isn't loaded into the breadcrumb. this is my fix for that.
+			finalBreadcrumb[0] = '<a href="' . $base_path . '">' . $site_name . '</a>';
+		}
 	  
-	   // Build the breadcrumb trail.
-      $output = '<ul class="breadcrumb">';
-      $output .= '<li><div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i>';
-	  $output .= '<span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>';
-	  $output .= '<ul class="dropdown-menu"><li>' . implode("" . '</li><li>', $breadcrumb) . '</li></ul>';
-	  $output .= '<i class="divider icon-angle-right"></i></div></li>';
-      $output .= '<li>' . implode($breadcrumb_separator . '</li><li>', $finalBreadcrumb) . '<i class="divider icon-angle-right"></i></li>';      
-	  $output .= '<li class="active">' . drupal_get_title() . '</li>';
-	  $output .= '</ul>';
-      //return $heading . '<div id="breadcrumb-home"><a href="#"><img alt="home" src="' . $base_path . $theme_path . '/img/home.png"></a><div class="bread-drop">' . implode("", $breadcrumb) . '</div></div>' . $breadcrumb_separator .  implode($breadcrumb_separator, $finalBreadcrumb) . $trailing_separator . $title;
-      return $output;
-    }
-  }
+		// Build the breadcrumb trail.
+		$output = '<ul class="breadcrumb">';
+		$output .= '<li><div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i>';
+		$output .= '<span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>';
+		$output .= '<ul class="dropdown-menu"><li>' . implode("" . '</li><li>', $breadcrumb) . '</li></ul>';
+		$output .= '<i class="divider icon-angle-right"></i></div></li>';
+		$output .= '<li>' . implode($breadcrumb_separator . '</li><li>', $finalBreadcrumb) . '<i class="divider icon-angle-right"></i></li>';      
+		$output .= '<li class="active">' . drupal_get_title() . '</li>';
+		$output .= '</ul>';
+		return $output;
+	}
+}
 
