@@ -18,38 +18,7 @@
 	h2 {
 		margin:0 0 .5em; } }
 
-.day {
-	overflow: hidden;
-	margin:0 0 .25em;
-	padding-left:14px;
-	span.date {
-		font-size:1.5em;
-		.wf-active & {
-			font-family: 'Crete Round', sans-serif;
-			font-weight: normal; } } 
-	h3 {
-		font-size: 1em;
-		clear: both;
-		margin-top: 0;
-		margin-left:-14px; }
-	a {
-		width:70%;
-		float: left;
-		margin-bottom: .5em;
-		text-indent: -8px; }
-	.time {
-		float: right;
-		clear: right;
-		color: #666;
-		margin-bottom:0 !important; } }
-		
-#calendars {
-	margin:1.5em 0;
-	padding:.75em 0;
-	clear: both;
-	border-top: solid 1px #DDD;
-	border-bottom: solid 1px #DDD;
-	overflow: hidden; }
+
 
 
 .briefs-item {
@@ -80,12 +49,10 @@
 
 @media all and (min-width: $med-width) {
 
-	#content {
-		padding: 1em 9% 4em;
-	}
+	#content { padding: 1em 9% 4em; }
 
 
-	#calendar, #news {
+	#news {
 	  width:45%;
 	  float:left;
 	  border-top:none;
@@ -117,12 +84,6 @@
 	    float:right;
 	    text-align:right; } }
 
-	#calendars {
-	  clear:both; }
-	  
-
-
-
 	#news {
 	  padding-right:0;
 	  float:right; }
@@ -145,17 +106,7 @@
 
 
 @media all and (min-width 800px) {
-
-	.briefs-item h3 {
-	  font-size: 1em; }
-
-	.day {
-	  font-size: 1em;
-	  a {
-	    width:72%; }
-	  .time {
-	    width:27%; } }
-
+	.briefs-item h3 { font-size: 1em; }
 }
 
 
@@ -163,9 +114,7 @@
 @media all and (min-width: $large-width) {
 
 	.one-sidebar, .two-sidebars {
-		#main-content, .sidebar {
-			float: left;
-		}
+		#main-content, .sidebar { float: left; }
 	}
 
 	.one-sidebar {
@@ -174,9 +123,7 @@
 			width:58.7%;
 		}
 
-		.sidebar { 
-			width:36.3%
-		}
+		.sidebar { width:36.3% }
 	}
 	
 
@@ -193,10 +140,6 @@
 			margin:0;
 		}
 	}
-
-
-	#calendar {
-	  width:34.755%; }
 	  
 	#news {
 	  width:56.238%; }
@@ -216,12 +159,6 @@
 	}
 	.baseline {
 	  clear:both; }
-
-	.day {
-	  a {
-	    width:74%; }
-	  .time {
-	    width:25%; } }
 
 }
 

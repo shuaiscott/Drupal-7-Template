@@ -5251,66 +5251,19 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
   margin: 0 0 .5em;
 }
 
-/* line 21, ../sass/responsive/_content.scss */
-.day {
-  overflow: hidden;
-  margin: 0 0 .25em;
-  padding-left: 14px;
-}
-/* line 25, ../sass/responsive/_content.scss */
-.day span.date {
-  font-size: 1.5em;
-}
-/* line 27, ../sass/responsive/_content.scss */
-.wf-active .day span.date {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: normal;
-}
-/* line 30, ../sass/responsive/_content.scss */
-.day h3 {
-  font-size: 1em;
-  clear: both;
-  margin-top: 0;
-  margin-left: -14px;
-}
-/* line 35, ../sass/responsive/_content.scss */
-.day a {
-  width: 70%;
-  float: left;
-  margin-bottom: .5em;
-  text-indent: -8px;
-}
-/* line 40, ../sass/responsive/_content.scss */
-.day .time {
-  float: right;
-  clear: right;
-  color: #666;
-  margin-bottom: 0 !important;
-}
-
-/* line 46, ../sass/responsive/_content.scss */
-#calendars {
-  margin: 1.5em 0;
-  padding: .75em 0;
-  clear: both;
-  border-top: solid 1px #DDD;
-  border-bottom: solid 1px #DDD;
-  overflow: hidden;
-}
-
-/* line 55, ../sass/responsive/_content.scss */
+/* line 24, ../sass/responsive/_content.scss */
 .briefs-item {
   padding: .5em 0 1em;
 }
 
-/* line 57, ../sass/responsive/_content.scss */
+/* line 26, ../sass/responsive/_content.scss */
 .news-item {
   padding: 1em 0;
   border-bottom: 1px solid #eee;
 }
 
 @media all and (min-width: 450px) {
-  /* line 65, ../sass/responsive/_content.scss */
+  /* line 34, ../sass/responsive/_content.scss */
   .briefs-item {
     padding: .25em 0;
     zoom: 1;
@@ -5324,45 +5277,45 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
     content: "";
     display: table;
   }
-  /* line 68, ../sass/responsive/_content.scss */
+  /* line 37, ../sass/responsive/_content.scss */
   .briefs-item img {
     padding: 0 1em 1em 0;
   }
-  /* line 70, ../sass/responsive/_content.scss */
+  /* line 39, ../sass/responsive/_content.scss */
   .briefs-item a {
     float: left;
     clear: both;
   }
-  /* line 73, ../sass/responsive/_content.scss */
+  /* line 42, ../sass/responsive/_content.scss */
   .briefs-item h3 {
     margin: 0;
   }
-  /* line 75, ../sass/responsive/_content.scss */
+  /* line 44, ../sass/responsive/_content.scss */
   .briefs-item h3 a {
     float: none;
   }
 }
 @media all and (min-width: 600px) {
-  /* line 83, ../sass/responsive/_content.scss */
+  /* line 52, ../sass/responsive/_content.scss */
   #content {
     padding: 1em 9% 4em;
   }
 
-  /* line 88, ../sass/responsive/_content.scss */
-  #calendar, #news {
+  /* line 55, ../sass/responsive/_content.scss */
+  #news {
     width: 45%;
     float: left;
     border-top: none;
     border-bottom: none;
   }
-  /* line 93, ../sass/responsive/_content.scss */
-  #calendar h2, #news h2 {
+  /* line 60, ../sass/responsive/_content.scss */
+  #news h2 {
     font-size: 1.5em;
     border-bottom: 1px solid #ddd;
     margin-bottom: 18px;
   }
 
-  /* line 99, ../sass/responsive/_content.scss */
+  /* line 66, ../sass/responsive/_content.scss */
   .day {
     font-size: .9em;
     clear: both;
@@ -5370,22 +5323,22 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
     margin-bottom: .75em;
     overflow: hidden;
   }
-  /* line 105, ../sass/responsive/_content.scss */
+  /* line 72, ../sass/responsive/_content.scss */
   .day h3 {
     margin-top: 0;
   }
-  /* line 107, ../sass/responsive/_content.scss */
+  /* line 74, ../sass/responsive/_content.scss */
   .day .date {
     font-size: 1.5em;
   }
-  /* line 109, ../sass/responsive/_content.scss */
+  /* line 76, ../sass/responsive/_content.scss */
   .day a {
     width: 65%;
     float: left;
     clear: both;
     margin-bottom: .75em;
   }
-  /* line 114, ../sass/responsive/_content.scss */
+  /* line 81, ../sass/responsive/_content.scss */
   .day .time {
     clear: none;
     width: 34%;
@@ -5393,30 +5346,25 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
     text-align: right;
   }
 
-  /* line 120, ../sass/responsive/_content.scss */
-  #calendars {
-    clear: both;
-  }
-
-  /* line 126, ../sass/responsive/_content.scss */
+  /* line 87, ../sass/responsive/_content.scss */
   #news {
     padding-right: 0;
     float: right;
   }
 
-  /* line 130, ../sass/responsive/_content.scss */
+  /* line 91, ../sass/responsive/_content.scss */
   .briefs-item {
     padding-bottom: 1em;
   }
-  /* line 132, ../sass/responsive/_content.scss */
+  /* line 93, ../sass/responsive/_content.scss */
   .briefs-item img {
     padding: 0;
   }
-  /* line 134, ../sass/responsive/_content.scss */
+  /* line 95, ../sass/responsive/_content.scss */
   .briefs-item a {
     float: none;
   }
-  /* line 136, ../sass/responsive/_content.scss */
+  /* line 97, ../sass/responsive/_content.scss */
   .briefs-item h3 {
     margin-top: .25em;
     font-size: .9em;
@@ -5424,113 +5372,86 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
   }
 }
 @media all and (min-width 800px) {
-  /* line 149, ../sass/responsive/_content.scss */
+  /* line 109, ../sass/responsive/_content.scss */
   .briefs-item h3 {
     font-size: 1em;
   }
-
-  /* line 152, ../sass/responsive/_content.scss */
-  .day {
-    font-size: 1em;
-  }
-  /* line 154, ../sass/responsive/_content.scss */
-  .day a {
-    width: 72%;
-  }
-  /* line 156, ../sass/responsive/_content.scss */
-  .day .time {
-    width: 27%;
-  }
 }
 @media all and (min-width: 900px) {
-  /* line 166, ../sass/responsive/_content.scss */
+  /* line 117, ../sass/responsive/_content.scss */
   .one-sidebar #main-content, .one-sidebar .sidebar, .two-sidebars #main-content, .two-sidebars .sidebar {
     float: left;
   }
 
-  /* line 172, ../sass/responsive/_content.scss */
+  /* line 121, ../sass/responsive/_content.scss */
   .one-sidebar #main-content {
     margin-right: 5%;
     width: 58.7%;
   }
-  /* line 177, ../sass/responsive/_content.scss */
+  /* line 126, ../sass/responsive/_content.scss */
   .one-sidebar .sidebar {
     width: 36.3%;
   }
 
-  /* line 185, ../sass/responsive/_content.scss */
+  /* line 132, ../sass/responsive/_content.scss */
   .two-sidebars #main-content {
     margin-right: 5%;
     margin-left: 5%;
     width: 48%;
   }
-  /* line 191, ../sass/responsive/_content.scss */
+  /* line 138, ../sass/responsive/_content.scss */
   .two-sidebars .sidebar {
     width: 21%;
     margin: 0;
   }
 
-  /* line 198, ../sass/responsive/_content.scss */
-  #calendar {
-    width: 34.755%;
-  }
-
-  /* line 201, ../sass/responsive/_content.scss */
+  /* line 144, ../sass/responsive/_content.scss */
   #news {
     width: 56.238%;
   }
 
-  /* line 203, ../sass/responsive/_content.scss */
+  /* line 146, ../sass/responsive/_content.scss */
   .briefs-item {
     width: 28.368%;
     float: left;
     margin-right: 4.1%;
   }
 
-  /* line 207, ../sass/responsive/_content.scss */
+  /* line 150, ../sass/responsive/_content.scss */
   #news-container {
     clear: both;
   }
 
-  /* line 209, ../sass/responsive/_content.scss */
+  /* line 152, ../sass/responsive/_content.scss */
   .news-item {
     width: 47%;
     float: left;
     margin-right: 5%;
   }
-  /* line 213, ../sass/responsive/_content.scss */
+  /* line 156, ../sass/responsive/_content.scss */
   .news-item.omega {
     margin-right: 0;
   }
 
-  /* line 217, ../sass/responsive/_content.scss */
+  /* line 160, ../sass/responsive/_content.scss */
   .baseline {
     clear: both;
   }
-
-  /* line 221, ../sass/responsive/_content.scss */
-  .day a {
-    width: 74%;
-  }
-  /* line 223, ../sass/responsive/_content.scss */
-  .day .time {
-    width: 25%;
-  }
 }
 @media screen and (min-width: 1146px) {
-  /* line 234, ../sass/responsive/_content.scss */
+  /* line 171, ../sass/responsive/_content.scss */
   body {
     background: url("../img/body-linen.png");
     color: #444;
   }
 
-  /* line 238, ../sass/responsive/_content.scss */
+  /* line 175, ../sass/responsive/_content.scss */
   .wrapper {
     max-width: 940px;
     margin: 0 auto;
   }
 
-  /* line 242, ../sass/responsive/_content.scss */
+  /* line 179, ../sass/responsive/_content.scss */
   #content {
     position: relative;
     min-height: 100%;
@@ -5542,7 +5463,7 @@ body.sideNav #main-header, body.sideNav #search-menu, body.sideNav #content, bod
     box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7);
   }
 
-  /* line 251, ../sass/responsive/_content.scss */
+  /* line 188, ../sass/responsive/_content.scss */
   #content.sidebar-navigation {
     width: 720px;
   }
