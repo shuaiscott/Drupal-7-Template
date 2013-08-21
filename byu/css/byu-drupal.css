@@ -1,0 +1,86 @@
+ul li.collapsed{ list-style:none;}
+#content {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+#search-container > div > div {float: left;}
+#user-login-form .item-list, #edit-cas-login-redirection-message {display:none;margin:0;}
+#user-login-form #edit-actions {margin:0}
+#block-system-user-menu .content li {
+	list-style-type: none;
+}
+#search-container #block-user-login form {
+	box-shadow: none;
+	background-image: none;
+}
+#block-system-user-menu .content a {
+    color: #fff;
+    display: block;
+    background: #628cb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 28px;
+    float: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#block-system-user-menu .content a:hover {
+    background: #369;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+    background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+    background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+    background-image: -o-linear-gradient(top,#369 0,#147 100%);
+    background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+    background-image: linear-gradient(top,#369 0,#147 100%);
+}
+
+#block-user-login input.form-submit{
+    color: #fff;
+    display: block;
+    background: #628cb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 28px;
+	border: none;
+    float: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#block-user-login input.form-submit:hover {
+    background: #369;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+    background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+    background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+    background-image: -o-linear-gradient(top,#369 0,#147 100%);
+    background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+    background-image: linear-gradient(top,#369 0,#147 100%);
+}
+.sub ul li {float:none;}
+
+.no-js #secondary-nav li:hover.nochild a, .no-js #secondary-nav li a:hover.nochild,#secondary-nav li.hover.nochild a {
+text-decoration: none;
+background-color: white;
+border-radius: 4px;
+color: #025;
+}
+div.contextual-links-wrapper {z-index:1;}
