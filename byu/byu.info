@@ -1,51 +1,34 @@
-name        = BYU Theme
+﻿name        = BYU
 screenshot  = screenshot.png
-description = Brigham Young University's theme for Drupal. Built using the <a href="http://drupal.org/node/873778">Zen</a> theme.
+description = Drupal Responsive Theme for Brigham Young University websites.
 core        = 7.x
-base theme  = zen
-version = 7.x-1.x
 
-stylesheets[all][] = css/style.css
-stylesheets[all][] = css/byu-drupal.css
+; STYLESHEETS
+stylesheets[all][] = css/base.css
+stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
-scripts[]   = js/script.js
-scripts[]   = js/libs/modernizr-2.0-basic.min.js
+; SCRIPTS
+scripts[] = js/modernizr.js
+scripts[] = js/jRespond.min.js
+scripts[] = js/script.js
+scripts[] = js/bootstrap/bootstrap-dropdown.js
 
-;Slider Plugin
-;scripts[]   = js/plugins/slider.js
-;stylesheets[all][]        = css/plugins/slider.css
+regions[content]        = Content
+;regions[calendar]    	= Calendar (Front Page Only)
+;regions[News]           = News (Front Page Only)
+regions[sidebar_left]  = Left sidebar
+regions[sidebar_right] = Right sidebar
+regions[footer]         = Footer
+regions[copyright]      = Copyright
 
-;Social Media Plugin
-;scripts[]   = js/plugins/addthis.js
-;stylesheets[all][]        = css/plugins/socialmedia.css
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
 
-;scripts[]   = js/plugins/calendar.js
-
-regions[header-topright]	= Header: Search and Login area
-regions[help]           	= Help
-regions[featured]    		= Featured News
-regions[content]        	= Content
-regions[sidebar_first]  	= Left sidebar
-regions[sidebar_second] 	= Right sidebar
-regions[footer-column1]	= Footer Column 1
-regions[footer-column2]	= Footer Column 2
-regions[footer-column3]	= Footer Column 3
-regions[footer-column4]	= Footer Column 4
-regions[footer-column5]	= Footer Column 5
-regions[footer-bottom]	= Footer Bottom
-
-features[] = logo
 features[] = name
+features[] = logo
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
-settings[parent_org]               = 'Parent Organization'
-settings[parent_org_link]          = 'Parent Organization URL'
-settings[zen_breadcrumb]           = yes
-settings[zen_breadcrumb_home]      = 1
-settings[zen_breadcrumb_trailing]  = 0
-settings[zen_breadcrumb_title]     = 1
-settings[zen_jump_link_target]     = main-menu
-settings[zen_rebuild_registry]     = 0
-settings[zen_wireframes]           = 0
+; To make this sub-theme an admin theme with shortcut links next to titles, uncomment the line below.
+;settings[shortcut_module_link]    = 1
