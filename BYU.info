@@ -1,0 +1,49 @@
+﻿name        = BYU
+description = Drupal Theme for Brigham Young University websites. Name BYU2. Not -responsive. Not built off of Zen.
+screenshot  = screenshot.png
+core        = 7.x
+version		= 2.0
+
+; The "FILE" is the name of the stylesheet to add/override/remove.
+; The "MEDIA" in the first set of brackets is a media type or a media query.
+; Typical CSS media types include "all", "screen", "print", and "handheld". A
+; typical media query is "screen and (max-width: 320px)".
+
+; stylesheets[MEDIA][] = FILE
+
+; STYLESHEETS
+stylesheets[all][] = css/base.css
+stylesheets[screen and (min-width:300px)][] = css/responsive.css
+
+; SCRIPTS
+scripts[] = js/modernizr.js
+scripts[] = js/jRespond.min.js
+scripts[] = js/script.js
+scripts[] = js/bootstrap/bootstrap-dropdown.js
+
+regions[content]        = Content
+regions[calendar]    	= Calendar (Front Page Only)
+regions[News]           = News (Front Page Only)
+regions[sidebar_left]  = Left sidebar
+regions[sidebar_right] = Right sidebar
+regions[footer]         = Footer
+regions[copyright]      = Copyright
+
+; The page_top and page_bottom regions are hidden, which means they will not
+; show up on the blocks administration page. But they are required in order for the html.tpl.php to work properly, so do not delete them.
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+; Various page elements output by the theme can be toggled on and off. The
+; "features" control which of these check boxes display on the
+; admin/appearance config page.
+
+features[] = name
+features[] = logo
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; To make this sub-theme an admin theme with shortcut links next to titles, uncomment the line below.
+;settings[shortcut_module_link]    = 1
