@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #################
 ## Eclipse
 #################
@@ -213,3 +214,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+=======
+.sass-cache
+processform.php
+.DS_Store
+/nbproject
+/node_modules
+npm-debug.log
+Gruntfile.js
+>>>>>>> 7380443dfd86f71861a2a65a67f3fe3a2a06f509

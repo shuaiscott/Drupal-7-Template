@@ -1,0 +1,17 @@
+.breadcrumb {
+	display: block;
+	padding: 0;
+
+	a, a:link, a:visited {
+		color: $blue4;
+	}
+
+	a:hover, a:active, a:focus {
+		text-decoration: none;
+		color: $blue2;
+	}
+
+	.divider {
+		width: 10px;
+	}
+}
