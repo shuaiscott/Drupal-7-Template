@@ -15,6 +15,7 @@
 #calendar, #news {
 	padding-top:1.5em;
 	padding-bottom:2em;
+	display:inline-table;
 	h2 {
 		margin:0 0 .5em; } }
 
@@ -138,6 +139,15 @@
 		.sidebar {
 			width: 21%;
 			margin:0;
+		}
+	}
+	
+	#calendar{
+		width:34.755%;
+		.content{
+			#calendar{
+				width:100%;
+			}
 		}
 	}
 	  
