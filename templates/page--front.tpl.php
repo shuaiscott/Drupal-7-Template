@@ -89,17 +89,21 @@ $news = render($page['News']);
 		</aside><!-- /.sidebars -->
         <?php endif; ?>             
 
-        <?php if ($calendar): ?>
-                <div id="calendar">
-                    <?php print $calendar; ?>
-                </div>
-	<?php endif; ?>
+		<?php if ($calendar): ?>
+			<div id="calendar">
+				<?php print $calendar; ?>
+            </div>
+		<?php endif; ?>
                 
         <?php if ($news): ?>
-                <div id="news">
-                    <?php print $news; ?>
-                </div>
-	<?php endif; ?>
+			<div id="news">
+				<?php print $news; ?>
+            </div>
+		<?php endif; ?>
+		
+		<div id="main-content">
+			<?php print render($page['content']); ?> 
+		</div>
 	  
 	<?php if ($sidebar_right): ?>
 		<aside class="sidebar">
