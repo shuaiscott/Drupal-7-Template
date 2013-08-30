@@ -9,7 +9,7 @@
 * @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/touch.js
 */
 
-
+(function ($) {
 (function () {
 
 	"use strict";
@@ -101,3 +101,5 @@
 
 }());
 
+
+})(jQuery); 

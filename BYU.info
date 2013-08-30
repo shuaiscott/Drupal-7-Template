@@ -9,9 +9,10 @@ stylesheets[all][] = css/base.css
 stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
 ; SCRIPTS
-scripts[] = js/modernizr.js
-scripts[] = js/jRespond.min.js
 scripts[] = js/script.js
+scripts[] = js/plugins/touchswipe.js
+scripts[] = js/touch.js
+scripts[] = js/plugins/modernizr.js
 scripts[] = js/bootstrap/bootstrap-dropdown.js
 
 regions[content]        = Content
