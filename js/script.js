@@ -9,7 +9,7 @@
 * @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
 */
 
-
+(function ($) {
 (function () {
 
    "use strict";
@@ -20,16 +20,25 @@
 
 
 	// Document ready - Execute on page load
-	jQuery( function () {
+	$( function () {
 
-		var w = jQuery(window).width();
+		var w = $(window).width();
 		//log( 'Initial window width: ' + w + 'px' );
-
+// Look at this one more time to see if there is a more efficient way?		
+		$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
+		if($(window).width() < 900){
+			$("#search-menu").css('margin-top', '0px');
+			$(".nav-container").css('top', '85px');	
+		} else {
+			$("#search-menu").css('margin-top', '65px');
+			$(".nav-container").css('top', '161px');				
+		}
+// End recheck section
 		if( w > activationSizeThreshold ) {
 			activateScripts();
 		} 
 		else {
-			jQuery(window).resize( checkActivation );
+			$(window).resize( checkActivation );
 		}
 	});
 
@@ -44,13 +53,13 @@
 	function checkActivation() {
 		
 		// If the scripts have not been activated, and the size threshold has been crossed
-		if( !scriptsActivated && jQuery(window).width() > activationSizeThreshold ) {
+		if( !scriptsActivated && $(window).width() > activationSizeThreshold ) {
 
 			// Activate the scripts
 			activateScripts();
 
 			// Turn off the resize checking
-			jQuery(window).off('resize', checkActivation);
+			$(window).off('resize', checkActivation);
 		}
 
 	}
@@ -79,16 +88,16 @@
 	 * Args: none
 	 */
 	function activateMenus() {
-		jQuery('#search-menu').delegate('.menu-button', 'click', function (e) {
+		$('#search-menu').delegate('.menu-button', 'click', function (e) {
 			e.stopPropagation();
 			e.preventDefault();
-			jQuery('body').toggleClass('sideNav');
+			$('body').toggleClass('sideNav');
 		});
 
-		jQuery('nav li:has(.mega, .sub) > a').click(function (e) {
+		$('nav li:has(.mega, .sub) > a').click(function (e) {
 			e.preventDefault();
 
-			var li = jQuery(this).parent();
+			var li = $(this).parent();
 
 			// Only close menu if user clicked to open it
 			if (li.hasClass('hover') && clickOpened) {
@@ -96,19 +105,19 @@
 			}
 			else {
 				li.addClass('hover');
-				jQuery('nav li').not(li).removeClass('hover');
+				$('nav li').not(li).removeClass('hover');
 				clickOpened = true;
 			}
 			return false;
 		});
 
-		jQuery('nav li:has(.mega, .sub)').click(function (e) {
+		$('nav li:has(.mega, .sub)').click(function (e) {
 			e.stopPropagation();
 		});
 
 		/* Positions menu divs */
-		jQuery('nav li .sub').each(function () {
-			var mega = jQuery(this);
+		$('nav li .sub').each(function () {
+			var mega = $(this);
 			var left = mega.parent().position().left;
 			if (left > mega.parent().parent().outerWidth() - mega.outerWidth()) {
 				mega.css('right', 0);
@@ -116,20 +125,30 @@
 		});
 
 		//Listener for if screen is resized to close sideNav
-		jQuery(window).resize(function (){
-			if (jQuery(window).width() > 768){
-				jQuery('body').removeClass('sideNav');
-			} else if (jQuery(window).width() < 768 && jQuery(".hover")[0]){
-				jQuery("body").addClass("sideNav");
+		$(window).resize(function (){
+			if ($(window).width() > 768){
+				$('body').removeClass('sideNav');
+			} else if ($(window).width() < 768 && $(".hover")[0]){
+				$("body").addClass("sideNav");
 			}
+			//Recheck this portion and write comments
+			$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
+			if($(window).width() < 900){
+				$("#search-menu").css('margin-top', '0px');
+				$(".nav-container").css('top', '85px');	
+			} else {
+				$("#search-menu").css('margin-top', '65px');
+				$(".nav-container").css('top', '161px');				
+			}
+			//End recheck section
 		});
 
-		jQuery("body").click(function(){
-			jQuery(".hover").removeClass("hover");
+		$("body").click(function(){
+			$(".hover").removeClass("hover");
 		}); 
 		
-		jQuery("#content").click(function(){
-			jQuery("body").removeClass("sideNav");
+		$("#content").click(function(){
+			$("body").removeClass("sideNav");
 		});
 
 	}
@@ -164,10 +183,11 @@
 	var hideSearch = function() {
 		if (document.readyState == 'complete') {
 			// CSE has successfully loaded. Go ahead and hide the basic search.
-	    jQuery("#basic-search").hide();
+	    $("#basic-search").hide();
 	  }
 	};
 
 
 
 }());
+})(jQuery);
