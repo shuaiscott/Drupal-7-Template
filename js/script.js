@@ -24,16 +24,15 @@
 
 		var w = $(window).width();
 		//log( 'Initial window width: ' + w + 'px' );
-// Look at this one more time to see if there is a more efficient way?		
+		//	Displays search-menu, nav-container, and body in correct position based on screen width	
 		$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
 		if($(window).width() < 900){
-			$("#search-menu").css('margin-top', '0px');
-			$(".nav-container").css('top', '85px');	
+			$(".toolbar-drawer #search-menu").css('margin-top', '0px');
+			$(".toolbar-drawer .nav-container").css('top', '85px');	
 		} else {
-			$("#search-menu").css('margin-top', '65px');
-			$(".nav-container").css('top', '161px');				
+			$(".toolbar-drawer #search-menu").css('margin-top', '65px');
+			$(".toolbar-drawer .nav-container").css('top', '161px');				
 		}
-// End recheck section
 		if( w > activationSizeThreshold ) {
 			activateScripts();
 		} 
@@ -131,16 +130,15 @@
 			} else if ($(window).width() < 768 && $(".hover")[0]){
 				$("body").addClass("sideNav");
 			}
-			//Recheck this portion and write comments
+			//Adds some styling to keep nav container, search menu, and body in the correct position upon window resize.
 			$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
 			if($(window).width() < 900){
-				$("#search-menu").css('margin-top', '0px');
-				$(".nav-container").css('top', '85px');	
+				$(".toolbar-drawer #search-menu").css('margin-top', '0px');
+				$(".toolbar-drawer .nav-container").css('top', '85px');	
 			} else {
-				$("#search-menu").css('margin-top', '65px');
-				$(".nav-container").css('top', '161px');				
+				$(".toolbar-drawer #search-menu").css('margin-top', '65px');
+				$(".toolbar-drawer .nav-container").css('top', '161px');				
 			}
-			//End recheck section
 		});
 
 		$("body").click(function(){
