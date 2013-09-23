@@ -118,7 +118,7 @@ $news = render($page['News']);
 			<div class="wrapper">
 				<?php print render($page['footer']); ?>		
 			</div>
-		</di
+		</div>
 
 		<div id="footer-bottom">
 			<div class="wrapper">

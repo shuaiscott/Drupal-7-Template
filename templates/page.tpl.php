@@ -104,7 +104,7 @@ $sidebar_right = render($page['sidebar_right']);
 			<div class="wrapper">
 				<?php print render($page['footer']); ?>		
 			</div>
-		</di
+		</div>
 
 		<div id="footer-bottom">
 			<div class="wrapper">
