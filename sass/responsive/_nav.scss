@@ -144,6 +144,7 @@ body.sideNav {
 	max-height:0px;
 	position: relative;
 	@include transition(max-height 0.2s ease);
+	li { border: none; }
 	a {
 		padding-left:1.75em;
 		border-top: 1px solid $blue2;
@@ -159,10 +160,9 @@ body.sideNav {
 		.sublinks a { 
 			padding-left: 15%;}
 	}
-	li { border: none; }
 }
 
-%activemenu {  max-height:1500px;}
+%activemenu { max-height:1500px; }
 
 /* Primary Nav */
 #primary-nav {

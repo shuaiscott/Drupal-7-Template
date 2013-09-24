@@ -18,6 +18,35 @@ function  byu_form_alter(&$form, &$form_state, $form_id) {
     $form['#id'] = 'basic-search'; // Change the text on the label element
   }
 }
+
+/**
+ * Implements theme_menu_item()
+ * 
+ * Used to modify the markup of the menus. This is to accommodate for when the megamenu module isn't being used.
+ */
+
+function byu_menu_link(array $variables) {
+	$element = $variables['element'];
+	$sub_menu = '';
+	$third_level = '';
+
+	$output = l($element['#title'], $element['#href'], $element['#localized_options']);
+	
+	if ($element['#below'] && $element['#original_link']['depth'] == 1) {
+		$sub_menu = drupal_render($element['#below']);
+	} elseif ($element['#below'] && $element['#original_link']['depth'] == 2) {
+		$third_level = drupal_render($element['#below']);
+
+		$third_level = str_replace('menu', 'sublinks', $third_level);
+	}
+
+	$html = '<li' . drupal_attributes($element['#attributes']) . '>' . $output;
+	$html .= ($third_level!='') ? $third_level : "";
+	$html .= ($sub_menu!='') ? '<div class="sub">' . $sub_menu . '</div>' : "" ;
+	$html .= "</li>";
+	return $html;
+}
+
  
 /** 
  * Return a themed breadcrumb trail.
