@@ -9,7 +9,6 @@
 @import "shared/variables";
 
 
-
 /*!
 	Twitter Bootstrap (Scss version)
 */
@@ -69,12 +68,18 @@
 
 // Utility classes
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
+	
+// Drupal Specific	
+@import "drupal-specific"; // Has to be last to override when necessary
 
-// Drupal Definitions
-	@import "drupal-specific";
+
+
+
 
 /*
+
 FontAwesome
+
 */
 @import "responsive/font-awesome";
 
@@ -93,9 +98,10 @@ BYU Styles
 @import "responsive/search";
 @import "responsive/nav";
 
-@import "responsive/anythingslider";
-@import "responsive/slider";
+//@import "responsive/anythingslider";
+//@import "responsive/slider";
 
+//@import "responsive/calendar";
 @import "responsive/content";
 @import "responsive/type";
 

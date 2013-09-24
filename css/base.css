@@ -9,7 +9,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../sass/base/_normalize.scss */
+/* line 11, ../sass/base/_normalize.scss */
 article,
 aside,
 details,
@@ -28,7 +28,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../sass/base/_normalize.scss */
+/* line 30, ../sass/base/_normalize.scss */
 audio,
 canvas,
 video {
@@ -101,7 +101,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 101, ../sass/base/_normalize.scss */
+/* line 100, ../sass/base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -131,7 +131,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 132, ../sass/base/_normalize.scss */
+/* line 131, ../sass/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -167,7 +167,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 170, ../sass/base/_normalize.scss */
+/* line 167, ../sass/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -203,7 +203,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 204, ../sass/base/_normalize.scss */
+/* line 203, ../sass/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -282,7 +282,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 284, ../sass/base/_normalize.scss */
+/* line 281, ../sass/base/_normalize.scss */
 button,
 input,
 select,
@@ -299,7 +299,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 296, ../sass/base/_normalize.scss */
+/* line 295, ../sass/base/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -311,7 +311,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 308, ../sass/base/_normalize.scss */
+/* line 307, ../sass/base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -324,7 +324,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 323, ../sass/base/_normalize.scss */
+/* line 320, ../sass/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -338,7 +338,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 333, ../sass/base/_normalize.scss */
+/* line 332, ../sass/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -348,7 +348,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 343, ../sass/base/_normalize.scss */
+/* line 342, ../sass/base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -376,7 +376,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 367, ../sass/base/_normalize.scss */
+/* line 366, ../sass/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -385,7 +385,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 376, ../sass/base/_normalize.scss */
+/* line 375, ../sass/base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -426,7 +426,7 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../sass/base/_h5bp.scss */
+/* line 13, ../sass/base/_h5bp.scss */
 html,
 button,
 input,
@@ -562,7 +562,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 165, ../sass/base/_h5bp.scss */
+/* line 164, ../sass/base/_h5bp.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -592,7 +592,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 195, ../sass/base/_h5bp.scss */
+/* line 194, ../sass/base/_h5bp.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -629,7 +629,7 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 228, ../sass/base/_h5bp.scss */
+  /* line 227, ../sass/base/_h5bp.scss */
   a,
   a:visited {
     text-decoration: underline;
@@ -648,14 +648,14 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 246, ../sass/base/_h5bp.scss */
+  /* line 244, ../sass/base/_h5bp.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 251, ../sass/base/_h5bp.scss */
+  /* line 250, ../sass/base/_h5bp.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -668,7 +668,7 @@ textarea {
     /* h5bp.com/t */
   }
 
-  /* line 261, ../sass/base/_h5bp.scss */
+  /* line 260, ../sass/base/_h5bp.scss */
   tr,
   img {
     page-break-inside: avoid;
@@ -683,7 +683,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 275, ../sass/base/_h5bp.scss */
+  /* line 273, ../sass/base/_h5bp.scss */
   p,
   h2,
   h3 {
@@ -691,7 +691,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 281, ../sass/base/_h5bp.scss */
+  /* line 280, ../sass/base/_h5bp.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -785,7 +785,7 @@ body strong {
 
 /* line 9, ../sass/base/_basics.scss */
 body, select, input, textarea {
-  color: #444;
+  color: #444444;
 }
 
 /* line 10, ../sass/base/_basics.scss */
@@ -810,7 +810,7 @@ blockquote:before {
   content: "\201C";
   font-size: 3em;
   line-height: .1em;
-  vertical-align: -0.4em;
+  vertical-align: -.4em;
   display: block;
   position: absolute;
   top: 15px;
@@ -823,7 +823,7 @@ blockquote:after {
   content: "\201D";
   font-size: 3em;
   line-height: .1em;
-  vertical-align: -0.45em;
+  vertical-align: -.45em;
 }
 
 /* line 32, ../sass/base/_basics.scss */
@@ -992,7 +992,7 @@ dt {
 
 /* line 73, ../sass/base/_basics.scss */
 dd {
-  padding: 0 0 .75em 1em;
+  padding: 0 0 0.75em 1em;
 }
 
 /* line 74, ../sass/base/_basics.scss */
@@ -1197,7 +1197,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-bottom: 4px;
 }
 
-/* line 184, ../sass/base.scss */
+/* line 179, ../sass/base.scss */
 #search-container textarea:hover,
 #search-container input:hover,
 #search-container textarea:active,
