@@ -340,43 +340,10 @@ nav.sidebar {
 }
 
 
-
-// Slider
-#feature {
-  margin: -1em -5.55% 0;
-  ul {
-    list-style: none;
-    margin:0;
-    padding-bottom:20px;
-  }
-  li {
-    display: none;
-    &.feature {
-      display: block;
-    }
-  }
-  .feature-image {
-    text-align: center;
-  }
-}
-
-.feature-description {
-  margin:0 5%;
-  h2 {
-    font-size:18px;
-    line-height: 20px;
-    margin: 20px 0px 10px;
-  }
-}
-
-
-
 // Breadcrumb
 .breadcrumb {
   display: none;
 }
-
-
 
 
 // Calendar
@@ -401,7 +368,7 @@ nav.sidebar {
   margin-top:1px;
   padding-bottom:1em;
 }
-#calendar, #news, #feature { border-bottom:1px solid #ccc; }
+#calendar, #news { border-bottom:1px solid #ccc; }
 ul#calendars{ list-style: none}
 .day { padding:.75em 0 0}
 a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; padding-bottom:1.5em; display: block;}
