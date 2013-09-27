@@ -5,6 +5,7 @@ version		= 2.0
 core        = 7.x
 
 ; STYLESHEETS
+stylesheets[all][] = css/fonts.css
 stylesheets[all][] = css/base.css
 stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
@@ -27,9 +28,7 @@ regions[copyright]      = Copyright
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
 
-; Various page elements output by the theme can be toggled on and off. The
-; "features" control which of these check boxes display on the
-; admin/appearance config page.
+; Various page elements output by the theme can be toggled on and off. The "features" control which of these check boxes display on the admin/appearance config page.
 
 features[] = name
 features[] = logo

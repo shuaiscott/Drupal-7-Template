@@ -5,6 +5,14 @@
  *
  */
 
+ /**
+ * Drupal cannot load external css from the .info file, so we do it here.
+ */
+ function byu_preprocess_html(&$variables) {
+  drupal_add_css('http://cloud.typography.com/75214/740862/css/fonts.css', array('type' => 'external'));
+}
+ 
+ 
 /**
  * Creates the variables to be used in the template (page.tpl.php is a view and should not have logic.)
  * @param array $variables
