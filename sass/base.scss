@@ -131,7 +131,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gs
   &:hover, &:active {
     margin: -2px;
     background-color: $blue4;
-    border: 2px solid $blue7;
+    border: none;
     cursor:pointer;
     @include border-radius(16px);
   }
@@ -209,9 +209,6 @@ $sidePadding:5px;
     position: absolute;
     top:0px;
     right:$sidePadding;
-    &:hover, &:active {
-      right:$sidePadding + 2;
-    }
 	}
 
   // Textinput fields
