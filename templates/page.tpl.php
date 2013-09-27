@@ -5,10 +5,18 @@
 ?>
 <header id="main-header" role="banner">
 	<div id="header-top" class="wrapper">
+	
 		<div id="logo">
+		<?php if (theme_get_setting('primary_secondary') == 'Secondary'): ?>
+			<h2>
+				<a href="#" class="byulink">Brigham Young University</a>
+				<a href="<?php echo theme_get_setting('parent_org_link') ?>" class="parentlink"><?php echo theme_get_setting('parent_org') ?></a>
+			</h2>
+		<?php else: ?>
 			<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a></h2>
+		<?php endif ?>
 		</div>
-	  
+		
 		<?php if ($site_name): ?>
 			<h1>
 				<a href="<?php print $front_page; ?>" id="site-name" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
