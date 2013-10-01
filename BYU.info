@@ -17,8 +17,8 @@ scripts[] = js/plugins/modernizr.js
 scripts[] = js/bootstrap/bootstrap-dropdown.js
 
 regions[content]        = Content
-regions[sidebar_left]  = Left sidebar
-regions[sidebar_right] = Right sidebar
+regions[sidebar_left]   = Left sidebar
+regions[sidebar_right]  = Right sidebar
 regions[footer]         = Footer
 regions[copyright]      = Copyright
 
