@@ -62,7 +62,7 @@
 		
 		<nav id="secondary-nav" role="navigation">
 			<?php if ($secondary_menu):
-//				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
+				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
 			endif; ?>
 		</nav>
 </div>
