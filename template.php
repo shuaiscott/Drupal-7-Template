@@ -18,7 +18,7 @@
  * @param array $variables
  */
 function byu_preprocess_page(&$variables){
-  $variables['search_box'] = drupal_render(drupal_get_form('search_block_form'));
+  $variables['search_box'] = drupal_get_form('search_block_form');
 }
 
 function  byu_form_alter(&$form, &$form_state, $form_id) {

@@ -42,7 +42,7 @@
 
 <div id="search-menu">	
 	<div id="search-container" role="search">	
-		<?php print $search_box ?>
+		<?php print render($search_box) ?>
 	</div>
 	<a href="#primary-nav" class="menu-button">Menu</a>  
 </div>
@@ -62,7 +62,7 @@
 		
 		<nav id="secondary-nav" role="navigation">
 			<?php if ($secondary_menu):
-				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
+//				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
 			endif; ?>
 		</nav>
 </div>
@@ -84,6 +84,7 @@ $sidebar_right = render($page['sidebar_right']);
 	<?php print render($title_suffix); ?>
 	<?php print $messages; ?>
 	<?php print render($tabs); ?>
+	<?php print render($page['help']); ?>
 	<?php if ($action_links): ?>
 		<ul class="action-links"><?php print render($action_links); ?></ul>
 	<?php endif; ?>
