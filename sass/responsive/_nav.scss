@@ -144,25 +144,26 @@ body.sideNav {
 	max-height:0px;
 	position: relative;
 	@include transition(max-height 0.2s ease);
-	li { border: none; }
 	a {
 		padding-left:1.75em;
 		border-top: 1px solid $blue2;
 		border-bottom: 1px solid $blue0;
-		padding:.65em 10%;
+		padding:.4em 10%;
 		padding-right:5%;
 		color: $blue9;
 		&:hover { color: #fff; }
 	}
+	.sublinks a {
+		padding-left:15%;
+	}
 	ul {
 		padding: 0;
-		margin: 0;		
-		.sublinks a { 
-			padding-left: 15%;}
+		margin: 0;
 	}
+	li { border: none; }
 }
 
-%activemenu { max-height:1500px; }
+%activemenu {  max-height:1500px;}
 
 /* Primary Nav */
 #primary-nav {
@@ -294,6 +295,13 @@ body.sideNav {
 			}
 		}
 	}
+	#primary-nav .mega, 
+	#primary-nav .sub, 
+	#secondary-nav .sub {
+		.sublinks a {
+			padding-left: 12.5%;
+		}
+	}
 
 }
 
@@ -321,18 +329,22 @@ body.sideNav {
 *
 * Full menu width 
 *
+* YOU CAN MAKE ADJUSTMENTS HERE BASED ON YOUR SITE'S MENU
+*
 * This media query should be set to the width where the primary menu will fit 
 * in the top bar without wrapping. Make sure to test in lots of browsers,
-* and some buffer to account for differences in rendering.
+* and some buffer to account for differences in rendering. NOTE: If you use
+* a width smaller than 45em, some other parts of the header may need to be
+* adjusted--especially the BYU logo (it will run into the sign in button).
 *
 */
 /* 
-* NOTE: The full-menu-width variable is found in variables.scss
+* NOTE: The full-menu-width variable is found in _variables.scss
 */
 @media all and ( min-width: $full-menu-width ) {
 	$header-top-height: 96px;
 	$search-width: 250px;
-	$menu-height:36px;
+	$menu-height: 36px;
 
 
 	#main-header {
@@ -340,9 +352,9 @@ body.sideNav {
 	}
 
 	body.sideNav {
-		min-height: auto;
+		min-height: 0;
 		#main-header, #content, #page-footer, #search-menu {
-			left:auto;
+			left: auto;
 		}
 	}
 
@@ -426,7 +438,7 @@ body.sideNav {
 			}
 		}
 		a {
-			padding: .6em .75em;
+			padding: .6em 1.2em;
 		}
 	}
 		
@@ -443,9 +455,9 @@ body.sideNav {
 		@include border-radius(3px);
 		@include box-shadow(0px 0px 12px rgba(#000, 0.5));
 		a {
-		display: block;
-		border: 0;
-			padding: .5em 1.5em;
+			display: block;
+			border: 0;
+			padding: .4em 1.5em;
 		}
 	}
 
@@ -466,12 +478,6 @@ body.sideNav {
 			position: relative;
 		}
 
-		li.hover ul {
-			a:hover {
-				@include border-radius(3px);
-			}
-		}
-
 		.mega {
 			@extend %tab-nav-submenu;
 			min-height:400px;
@@ -479,6 +485,7 @@ body.sideNav {
 			padding: 1em 0 2em;
 			width: 97.95%;
 			@include border-radius(0 0 3px 3px);
+			a {@include border-radius(3px);}
 		}
 		.sub { 
 			background-color: #fff;
@@ -489,6 +496,7 @@ body.sideNav {
 			padding: 10px;
 			position: absolute;
 			width: 222px;
+			li { margin-left: -10px; margin-right:-10px; }
 			a {border:none;}
 			.links { width: 100%; }
 		}
@@ -532,12 +540,19 @@ body.sideNav {
 				}
 			}
 			.sublinks { 
-				padding-bottom: 0 25px 0 .25em;
+				padding: 0 25px 0 .25em;
+				a {
+					padding-left: 1.5em;
+				}
 				li a:before {
-					content: '\25B8';
-					padding-right:4px;
-					font-size: 10px;
+					font-family: 'fontawesome';
+					content: '\f105';
+					padding-right: 8px;
 					list-style-type: none;
+					color: #ddd;
+				}
+				li a:hover:before {
+					color: #fff;
 				}
 			} 
 		}
@@ -566,7 +581,7 @@ body.sideNav {
 	
 	#secondary-nav {
 		position: absolute;
-		bottom: 42px;
+		top: -41px;
 		right:9px;
 		@extend %tab-nav;
 		.sub { @extend %tab-nav-submenu; }

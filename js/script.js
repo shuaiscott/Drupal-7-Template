@@ -9,14 +9,22 @@
 * @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
 */
 
-(function ($) {
-(function () {
+
+var byu_template = (function ($) {
 
    "use strict";
-
+   
 	var clickOpened = false;
-	var scriptsActivated = false;
-	var activationSizeThreshold = 250;
+   	
+	// Load scripts
+	Modernizr.load([
+		
+		// Next, load scripts that require jQuery. If touch is enabled, load alternate script file with touch support added.
+		{
+			test: Modernizr.touch,
+			yep:  "sites/all/themes/byu/js/script-touch.min.js"
+		},
+	]);
 
 
 	// Document ready - Execute on page load
@@ -24,6 +32,7 @@
 
 		var w = $(window).width();
 		//log( 'Initial window width: ' + w + 'px' );
+		
 		//	Displays search-menu, nav-container, and body in correct position based on screen width	
 		$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
 		if($(window).width() < 900){
@@ -33,51 +42,12 @@
 			$(".toolbar-drawer #search-menu").css('margin-top', '65px');
 			$(".toolbar-drawer .nav-container").css('top', '161px');				
 		}
-		if( w > activationSizeThreshold ) {
-			activateScripts();
-		} 
-		else {
-			$(window).resize( checkActivation );
-		}
+
+		// Execute menu activation and search load only after window width exceeds 250px
+		executeAfterBreakpoint( [ activateMenus, loadSearch ], 256);
 	});
 
 
-
-
-
-	/* Func: checkActivation
-	 * Desc: Check to see if search and menus have been activated, and activate them if needed
-	 * Args: none
-	 */
-	function checkActivation() {
-		
-		// If the scripts have not been activated, and the size threshold has been crossed
-		if( !scriptsActivated && $(window).width() > activationSizeThreshold ) {
-
-			// Activate the scripts
-			activateScripts();
-
-			// Turn off the resize checking
-			$(window).off('resize', checkActivation);
-		}
-
-	}
-
-
-
-
-
-	/* Func: activateScript
-	 * Desc: Activate the search and menu scripts
-	 * Args: none
-	 */
-	function activateScripts() {
-		
-		activateMenus();
-		loadSearch();
-
-		scriptsActivated = true;
-	}
 
 
 
@@ -130,6 +100,7 @@
 			} else if ($(window).width() < 768 && $(".hover")[0]){
 				$("body").addClass("sideNav");
 			}
+			
 			//Adds some styling to keep nav container, search menu, and body in the correct position upon window resize.
 			$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
 			if($(window).width() < 900){
@@ -139,6 +110,7 @@
 				$(".toolbar-drawer #search-menu").css('margin-top', '65px');
 				$(".toolbar-drawer .nav-container").css('top', '161px');				
 			}
+			
 		});
 
 		$("body").click(function(){
@@ -158,34 +130,40 @@
 	 * Args: none
 	 */
 	function loadSearch(){
-		window.__gcse = {
-				callback: hideSearch
-		};
 
-		(function() {
-			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-		})();
+		// Check for settings, set default if absent
+		if ( typeof window.pageSettings == 'undefined') {
+			window.pageSettings = {};
+		}
+		if ( typeof window.pageSettings.gcse_search == 'undefined' || typeof window.pageSettings.gcse_search_id == 'undefined' ) {
+			window.pageSettings.gcse_search = false;
+		}
+
+
+		// Run the GCSE search script if set to do so
+		if ( window.pageSettings.gcse_search === true ) {
+
+			window.__gcse = {
+				callback: function() {
+						if (document.readyState == 'complete') {
+						// CSE has successfully loaded. Go ahead and hide the basic search.
+							$("#basic-search").hide();
+						}
+					}
+			};
+
+			(function() {
+				var cx = window.pageSettings.gcse_search_id; // Insert your own Custom Search engine ID here
+				var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+				gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(gcse, s);
+			})();
+
+		}
+
 	}
 
 
 
-
-	/* Func: hideSearch
-	 * Desc: Hide basic search if the Google CSE loads
-	 * Args: none
-	 */
-	var hideSearch = function() {
-		if (document.readyState == 'complete') {
-			// CSE has successfully loaded. Go ahead and hide the basic search.
-	    $("#basic-search").hide();
-	  }
-	};
-
-
-
-}());
-})(jQuery);
+}(jQuery));

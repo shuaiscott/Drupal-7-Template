@@ -54,7 +54,8 @@
 					if (module_exists('byu_megamenu')) {
 						print _renderMainMenu();
 					} else {
-						print drupal_render(menu_tree(variable_get('menu_main_links_source', 'main-menu')));
+						$menu = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+						print drupal_render($menu);	
 					}
 				endif; 
 			?>
@@ -62,7 +63,8 @@
 		
 		<nav id="secondary-nav" role="navigation">
 			<?php if ($secondary_menu):
-				print drupal_render(menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu')));	
+				$menu = menu_tree(variable_get('menu_secondary_links_source', 'secondary-menu'));
+				print drupal_render($menu);	
 			endif; ?>
 		</nav>
 </div>
@@ -115,7 +117,7 @@ $sidebar_right = render($page['sidebar_right']);
 		</div>
 
 		<div id="footer-bottom">
-			<div class="wrapper">
+			<div class="wrapper clearfix">
 			<?php 
 			if (!render($page['copyright'])): //If there is no specific content in the copyright area, display default ?> 
 				<a id="lds"   href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>

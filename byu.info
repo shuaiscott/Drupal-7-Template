@@ -10,10 +10,9 @@ stylesheets[all][] = css/base.css
 stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
 ; SCRIPTS
+scripts[] = js/plugins/modernizr.js
 scripts[] = js/script.js
 scripts[] = js/plugins/touchswipe.js
-scripts[] = js/touch.js
-scripts[] = js/plugins/modernizr.js
 scripts[] = js/bootstrap/bootstrap-dropdown.js
 
 regions[help]        	= Help
@@ -28,6 +27,7 @@ regions[copyright]      = Copyright
 
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+regions_hidden[]        = help
 
 ; Various page elements output by the theme can be toggled on and off. The "features" control which of these check boxes display on the admin/appearance config page.
 
