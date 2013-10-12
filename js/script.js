@@ -35,9 +35,8 @@ var byu_template = (function ($) {
 		
 		//	Displays search-menu, nav-container, and body in correct position based on screen width	
 		$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
-		if($(window).width() < 900){
+		if($(window).width() < 960){
 			$(".toolbar-drawer #search-menu").css('margin-top', '0px');
-			$(".toolbar-drawer .nav-container").css('top', '85px');	
 		} else {
 			$(".toolbar-drawer #search-menu").css('margin-top', '65px');
 			$(".toolbar-drawer .nav-container").css('top', '161px');				
@@ -103,9 +102,8 @@ var byu_template = (function ($) {
 			
 			//Adds some styling to keep nav container, search menu, and body in the correct position upon window resize.
 			$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
-			if($(window).width() < 900){
+			if($(window).width() < 960){
 				$(".toolbar-drawer #search-menu").css('margin-top', '0px');
-				$(".toolbar-drawer .nav-container").css('top', '85px');	
 			} else {
 				$(".toolbar-drawer #search-menu").css('margin-top', '65px');
 				$(".toolbar-drawer .nav-container").css('top', '161px');				
