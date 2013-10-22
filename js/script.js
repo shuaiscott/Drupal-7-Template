@@ -30,16 +30,17 @@ var byu_template = (function ($) {
 	// Document ready - Execute on page load
 	$( function () {
 
-		var w = $(window).width();
-		//log( 'Initial window width: ' + w + 'px' );
+		//	Displays search-menu, nav-container, and body in correct position based on screen width
+		var toolbarHeight = $("#toolbar").height();
+		var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();
+		$("body.toolbar-drawer").css('padding-top',toolbarHeight);
 		
-		//	Displays search-menu, nav-container, and body in correct position based on screen width	
-		$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
 		if($(window).width() < 960){
 			$(".toolbar-drawer #search-menu").css('margin-top', '0px');
+			$(".toolbar-drawer .nav-container").css('top', toolbarHeight );	
 		} else {
-			$(".toolbar-drawer #search-menu").css('margin-top', '65px');
-			$(".toolbar-drawer .nav-container").css('top', '161px');				
+			$(".toolbar-drawer #search-menu").css('margin-top', toolbarHeight);
+			$(".toolbar-drawer .nav-container").css('top', menuPosition );				
 		}
 
 		// Execute menu activation and search load only after window width exceeds 250px
@@ -100,13 +101,17 @@ var byu_template = (function ($) {
 				$("body").addClass("sideNav");
 			}
 			
-			//Adds some styling to keep nav container, search menu, and body in the correct position upon window resize.
-			$("body.toolbar-drawer").css('padding-top',($("#toolbar").height()));
+			//	Displays search-menu, nav-container, and body in correct position based on screen width
+			var toolbarHeight = $("#toolbar").height();
+			var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();
+			$("body.toolbar-drawer").css('padding-top',toolbarHeight);
+			
 			if($(window).width() < 960){
 				$(".toolbar-drawer #search-menu").css('margin-top', '0px');
+				$(".toolbar-drawer .nav-container").css('top', toolbarHeight );				
 			} else {
-				$(".toolbar-drawer #search-menu").css('margin-top', '65px');
-				$(".toolbar-drawer .nav-container").css('top', '161px');				
+				$(".toolbar-drawer #search-menu").css('margin-top', toolbarHeight);
+				$(".toolbar-drawer .nav-container").css('top', menuPosition );				
 			}
 			
 		});

@@ -9,7 +9,7 @@
  * Drupal cannot load external css from the .info file, so we do it here.
  */
  function byu_preprocess_html(&$variables) {
-  drupal_add_css('http://cloud.typography.com/75214/740862/css/fonts.css', array('type' => 'external'));
+  drupal_add_css('//cloud.typography.com/75214/740862/css/fonts.css', array('type' => 'external'));
 }
  
  

@@ -11,6 +11,8 @@ stylesheets[screen and (min-width:300px)][] = css/responsive.css
 
 ; SCRIPTS
 scripts[] = js/plugins/modernizr.js
+scripts[] = js/plugins/jquery-1.10.2.min.js
+scripts[] = js/plugins/jquery-migrate-1.2.1.min.js
 scripts[] = js/script.js
 scripts[] = js/plugins/touchswipe.js
 scripts[] = js/bootstrap/bootstrap-dropdown.js
