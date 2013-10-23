@@ -30,28 +30,13 @@ var byu_template = (function ($) {
 	// Document ready - Execute on page load
 	$( function () {
 
-		//	Displays search-menu, nav-container, and body in correct position based on screen width
-		var toolbarHeight = $("#toolbar").height();
-		var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();
-		$("body.toolbar-drawer").css('padding-top',toolbarHeight);
-		
-		if($(window).width() < 960){
-			$(".toolbar-drawer #search-menu").css('margin-top', '0px');
-			$(".toolbar-drawer .nav-container").css('top', toolbarHeight );	
-		} else {
-			$(".toolbar-drawer #search-menu").css('margin-top', toolbarHeight);
-			$(".toolbar-drawer .nav-container").css('top', menuPosition );				
-		}
+		repositionMenu();	
 
 		// Execute menu activation and search load only after window width exceeds 250px
 		executeAfterBreakpoint( [ activateMenus, loadSearch ], 256);
 	});
 
-
-
-
-
-
+	
 	/* Func: ActivateMenus
 	 * Desc: Get the menus going
 	 * Args: none
@@ -95,26 +80,20 @@ var byu_template = (function ($) {
 
 		//Listener for if screen is resized to close sideNav
 		$(window).resize(function (){
-			if ($(window).width() > 768){
+			repositionMenu();	
+		
+			if ($(window).width() > '37.5em'){
 				$('body').removeClass('sideNav');
-			} else if ($(window).width() < 768 && $(".hover")[0]){
+			} else if ($(window).width() < "60em" && $(".hover")[0]){
 				$("body").addClass("sideNav");
 			}
-			
-			//	Displays search-menu, nav-container, and body in correct position based on screen width
-			var toolbarHeight = $("#toolbar").height();
-			var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();
-			$("body.toolbar-drawer").css('padding-top',toolbarHeight);
-			
-			if($(window).width() < 960){
-				$(".toolbar-drawer #search-menu").css('margin-top', '0px');
-				$(".toolbar-drawer .nav-container").css('top', toolbarHeight );				
-			} else {
-				$(".toolbar-drawer #search-menu").css('margin-top', toolbarHeight);
-				$(".toolbar-drawer .nav-container").css('top', menuPosition );				
-			}
-			
+		
 		});
+		
+		$(".toolbar-toggle-processed").click(function() {
+			repositionMenu();
+		});
+		
 
 		$("body").click(function(){
 			$(".hover").removeClass("hover");
@@ -123,11 +102,29 @@ var byu_template = (function ($) {
 		$("#content").click(function(){
 			$("body").removeClass("sideNav");
 		});
-
+		
+	}
+	
+	/**
+	* Reposition Menu
+	* Repositions the the navigation menu and search bar to accommodate the position on the Drupal toolbar
+	*/
+	function repositionMenu(){
+		if ($('#toolbar').length){
+			var toolbarHeight = $("#toolbar").height();
+			var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();		
+		
+			if ($('.menu-button').css('display') != 'none'){
+				$("#search-menu").css('margin-top', 0);
+				$(".nav-container").css('top', toolbarHeight );	
+			} else {
+				$("#search-menu").css('margin-top', toolbarHeight);
+				$(".nav-container").css('top', menuPosition );				
+			}
+		}
 	}
 
-
-
+	
 	/* Func: loadSearch
 	 * Desc: Load the Google Custom Search
 	 * Args: none
@@ -166,7 +163,5 @@ var byu_template = (function ($) {
 		}
 
 	}
-
-
 
 }(jQuery));
