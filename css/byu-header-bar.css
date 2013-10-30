@@ -65,11 +65,11 @@ html, body {
   display: inline-block;
   height: 26px;
   width: 90px;
-  background: transparent url("http://byuweb.github.com/Global-Assets/img/byu-logo-sm.png") 0px 0px no-repeat;
+  background: transparent url("//byuweb.github.com/Global-Assets/img/byu-logo-sm.png") 0px 0px no-repeat;
 }
 /* line 48, ../sass/byu-header-bar.scss */
 .svg #byu-bar a.byulink {
-  background-image: url("http://byuweb.github.com/Global-Assets/img/byu-logo-sm.svg");
+  background-image: url("//byuweb.github.com/Global-Assets/img/byu-logo-sm.svg");
 }
 /* line 53, ../sass/byu-header-bar.scss */
 #byu-bar a.byu {
@@ -238,7 +238,7 @@ html, body {
 }
 /* line 20, ../sass/responsive/_byu-bar.scss */
 .svg #byu-bar {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-header-bg.svg");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-header-bg.svg");
 }
 /* line 24, ../sass/responsive/_byu-bar.scss */
 #byu-bar h2 {
@@ -251,11 +251,11 @@ html, body {
 }
 /* line 33, ../sass/responsive/_byu-bar.scss */
 #byu-bar a.byu {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-logo.png");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-logo.png");
 }
 /* line 35, ../sass/responsive/_byu-bar.scss */
 .svg #byu-bar a.byu {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-logo.svg");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-logo.svg");
 }
 /* line 40, ../sass/responsive/_byu-bar.scss */
 #byu-bar a.byulink {

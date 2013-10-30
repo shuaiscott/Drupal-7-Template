@@ -30,10 +30,9 @@ var byu_template = (function ($) {
 	// Document ready - Execute on page load
 	$( function () {
 
-		repositionMenu();	
-
 		// Execute menu activation and search load only after window width exceeds 250px
 		executeAfterBreakpoint( [ activateMenus, loadSearch ], 256);
+		fixNavForDrupalAdmin();
 	});
 
 	
@@ -80,7 +79,7 @@ var byu_template = (function ($) {
 
 		//Listener for if screen is resized to close sideNav
 		$(window).resize(function (){
-			repositionMenu();	
+			fixNavForDrupalAdmin();	
 		
 			if ($(window).width() > '37.5em'){
 				$('body').removeClass('sideNav');
@@ -91,7 +90,7 @@ var byu_template = (function ($) {
 		});
 		
 		$(".toolbar-toggle-processed").click(function() {
-			repositionMenu();
+			fixNavForDrupalAdmin();
 		});
 		
 
@@ -109,18 +108,10 @@ var byu_template = (function ($) {
 	* Reposition Menu
 	* Repositions the the navigation menu and search bar to accommodate the position on the Drupal toolbar
 	*/
-	function repositionMenu(){
+	function fixNavForDrupalAdmin(){
 		if ($('#toolbar').length){
-			var toolbarHeight = $("#toolbar").height();
-			var menuPosition = $('#main-header').height()+toolbarHeight-$('.nav-container').height();		
-		
-			if ($('.menu-button').css('display') != 'none'){
-				$("#search-menu").css('margin-top', 0);
-				$(".nav-container").css('top', toolbarHeight );	
-			} else {
-				$("#search-menu").css('margin-top', toolbarHeight);
-				$(".nav-container").css('top', menuPosition );				
-			}
+			var toolbarHeight = $('#toolbar').height();
+                $("body").css('padding-top', toolbarHeight );
 		}
 	}
 
@@ -163,5 +154,11 @@ var byu_template = (function ($) {
 		}
 
 	}
+	
+	/*!
+	Func: ExecuteAfterBreakpoint
+	Desc: Execute a function once (and only once) after a pixel width has been reached
+	Auth: Nate Walton (BYU Web Community Project) */
+	window.executeAfterBreakpoint=function(functionObject,breakpoint){"use strict";function checkBreakpoint(){!functionsExecuted&&$(window).width()>breakpoint&&(executeFunctions(),$(window).off("resize",checkBreakpoint))}function executeFunctions(){var len=functions.length;functionsExecuted=!0;for(var x=0;len>x;x++)functions[x]()}var functionsExecuted=!1,functions=functionObject;return"function"==typeof functionObject&&(functions=[functionObject]),!functions instanceof Array?(console.log("ExecuteAfterBreakpoint error: functionObj must be a function or an array of functions"),console.log("Syntax: executeAfterBreakpoint(functionObj, breakpoint)"),console.log("Your argument: "+functionObject),void 0):"number"!=typeof breakpoint?(console.log("ExecuteAfterBreakpoint error: breakpoint must be a number"),console.log("Syntax: executeAfterBreakpoint(functionObj, breakpoint)"),console.log("Your argument: "+breakpoint),void 0):(!functionsExecuted&&$(window).width()>breakpoint?executeFunctions():$(window).resize(checkBreakpoint),void 0)}
 
 }(jQuery));

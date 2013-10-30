@@ -11,16 +11,20 @@
  function byu_preprocess_html(&$variables) {
   drupal_add_css('//cloud.typography.com/75214/740862/css/fonts.css', array('type' => 'external'));
 }
- 
- 
+
+
 /**
  * Creates the variables to be used in the template (page.tpl.php is a view and should not have logic.)
  * @param array $variables
  */
 function byu_preprocess_page(&$variables){
-  $variables['search_box'] = drupal_get_form('search_block_form');
+	$variables['search_box'] = drupal_get_form('search_block_form');
 }
 
+
+/**
+* Change the default Drupal search id to match BYU theme's id
+*/
 function  byu_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['#id'] = 'basic-search'; // Change the text on the label element
@@ -30,7 +34,7 @@ function  byu_form_alter(&$form, &$form_state, $form_id) {
 /**
  * Implements theme_menu_item()
  * 
- * Used to modify the markup of the menus. This is to accommodate for when the megamenu module isn't being used.
+ * Used to modify the markup of the menus. This is to accommodate the menus for when the megamenu module isn't being used.
  */
 
 function byu_menu_link(array $variables) {

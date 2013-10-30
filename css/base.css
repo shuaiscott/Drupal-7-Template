@@ -919,7 +919,18 @@ dl, menu, ol, ul {
 }
 
 /*** Type ***/
-/* line 30, ../sass/base.scss */
+/* Make this the same color as the bottom footer */
+/* line 31, ../sass/base.scss */
+html {
+  background-color: #dddddd;
+}
+
+/* line 34, ../sass/base.scss */
+body {
+  background-color: #fff;
+}
+
+/* line 38, ../sass/base.scss */
 body, button, input, select, textarea {
   color: #444;
   font-family: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
@@ -928,63 +939,63 @@ body, button, input, select, textarea {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 37, ../sass/base.scss */
+/* line 45, ../sass/base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
   margin: 10px 0;
   line-height: 1.2;
 }
 
-/* line 42, ../sass/base.scss */
+/* line 50, ../sass/base.scss */
 h2, h3, h4, h5, h6 {
   color: #444;
 }
 
-/* line 43, ../sass/base.scss */
+/* line 51, ../sass/base.scss */
 h1 {
   font-size: 2em;
   margin: 20px 0 10px;
   line-height: 1.1;
 }
 
-/* line 44, ../sass/base.scss */
+/* line 52, ../sass/base.scss */
 h2 {
   font-size: 1.65em;
   margin: 15px 0 10px;
   line-height: 1.1;
 }
 
-/* line 45, ../sass/base.scss */
+/* line 53, ../sass/base.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 46, ../sass/base.scss */
+/* line 54, ../sass/base.scss */
 h4 {
   font-size: 1.1em;
 }
 
-/* line 47, ../sass/base.scss */
+/* line 55, ../sass/base.scss */
 h5 {
   font-size: 1em;
 }
 
-/* line 48, ../sass/base.scss */
+/* line 56, ../sass/base.scss */
 h6 {
   font-size: .9em;
 }
 
-/* line 49, ../sass/base.scss */
+/* line 57, ../sass/base.scss */
 p, pre {
   margin: 10px 0;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
 code {
   color: #d14;
 }
 
-/* line 53, ../sass/base.scss */
+/* line 61, ../sass/base.scss */
 a {
   -webkit-transition: background 0.1s ease;
   -moz-transition: background 0.1s ease;
@@ -993,43 +1004,43 @@ a {
 }
 
 /** Positioning **/
-/* line 62, ../sass/base.scss */
+/* line 70, ../sass/base.scss */
 #main-header, #search-menu, #content, #page-footer, .nav-container {
   position: relative;
 }
 
 /*** Header ***/
-/* line 71, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 #main-header {
   background-color: #003366;
   border-bottom: 1px solid #003366;
 }
 
-/* line 77, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 #header-top {
   position: relative;
 }
-/* line 79, ../sass/base.scss */
+/* line 87, ../sass/base.scss */
 #header-top h1 {
   font-size: 2.2em;
   margin: 0 5% .25em;
 }
-/* line 82, ../sass/base.scss */
+/* line 90, ../sass/base.scss */
 #header-top h1 a {
   color: #fff;
 }
-/* line 84, ../sass/base.scss */
+/* line 92, ../sass/base.scss */
 #header-top a.sign-in {
   position: absolute;
   top: .35em;
   right: 5%;
 }
 
-/* line 91, ../sass/base.scss */
+/* line 99, ../sass/base.scss */
 #logo, #byu-bar {
   padding: .35em 0 .45em;
 }
-/* line 94, ../sass/base.scss */
+/* line 102, ../sass/base.scss */
 #logo a.byu, #logo a.byulink, #byu-bar a.byu, #byu-bar a.byulink {
   display: block;
   text-indent: -999em;
@@ -1039,14 +1050,14 @@ a {
   direction: ltr;
   display: inline-block;
   height: 26px;
-  width: 90px;
-  background: transparent url("http://byuweb.github.com/Global-Assets/img/byu-logo-sm.png") 0px 0px no-repeat;
+  width: 70px;
+  background: transparent url("//byuweb.github.com/Global-Assets/img/byu-logo-header-sm.png") 0px 0px no-repeat;
 }
-/* line 100, ../sass/base.scss */
+/* line 108, ../sass/base.scss */
 .svg #logo a.byu, .svg #logo a.byulink, .svg #byu-bar a.byu, .svg #byu-bar a.byulink {
-  background-image: url("http://byuweb.github.com/Global-Assets/img/byu-logo-sm.svg");
+  background-image: url("//byuweb.github.com/Global-Assets/img/byu-logo-header-sm.svg");
 }
-/* line 105, ../sass/base.scss */
+/* line 113, ../sass/base.scss */
 #logo a.parentlink, #byu-bar a.parentlink {
   text-transform: uppercase;
   font-size: 15px;
@@ -1057,19 +1068,19 @@ a {
   min-height: 26px;
   vertical-align: top;
 }
-/* line 115, ../sass/base.scss */
+/* line 123, ../sass/base.scss */
 #logo h2, #byu-bar h2 {
   margin: 0;
   margin-right: 100px;
   line-height: 26px;
 }
-/* line 120, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 #logo a, #byu-bar a {
   display: block;
 }
 
-/* line 123, ../sass/base.scss */
-a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gsc-search-button {
+/* line 131, ../sass/base.scss */
+a.mybyu, a.sign-in, .open #search-button, #search-submit, .search-submit, .gcse-wrapper input.gsc-search-button {
   background-color: #628cb6;
   border: none;
   color: #fff;
@@ -1082,11 +1093,11 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gs
   -o-border-radius: 14px;
   border-radius: 14px;
 }
-/* line 131, ../sass/base.scss */
-a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-button:hover, .open #search-button:active, #search-submit:hover, #search-submit:active, .gcse-wrapper input.gsc-search-button:hover, .gcse-wrapper input.gsc-search-button:active {
+/* line 139, ../sass/base.scss */
+a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-button:hover, .open #search-button:active, #search-submit:hover, #search-submit:active, .search-submit:hover, .search-submit:active, .gcse-wrapper input.gsc-search-button:hover, .gcse-wrapper input.gsc-search-button:active {
   margin: -2px;
   background-color: #336699;
-  border: none;
+  border: 2px solid #abc8e4;
   cursor: pointer;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -1095,14 +1106,14 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   border-radius: 16px;
 }
 
-/* line 140, ../sass/base.scss */
+/* line 148, ../sass/base.scss */
 .menu-button {
   display: none;
 }
 
 /*** Search ***/
 /* Search box styling for mobile */
-/* line 165, ../sass/base.scss */
+/* line 173, ../sass/base.scss */
 #search-menu {
   width: 100%;
   position: relative;
@@ -1115,7 +1126,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-bottom: 4px;
 }
 
-/* line 184, ../sass/base.scss */
+/* line 192, ../sass/base.scss */
 #search-container textarea:hover,
 #search-container input:hover,
 #search-container textarea:active,
@@ -1125,17 +1136,17 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   outline: 0px !important;
   -webkit-appearance: none;
 }
-/* line 190, ../sass/base.scss */
+/* line 198, ../sass/base.scss */
 #search-container #basic-search {
   position: relative;
   padding-right: 77px;
   padding-left: 5px;
 }
-/* line 194, ../sass/base.scss */
+/* line 202, ../sass/base.scss */
 #search-container #basic-search label {
   color: #fff;
 }
-/* line 200, ../sass/base.scss */
+/* line 208, ../sass/base.scss */
 #search-container #search-submit {
   background-image: url(../img/search_box_icon.png);
   background-position: 50% 50%;
@@ -1149,7 +1160,11 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   top: 0px;
   right: 5px;
 }
-/* line 215, ../sass/base.scss */
+/* line 220, ../sass/base.scss */
+#search-container #search-submit:hover, #search-container #search-submit:active {
+  right: 7px;
+}
+/* line 226, ../sass/base.scss */
 #search-container #basic-search #search, #search-container input.gsc-input {
   margin-bottom: 0;
   vertical-align: top;
@@ -1166,7 +1181,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
 }
 
 /*** Navigation ***/
-/* line 247, ../sass/base.scss */
+/* line 258, ../sass/base.scss */
 .nav-container a {
   font-size: 14px;
   padding: .5em 0;
@@ -1175,135 +1190,169 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 254, ../sass/base.scss */
+/* line 265, ../sass/base.scss */
 .nav-container a:hover, .nav-container a:active {
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 260, ../sass/base.scss */
+/* line 271, ../sass/base.scss */
 .nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a {
   font-weight: normal;
   padding-left: 10%;
 }
-/* line 265, ../sass/base.scss */
+/* line 276, ../sass/base.scss */
 .nav-container .featured, .nav-container .highlight {
   display: none;
 }
-/* line 269, ../sass/base.scss */
+/* line 280, ../sass/base.scss */
 .nav-container .sublinks {
   list-style: none;
   font-size: 13px;
 }
-/* line 272, ../sass/base.scss */
+/* line 283, ../sass/base.scss */
 .nav-container .sublinks a {
   padding-left: 15%;
 }
 
-/* line 278, ../sass/base.scss */
+/* line 289, ../sass/base.scss */
 #primary-nav, #secondary-nav {
   border-top: 1px solid #ddd;
   padding: 10px 0;
 }
 
 /* Sidebar nav */
-/* line 285, ../sass/base.scss */
+/* line 296, ../sass/base.scss */
 nav.sidebar {
   display: none;
 }
 
-/* line 292, ../sass/base.scss */
+/* line 303, ../sass/base.scss */
 .sidebar-navigation nav.sidebar {
   border-top: 1px solid #ddd;
   display: block;
   padding-top: .5em;
   margin-top: 1em;
 }
-/* line 298, ../sass/base.scss */
+/* line 309, ../sass/base.scss */
 .sidebar-navigation nav.sidebar a {
   padding: .2em 0;
   display: block;
   color: #003366;
 }
-/* line 302, ../sass/base.scss */
+/* line 313, ../sass/base.scss */
 .sidebar-navigation nav.sidebar a:hover {
   text-decoration: underline;
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 308, ../sass/base.scss */
+/* line 319, ../sass/base.scss */
 .sidebar-navigation nav.sidebar .current a {
   color: #666;
 }
-/* line 310, ../sass/base.scss */
+/* line 321, ../sass/base.scss */
 .sidebar-navigation nav.sidebar .current a:hover {
   text-decoration: none;
 }
 
 /*** Main Content ***/
-/* line 332, ../sass/base.scss */
+/* line 343, ../sass/base.scss */
 .wrapper {
   margin: 0;
 }
 
-/* line 334, ../sass/base.scss */
+/* line 345, ../sass/base.scss */
 #content {
   padding: 1em 5% 2em;
 }
-/* line 336, ../sass/base.scss */
+/* line 347, ../sass/base.scss */
 #content h1 {
   color: #002255;
 }
 
-/* line 341, ../sass/base.scss */
+/* line 353, ../sass/base.scss */
+#feature {
+  margin: -1em -5.55% 0;
+}
+/* line 355, ../sass/base.scss */
+#feature ul {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+/* line 360, ../sass/base.scss */
+#feature li {
+  display: none;
+}
+/* line 362, ../sass/base.scss */
+#feature li.feature {
+  display: block;
+}
+/* line 366, ../sass/base.scss */
+#feature .feature-image {
+  text-align: center;
+}
+
+/* line 371, ../sass/base.scss */
+.feature-description {
+  margin: 0 5%;
+}
+/* line 373, ../sass/base.scss */
+.feature-description h2 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0px 10px;
+}
+
+/* line 383, ../sass/base.scss */
 .breadcrumb {
   display: none;
 }
 
-/* line 348, ../sass/base.scss */
+/* line 392, ../sass/base.scss */
 #calendar h2 {
   margin-bottom: 0;
 }
 
-/* line 351, ../sass/base.scss */
+/* line 395, ../sass/base.scss */
 .day a, .day span {
   display: block;
 }
-/* line 352, ../sass/base.scss */
+/* line 396, ../sass/base.scss */
 .day span.date {
   margin-right: .33em;
   display: inline;
   font-weight: normal;
 }
 
-/* line 358, ../sass/base.scss */
+/* line 402, ../sass/base.scss */
 #calendars {
   margin: 0;
   padding: .5em 0 0;
 }
 
-/* line 363, ../sass/base.scss */
+/* line 407, ../sass/base.scss */
 #calendar, #news {
   border-top: 4px solid #f7f7f7;
   margin-top: 1px;
   padding-bottom: 1em;
 }
 
-/* line 368, ../sass/base.scss */
-#calendar, #news {
+/* line 412, ../sass/base.scss */
+#calendar, #news, #feature {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 369, ../sass/base.scss */
+/* line 413, ../sass/base.scss */
 ul#calendars {
   list-style: none;
 }
 
-/* line 370, ../sass/base.scss */
+/* line 414, ../sass/base.scss */
 .day {
   padding: .75em 0 0;
 }
 
-/* line 371, ../sass/base.scss */
+/* line 415, ../sass/base.scss */
 a.baseline, #calendar > strong, a.more {
   font-weight: bold;
   margin-top: 1.5em;
@@ -1311,102 +1360,102 @@ a.baseline, #calendar > strong, a.more {
   display: block;
 }
 
-/* line 379, ../sass/base.scss */
+/* line 423, ../sass/base.scss */
 .news-item {
   padding: .25em 0 0;
 }
 
-/* line 380, ../sass/base.scss */
+/* line 424, ../sass/base.scss */
 .briefs-item {
   padding: .1em 0 0;
 }
 
-/* line 381, ../sass/base.scss */
+/* line 425, ../sass/base.scss */
 #briefs-container {
   border-bottom: 1px solid #eee;
   padding-bottom: .75em;
   margin-bottom: .5em;
 }
 
-/* line 389, ../sass/base.scss */
+/* line 433, ../sass/base.scss */
 #page-footer {
-  background-color: #eeebe9;
-  border-top: 1px solid #fff;
-  border-bottom: 2px solid transparent;
+  background-color: #e8e8e8;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
-/* line 393, ../sass/base.scss */
+/* line 437, ../sass/base.scss */
 #page-footer a, #page-footer a:link, #page-footer a:visited {
-  color: #6b6761;
+  color: #6b6a69;
   display: block;
   padding: .35em 1%;
   font-size: .95em;
 }
-/* line 398, ../sass/base.scss */
+/* line 442, ../sass/base.scss */
 #page-footer a:hover, #page-footer a:active, #page-footer a:focus {
-  color: #595650;
+  color: #595857;
 }
-/* line 400, ../sass/base.scss */
+/* line 444, ../sass/base.scss */
 #page-footer h2 {
-  color: #595650;
+  color: #595857;
   margin-top: 1.5em;
   font-size: 1em;
-  border-bottom: 1px solid #cccac6;
+  border-bottom: 1px solid #c7c7c7;
 }
-/* line 405, ../sass/base.scss */
+/* line 449, ../sass/base.scss */
 #page-footer h3 {
   font-weight: normal;
-  color: #595650;
+  color: #595857;
   font-size: .95em;
   margin: 1em 0 0;
 }
-/* line 410, ../sass/base.scss */
+/* line 454, ../sass/base.scss */
 #page-footer p {
-  color: #6b6761;
+  color: #6b6a69;
   font-size: .95em;
 }
-/* line 413, ../sass/base.scss */
+/* line 457, ../sass/base.scss */
 #page-footer .wrapper {
   margin: 9px 5%;
 }
 
-/* line 418, ../sass/base.scss */
+/* line 462, ../sass/base.scss */
 #footer-links {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5em;
 }
-/* line 421, ../sass/base.scss */
+/* line 465, ../sass/base.scss */
 #footer-links div.alpha {
   margin-top: 0;
   border-top: none;
 }
-/* line 423, ../sass/base.scss */
+/* line 467, ../sass/base.scss */
 #footer-links .addthis_default_style a {
   clear: left;
   padding: 0;
 }
-/* line 425, ../sass/base.scss */
+/* line 469, ../sass/base.scss */
 #footer-links .addthis_toolbox a {
   padding-left: 0;
 }
-/* line 427, ../sass/base.scss */
+/* line 471, ../sass/base.scss */
 #footer-links .addthis_toolbox a span {
   padding-right: 10px;
   margin: 0;
 }
 
-/* line 431, ../sass/base.scss */
+/* line 475, ../sass/base.scss */
 #footer-bottom {
-  background-color: #e5e2df;
+  background-color: #dddddd;
   border-top: 1px solid #fff;
   padding-bottom: 1.5em;
 }
-/* line 436, ../sass/base.scss */
+/* line 480, ../sass/base.scss */
 #footer-bottom a, #footer-bottom a:link, #footer-bottom a:visited {
-  color: #595650;
+  color: #595857;
 }
 
 @media all and (max-width: 939px) {
-  /* line 443, ../sass/base.scss */
+  /* line 489, ../sass/base.scss */
   .feature-description {
     border-left: none !important;
     background-color: transparent !important;
@@ -1430,7 +1479,7 @@ a.baseline, #calendar > strong, a.more {
 }
 /* line 20, ../sass/responsive/_byu-bar.scss */
 .svg #byu-bar {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-header-bg.svg");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-header-bg.svg");
 }
 /* line 24, ../sass/responsive/_byu-bar.scss */
 #byu-bar h2 {
@@ -1443,11 +1492,11 @@ a.baseline, #calendar > strong, a.more {
 }
 /* line 33, ../sass/responsive/_byu-bar.scss */
 #byu-bar a.byu {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-logo.png");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-logo.png");
 }
 /* line 35, ../sass/responsive/_byu-bar.scss */
 .svg #byu-bar a.byu {
-  background-image: url("http://byuweb.github.com/Global-Assets//img/byu-logo.svg");
+  background-image: url("//byuweb.github.com/Global-Assets//img/byu-logo.svg");
 }
 /* line 40, ../sass/responsive/_byu-bar.scss */
 #byu-bar a.byulink {
