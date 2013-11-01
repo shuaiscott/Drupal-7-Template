@@ -23,7 +23,7 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
   
   $form['byu_template']['primary_secondary'] = array(
 	  '#type'          => 'radios',
-	  '#title'         => t('Primary or Secondary'),
+	  '#title'         => t('Organizational Level'),
 	  '#default_value' => theme_get_setting('primary_secondary'),
 	  '#options'	   => drupal_map_assoc(array(t('Primary'), t('Secondary'))),
 	  '#description'   => t("A primary organization is usually a college level. A secondary organization is a department under a college."),	  

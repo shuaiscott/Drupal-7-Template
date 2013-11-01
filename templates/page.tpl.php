@@ -25,15 +25,15 @@
 
 		<?php if (module_exists('cas')): ?>
 			<?php if (user_is_logged_in()): ?>
-				<a href="caslogout" class="sign-in button">Sign Out</a>
+				<a href="/caslogout" class="sign-in button">Sign Out</a>
 			<?php else: ?>
-				<a href="cas" class="sign-in button">Sign in</a>
+				<a href="/cas" class="sign-in button">Sign in</a>
 			<?php endif; ?>
 		<?php else: ?>
 			<?php if (user_is_logged_in()): ?>
-				<a href="logout" class="sign-in button">Sign out</a>
+				<a href="/user/logout" class="sign-in button">Sign out</a>
 			<?php else: ?>
-				<a href="user" class="sign-in button">Sign in</a>
+				<a href="/user" class="sign-in button">Sign in</a>
 			<?php endif; ?>			
 		<?php endif; ?>
 		
