@@ -3722,24 +3722,24 @@ a.mybyu, a.sign-in, .open #search-button {
 @media all and (min-width: 32em) {
   /* line 66, ../sass/responsive/_header-footer.scss */
   #logo a.byu {
-    background-image: url("//byuweb.github.com/Global-Assets/img/byu-logo-header.png");
+    background-image: url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header.png");
     width: 350px;
   }
   /* line 69, ../sass/responsive/_header-footer.scss */
   .svg #logo a.byu {
-    background-image: url("//byuweb.github.com/Global-Assets/img/byu-logo-header.svg");
+    background-image: url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header.svg");
   }
 }
 /* Medium width */
 @media all and (min-width: 37.5em) {
   /* line 83, ../sass/responsive/_header-footer.scss */
   #main-header {
-    background: #003366 url("//byuweb.github.com/Global-Assets/img/byu-header-bg.png") top left no-repeat;
+    background: #003366 url("//home.byu.edu/home/sites/default/files/global/img/byu-header-bg.png") top left no-repeat;
     background-size: 100% 100%;
   }
   /* line 86, ../sass/responsive/_header-footer.scss */
   .svg #main-header {
-    background-image: url("//byuweb.github.com/Global-Assets/img/byu-header-bg.svg");
+    background-image: url("//home.byu.edu/home/sites/default/files/global/img/byu-header-bg.svg");
   }
 
   /* line 91, ../sass/responsive/_header-footer.scss */
