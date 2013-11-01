@@ -13,7 +13,6 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
 		return;
 	}
   
-	if ($form_id == 'install_configure_form' || TRUE) {
 	//Sets the Parent Organization Name
 	$form['byu_template'] = array(
 		'#type' => 'fieldset', 
@@ -54,5 +53,4 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
 			),
 		),
 	);
-	}
 }
