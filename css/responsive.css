@@ -1774,7 +1774,7 @@ body.toolbar-drawer #overlay-container {
 }
 
 /* line 10, ../sass/_drupal-specific.scss */
-#page-footer .contextual-links-trigger {
+#page-footer a.contextual-links-trigger {
   padding: 0;
 }
 
@@ -3909,7 +3909,7 @@ a.mybyu, a.sign-in, .open #search-button {
     max-width: 71.625em;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 9%;
+    padding-left: 5%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
