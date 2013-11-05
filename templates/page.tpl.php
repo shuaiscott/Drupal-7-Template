@@ -80,6 +80,8 @@ $sidebar_right = render($page['sidebar_right']);
 <div id="content" class="wrapper clearfix <?php print ($sidebar_left && $sidebar_right ? 'two-sidebars' : ($sidebar_left || $sidebar_right ? 'one-sidebar' : '')) ?>" role="main">
 	<?php print render($page['highlighted']); ?>
 	<?php print $breadcrumb; ?>
+	
+	<?php print render($page['feature']); ?> 
 
 	<?php print render($title_prefix); ?>
 	<?php if ($title): ?>

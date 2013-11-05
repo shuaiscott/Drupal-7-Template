@@ -18,6 +18,7 @@ scripts[] = js/plugins/touchswipe.js
 scripts[] = js/bootstrap/bootstrap-dropdown.js
 
 regions[help]        	= Help
+regions[feature]        = Featured Content
 regions[content]        = Content
 regions[sidebar_left]   = Left sidebar
 regions[sidebar_right]  = Right sidebar
