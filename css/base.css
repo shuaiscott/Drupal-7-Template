@@ -1304,7 +1304,7 @@ nav.sidebar {
 }
 
 /* line 377, ../sass/base.scss */
-#calendar, #news, #feature {
+#calendar, #news {
   border-bottom: 1px solid #ccc;
 }
 
