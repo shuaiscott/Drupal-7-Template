@@ -2,6 +2,8 @@
 /**
  * BYU theme page to generate the markup for a single page.
  */
+ 
+ global $base_url;
 ?>
 <header id="main-header" role="banner">
 	<div id="header-top" class="wrapper">
@@ -25,15 +27,15 @@
 
 		<?php if (module_exists('cas')): ?>
 			<?php if (user_is_logged_in()): ?>
-				<a href="/caslogout" class="sign-in button">Sign Out</a>
+				<a href="<?php print $base_url ?>/caslogout" class="sign-in button">Sign Out</a>
 			<?php else: ?>
-				<a href="/cas" class="sign-in button">Sign in</a>
+				<a href="<?php print $base_url ?>/cas" class="sign-in button">Sign in</a>
 			<?php endif; ?>
 		<?php else: ?>
 			<?php if (user_is_logged_in()): ?>
-				<a href="/user/logout" class="sign-in button">Sign out</a>
+				<a href="<?php print $base_url ?>/user/logout" class="sign-in button">Sign out</a>
 			<?php else: ?>
-				<a href="/user" class="sign-in button">Sign in</a>
+				<a href="<?php print $base_url ?>/user" class="sign-in button">Sign in</a>
 			<?php endif; ?>			
 		<?php endif; ?>
 		
