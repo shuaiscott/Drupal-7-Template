@@ -144,6 +144,12 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit, .search-submit, .gcse-
     @include border-radius(16px);
   }
 }
+#search-submit{
+	&:hover, &:active {
+    border: none;
+  }
+}
+
 
 .menu-button {
   display: none;

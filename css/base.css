@@ -1107,13 +1107,18 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
 }
 
 /* line 148, ../sass/base.scss */
+#search-submit:hover, #search-submit:active {
+  border: none;
+}
+
+/* line 154, ../sass/base.scss */
 .menu-button {
   display: none;
 }
 
 /*** Search ***/
 /* Search box styling for mobile */
-/* line 173, ../sass/base.scss */
+/* line 179, ../sass/base.scss */
 #search-menu {
   width: 100%;
   position: relative;
@@ -1126,7 +1131,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-bottom: 4px;
 }
 
-/* line 192, ../sass/base.scss */
+/* line 198, ../sass/base.scss */
 #search-container textarea:hover,
 #search-container input:hover,
 #search-container textarea:active,
@@ -1136,17 +1141,17 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   outline: 0px !important;
   -webkit-appearance: none;
 }
-/* line 198, ../sass/base.scss */
+/* line 204, ../sass/base.scss */
 #search-container #basic-search {
   position: relative;
   padding-right: 77px;
   padding-left: 5px;
 }
-/* line 202, ../sass/base.scss */
+/* line 208, ../sass/base.scss */
 #search-container #basic-search label {
   color: #fff;
 }
-/* line 208, ../sass/base.scss */
+/* line 214, ../sass/base.scss */
 #search-container #search-submit {
   background-image: url(../img/search_box_icon.png);
   background-position: 50% 50%;
@@ -1160,11 +1165,11 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   top: 0px;
   right: 5px;
 }
-/* line 220, ../sass/base.scss */
+/* line 226, ../sass/base.scss */
 #search-container #search-submit:hover, #search-container #search-submit:active {
   right: 7px;
 }
-/* line 226, ../sass/base.scss */
+/* line 232, ../sass/base.scss */
 #search-container #basic-search #search, #search-container input.gsc-input {
   margin-bottom: 0;
   vertical-align: top;
@@ -1181,7 +1186,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
 }
 
 /*** Navigation ***/
-/* line 258, ../sass/base.scss */
+/* line 264, ../sass/base.scss */
 .nav-container a {
   font-size: 14px;
   padding: .5em 0;
@@ -1190,135 +1195,135 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 265, ../sass/base.scss */
+/* line 271, ../sass/base.scss */
 .nav-container a:hover, .nav-container a:active {
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 271, ../sass/base.scss */
+/* line 277, ../sass/base.scss */
 .nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a {
   font-weight: normal;
   padding-left: 10%;
 }
-/* line 276, ../sass/base.scss */
+/* line 282, ../sass/base.scss */
 .nav-container .featured, .nav-container .highlight {
   display: none;
 }
-/* line 280, ../sass/base.scss */
+/* line 286, ../sass/base.scss */
 .nav-container .sublinks {
   list-style: none;
   font-size: 13px;
 }
-/* line 283, ../sass/base.scss */
+/* line 289, ../sass/base.scss */
 .nav-container .sublinks a {
   padding-left: 15%;
 }
 
-/* line 289, ../sass/base.scss */
+/* line 295, ../sass/base.scss */
 #primary-nav, #secondary-nav {
   border-top: 1px solid #ddd;
   padding: 10px 0;
 }
 
 /* Sidebar nav */
-/* line 296, ../sass/base.scss */
+/* line 302, ../sass/base.scss */
 nav.sidebar {
   display: none;
 }
 
-/* line 303, ../sass/base.scss */
+/* line 309, ../sass/base.scss */
 .sidebar-navigation nav.sidebar {
   border-top: 1px solid #ddd;
   display: block;
   padding-top: .5em;
   margin-top: 1em;
 }
-/* line 309, ../sass/base.scss */
+/* line 315, ../sass/base.scss */
 .sidebar-navigation nav.sidebar a {
   padding: .2em 0;
   display: block;
   color: #003366;
 }
-/* line 313, ../sass/base.scss */
+/* line 319, ../sass/base.scss */
 .sidebar-navigation nav.sidebar a:hover {
   text-decoration: underline;
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 319, ../sass/base.scss */
+/* line 325, ../sass/base.scss */
 .sidebar-navigation nav.sidebar .current a {
   color: #666;
 }
-/* line 321, ../sass/base.scss */
+/* line 327, ../sass/base.scss */
 .sidebar-navigation nav.sidebar .current a:hover {
   text-decoration: none;
 }
 
 /*** Main Content ***/
-/* line 343, ../sass/base.scss */
+/* line 349, ../sass/base.scss */
 .wrapper {
   margin: 0;
 }
 
-/* line 345, ../sass/base.scss */
+/* line 351, ../sass/base.scss */
 #content {
   padding: 1em 5% 2em;
 }
-/* line 347, ../sass/base.scss */
+/* line 353, ../sass/base.scss */
 #content h1 {
   color: #002255;
 }
 
-/* line 351, ../sass/base.scss */
+/* line 357, ../sass/base.scss */
 .breadcrumb {
   display: none;
 }
 
-/* line 357, ../sass/base.scss */
+/* line 363, ../sass/base.scss */
 #calendar h2 {
   margin-bottom: 0;
 }
 
-/* line 360, ../sass/base.scss */
+/* line 366, ../sass/base.scss */
 .day a, .day span {
   display: block;
 }
-/* line 361, ../sass/base.scss */
+/* line 367, ../sass/base.scss */
 .day span.date {
   margin-right: .33em;
   display: inline;
   font-weight: normal;
 }
 
-/* line 367, ../sass/base.scss */
+/* line 373, ../sass/base.scss */
 #calendars {
   margin: 0;
   padding: .5em 0 0;
 }
 
-/* line 372, ../sass/base.scss */
+/* line 378, ../sass/base.scss */
 #calendar, #news {
   border-top: 4px solid #f7f7f7;
   margin-top: 1px;
   padding-bottom: 1em;
 }
 
-/* line 377, ../sass/base.scss */
+/* line 383, ../sass/base.scss */
 #calendar, #news {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 378, ../sass/base.scss */
+/* line 384, ../sass/base.scss */
 ul#calendars {
   list-style: none;
 }
 
-/* line 379, ../sass/base.scss */
+/* line 385, ../sass/base.scss */
 .day {
   padding: .75em 0 0;
 }
 
-/* line 380, ../sass/base.scss */
+/* line 386, ../sass/base.scss */
 a.baseline, #calendar > strong, a.more {
   font-weight: bold;
   margin-top: 1.5em;
@@ -1326,102 +1331,102 @@ a.baseline, #calendar > strong, a.more {
   display: block;
 }
 
-/* line 388, ../sass/base.scss */
+/* line 394, ../sass/base.scss */
 .news-item {
   padding: .25em 0 0;
 }
 
-/* line 389, ../sass/base.scss */
+/* line 395, ../sass/base.scss */
 .briefs-item {
   padding: .1em 0 0;
 }
 
-/* line 390, ../sass/base.scss */
+/* line 396, ../sass/base.scss */
 #briefs-container {
   border-bottom: 1px solid #eee;
   padding-bottom: .75em;
   margin-bottom: .5em;
 }
 
-/* line 398, ../sass/base.scss */
+/* line 404, ../sass/base.scss */
 #page-footer {
   background-color: #e8e8e8;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-/* line 402, ../sass/base.scss */
+/* line 408, ../sass/base.scss */
 #page-footer a, #page-footer a:link, #page-footer a:visited {
   color: #6b6a69;
   display: block;
   padding: .35em 1%;
   font-size: .95em;
 }
-/* line 407, ../sass/base.scss */
+/* line 413, ../sass/base.scss */
 #page-footer a:hover, #page-footer a:active, #page-footer a:focus {
   color: #595857;
 }
-/* line 409, ../sass/base.scss */
+/* line 415, ../sass/base.scss */
 #page-footer h2 {
   color: #595857;
   margin-top: 1.5em;
   font-size: 1em;
   border-bottom: 1px solid #c7c7c7;
 }
-/* line 414, ../sass/base.scss */
+/* line 420, ../sass/base.scss */
 #page-footer h3 {
   font-weight: normal;
   color: #595857;
   font-size: .95em;
   margin: 1em 0 0;
 }
-/* line 419, ../sass/base.scss */
+/* line 425, ../sass/base.scss */
 #page-footer p {
   color: #6b6a69;
   font-size: .95em;
 }
-/* line 422, ../sass/base.scss */
+/* line 428, ../sass/base.scss */
 #page-footer .wrapper {
   margin: 9px 5%;
 }
 
-/* line 427, ../sass/base.scss */
+/* line 433, ../sass/base.scss */
 #footer-links {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5em;
 }
-/* line 430, ../sass/base.scss */
+/* line 436, ../sass/base.scss */
 #footer-links div.alpha {
   margin-top: 0;
   border-top: none;
 }
-/* line 432, ../sass/base.scss */
+/* line 438, ../sass/base.scss */
 #footer-links .addthis_default_style a {
   clear: left;
   padding: 0;
 }
-/* line 434, ../sass/base.scss */
+/* line 440, ../sass/base.scss */
 #footer-links .addthis_toolbox a {
   padding-left: 0;
 }
-/* line 436, ../sass/base.scss */
+/* line 442, ../sass/base.scss */
 #footer-links .addthis_toolbox a span {
   padding-right: 10px;
   margin: 0;
 }
 
-/* line 440, ../sass/base.scss */
+/* line 446, ../sass/base.scss */
 #footer-bottom {
   background-color: #dddddd;
   border-top: 1px solid #fff;
   padding-bottom: 1.5em;
 }
-/* line 445, ../sass/base.scss */
+/* line 451, ../sass/base.scss */
 #footer-bottom a, #footer-bottom a:link, #footer-bottom a:visited {
   color: #595857;
 }
 
 @media all and (max-width: 939px) {
-  /* line 454, ../sass/base.scss */
+  /* line 460, ../sass/base.scss */
   .feature-description {
     border-left: none !important;
     background-color: transparent !important;
