@@ -20,6 +20,7 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
 		'#description' => t('Configure settings specific to the BYU template.'),
 	);
 
+    // Sets organization level of department
 	$form['byu_template']['primary_secondary'] = array(
 		'#type'          => 'radios',
 		'#title'         => t('Organization Level'),
@@ -52,5 +53,14 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
 				':input[name="primary_secondary"]' => array('value' => 'Secondary'),
 			),
 		),
+	);
+    
+	// Sets the footer
+	$form['byu_template']['footer_logos'] = array( 
+		'#type'          => 'checkbox',
+		'#title'         => t('Show Default Page Footer'),
+        '#default'       => True,
+		'#default_value' => theme_get_setting('footer_logos'),
+		'#description'   => t("Choose whether the default footer shows the logos for BYU Idaho, BYU Hawaii, and LDSBC. This footer will always be overridden by any blocks placed in the footer region."),
 	);
 }
