@@ -28,6 +28,7 @@ function byu_preprocess_page(&$variables){
 function  byu_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['#id'] = 'basic-search'; // Change the text on the label element
+    $form['search_block_form']['#attributes']['placeholder'] = t(theme_get_setting('search_placeholder_text'));
   }
 }
 

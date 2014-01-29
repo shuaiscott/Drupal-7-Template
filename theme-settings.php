@@ -63,4 +63,13 @@ function byu_form_system_theme_settings_alter(&$form, &$form_state, $form_id = N
 		'#default_value' => theme_get_setting('footer_logos'),
 		'#description'   => t("Choose whether the default footer shows the logos for BYU Idaho, BYU Hawaii, and LDSBC. This footer will always be overridden by any blocks placed in the footer region."),
 	);
+
+	//Sets the search placeholder text
+	$form['byu_template']['search_placeholder_text'] = array(
+		'#type' => 'textfield', 
+		'#title' => t('Search Box Placeholder Text'),
+        '#default' => t('Search'),
+		'#default_value' => theme_get_setting('search_placeholder_text'),
+		'#description' => t('Set the default placeholder text that will be shown in the search box.'),
+	);
 }
