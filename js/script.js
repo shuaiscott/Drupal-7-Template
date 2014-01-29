@@ -35,6 +35,17 @@ var byu_template = (function ($) {
 		fixNavForDrupalAdmin();
 	});
 
+
+    /* Func: SetSearchPlaceholder
+     * Desc: Sets the placeholder text of the search box
+     * Args: none
+     */
+    Drupal.behaviors.SetSearchPlaceholder = {
+        attach: function (context, settings) {
+            $('#search').attr('placeholder', Drupal.settings.byu.search_placeholder_text);
+        }
+    };
+
 	
 	/* Func: ActivateMenus
 	 * Desc: Get the menus going
