@@ -10,6 +10,10 @@
  */
  function byu_preprocess_html(&$variables) {
   drupal_add_css('//cloud.typography.com/75214/740862/css/fonts.css', array('type' => 'external'));
+  $js_settings = array(
+      'search_placeholder_text' => t(theme_get_setting('search_placeholder_text')),
+  );
+  drupal_add_js(array('byu' => $js_settings), 'setting');
 }
 
 
