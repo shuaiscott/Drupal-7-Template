@@ -43,16 +43,13 @@ a.mybyu, a.sign-in, .open #search-button {
 #site-name, .parentlink {
 	&:hover {
 		text-decoration: none;
-		color: $yellow2;
 		@include text-shadow(0 0 20px rgba($blue0, 1))
 	}
 }
 
 // Logo
-#logo a.parentlink {
-	&:hover {
-		color: $yellow2;
-	}
+#logo a.parentlink:hover {
+	color: #fff;
 }
 
 // Footer
@@ -260,10 +257,11 @@ a.mybyu, a.sign-in, .open #search-button {
 @media all and (min-width: $larger-width) {
 	#page-footer #footer-links {
 		.wrapper {
+			width: $larger-width;
 			max-width: $larger-width;
+			padding-left: $larger-width * 0.09;
 			margin-left: auto;
 			margin-right: auto;
-			padding-left: 5%;
 			@include box-sizing(border-box);
 		}
 	}

@@ -68,20 +68,28 @@
 
 // Utility classes
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
-	
-// Drupal Specific	
-@import "drupal-specific"; // Has to be last to override when necessary
 
 
 
 
 
-/*
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
 
-FontAwesome
-
-*/
-@import "responsive/font-awesome";
+@import "fontawesome/variables";
+@import "fontawesome/mixins";
+@import "fontawesome/path";
+@import "fontawesome/core";
+@import "fontawesome/larger";
+@import "fontawesome/fixed-width";
+@import "fontawesome/list";
+@import "fontawesome/bordered-pulled";
+@import "fontawesome/spinning";
+@import "fontawesome/rotated-flipped";
+@import "fontawesome/stacked";
+@import "fontawesome/icons";
 
 
 
@@ -98,59 +106,15 @@ BYU Styles
 @import "responsive/search";
 @import "responsive/nav";
 
-//@import "responsive/anythingslider";
-//@import "responsive/slider";
+@import "responsive/anythingslider";
+@import "responsive/slider";
 
-//@import "responsive/calendar";
+@import "responsive/calendar";
 @import "responsive/content";
 @import "responsive/type";
 
-
-
-
-/*** Larger width ***/
-@media all and ( min-width:$larger-width ) {
-	$display_width:1008px;
-	$side_padding: 12px;
-
-	#primary-nav {
-		width: $display_width;
-		margin:0 auto;
-		padding-left: 0;
-		.mega {
-			width: 100%;
-		}
-	}
-
-	#primary-nav, #secondary-nav {
-		a {
-			padding-left: $side_padding;
-			padding-right: $side_padding;
-		}
-	}
-
-	#logo {
-		padding-left: $side_padding;
-	}
-
-	#header-top {
-		max-width: $display_width;
-		margin-right: auto;
-	}
-
-	#search-menu, #secondary-nav {
-		right:50%;
-		margin-right: -$display_width/2;
-	}
-
-	#footer-links .wrapper {
-		max-width: $larger-width * .91;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 8%;
-	}
-
-}
+// Media queries for specific sizes
+@import "responsive/query-larger";
 
 
 
