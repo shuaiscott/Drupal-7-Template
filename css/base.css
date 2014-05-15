@@ -1,15 +1,14 @@
 /* Base.css
 * The lowest common demoninator style definitions which all browsers will load. No CSS3.
 */
-/* Variables */
-/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../sass/base/_normalize.scss */
+/* line 22, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 article,
 aside,
 details,
@@ -28,7 +27,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../sass/base/_normalize.scss */
+/* line 32, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 audio,
 canvas,
 video {
@@ -39,7 +38,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, ../sass/base/_normalize.scss */
+/* line 41, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -48,7 +47,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, ../sass/base/_normalize.scss */
+/* line 50, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -65,7 +64,7 @@ audio:not([controls]) {
  * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 68, ../sass/base/_normalize.scss */
+/* line 68, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 html {
   background: #fff;
   /* 1 */
@@ -82,7 +81,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 80, ../sass/base/_normalize.scss */
+/* line 80, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -93,7 +92,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 92, ../sass/base/_normalize.scss */
+/* line 92, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -101,7 +100,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 101, ../sass/base/_normalize.scss */
+/* line 101, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -114,7 +113,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 114, ../sass/base/_normalize.scss */
+/* line 114, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -123,7 +122,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 123, ../sass/base/_normalize.scss */
+/* line 123, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -131,7 +130,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 132, ../sass/base/_normalize.scss */
+/* line 132, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -140,7 +139,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 140, ../sass/base/_normalize.scss */
+/* line 140, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -148,7 +147,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 148, ../sass/base/_normalize.scss */
+/* line 148, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -158,7 +157,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 158, ../sass/base/_normalize.scss */
+/* line 158, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -167,7 +166,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 170, ../sass/base/_normalize.scss */
+/* line 170, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -179,7 +178,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 179, ../sass/base/_normalize.scss */
+/* line 179, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -187,7 +186,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 187, ../sass/base/_normalize.scss */
+/* line 187, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -195,7 +194,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 195, ../sass/base/_normalize.scss */
+/* line 195, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -203,7 +202,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 204, ../sass/base/_normalize.scss */
+/* line 204, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -212,12 +211,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 211, ../sass/base/_normalize.scss */
+/* line 211, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 215, ../sass/base/_normalize.scss */
+/* line 215, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -228,7 +227,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 227, ../sass/base/_normalize.scss */
+/* line 227, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 img {
   border: 0;
 }
@@ -236,7 +235,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 235, ../sass/base/_normalize.scss */
+/* line 235, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -247,7 +246,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 247, ../sass/base/_normalize.scss */
+/* line 247, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -258,7 +257,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 259, ../sass/base/_normalize.scss */
+/* line 259, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -269,7 +268,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 270, ../sass/base/_normalize.scss */
+/* line 270, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -282,7 +281,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 284, ../sass/base/_normalize.scss */
+/* line 284, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button,
 input,
 select,
@@ -299,7 +298,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 296, ../sass/base/_normalize.scss */
+/* line 296, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -311,7 +310,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 308, ../sass/base/_normalize.scss */
+/* line 308, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -324,7 +323,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 323, ../sass/base/_normalize.scss */
+/* line 323, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -338,7 +337,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 333, ../sass/base/_normalize.scss */
+/* line 333, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -348,7 +347,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 343, ../sass/base/_normalize.scss */
+/* line 343, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -362,7 +361,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 354, ../sass/base/_normalize.scss */
+/* line 354, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -376,7 +375,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 367, ../sass/base/_normalize.scss */
+/* line 367, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -385,7 +384,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 376, ../sass/base/_normalize.scss */
+/* line 376, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -396,7 +395,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 386, ../sass/base/_normalize.scss */
+/* line 386, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -410,7 +409,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 399, ../sass/base/_normalize.scss */
+/* line 399, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -426,7 +425,7 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../sass/base/_h5bp.scss */
+/* line 17, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 html,
 button,
 input,
@@ -435,7 +434,7 @@ textarea {
   color: #222;
 }
 
-/* line 21, ../sass/base/_h5bp.scss */
+/* line 21, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -446,13 +445,13 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, ../sass/base/_h5bp.scss */
+/* line 32, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 37, ../sass/base/_h5bp.scss */
+/* line 37, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -461,7 +460,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 46, ../sass/base/_h5bp.scss */
+/* line 46, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 hr {
   display: block;
   height: 1px;
@@ -474,7 +473,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, ../sass/base/_h5bp.scss */
+/* line 59, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 img {
   vertical-align: middle;
 }
@@ -482,7 +481,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 67, ../sass/base/_h5bp.scss */
+/* line 67, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -492,7 +491,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, ../sass/base/_h5bp.scss */
+/* line 77, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 textarea {
   resize: vertical;
 }
@@ -500,7 +499,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, ../sass/base/_h5bp.scss */
+/* line 85, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -517,7 +516,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 120, ../sass/base/_h5bp.scss */
+/* line 120, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -526,7 +525,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 128, ../sass/base/_h5bp.scss */
+/* line 128, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .ir:before {
   content: "";
   display: block;
@@ -537,7 +536,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 139, ../sass/base/_h5bp.scss */
+/* line 139, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -546,7 +545,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 148, ../sass/base/_h5bp.scss */
+/* line 148, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -562,7 +561,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 165, ../sass/base/_h5bp.scss */
+/* line 165, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -576,7 +575,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 178, ../sass/base/_h5bp.scss */
+/* line 178, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .invisible {
   visibility: hidden;
 }
@@ -592,7 +591,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 195, ../sass/base/_h5bp.scss */
+/* line 195, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -601,7 +600,7 @@ textarea {
   /* 2 */
 }
 
-/* line 200, ../sass/base/_h5bp.scss */
+/* line 200, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .clearfix:after {
   clear: both;
 }
@@ -610,59 +609,60 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 209, ../sass/base/_h5bp.scss */
+/* line 209, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_h5bp.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 1, ../sass/base/_prettify.scss */
+/** Prettify **/
+/* line 3, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .com {
   color: #93a1a1;
 }
 
-/* line 2, ../sass/base/_prettify.scss */
+/* line 4, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .lit {
   color: #195f91;
 }
 
-/* line 3, ../sass/base/_prettify.scss */
+/* line 5, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .pun, .opn, .clo {
   color: #93a1a1;
 }
 
-/* line 4, ../sass/base/_prettify.scss */
+/* line 6, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .fun {
   color: #dc322f;
 }
 
-/* line 5, ../sass/base/_prettify.scss */
+/* line 7, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .str, .atv {
   color: #D14;
 }
 
-/* line 6, ../sass/base/_prettify.scss */
+/* line 8, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .kwd, .prettyprint .tag {
   color: #1e347b;
 }
 
-/* line 7, ../sass/base/_prettify.scss */
+/* line 9, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .typ, .atn, .dec, .var {
   color: teal;
 }
 
-/* line 8, ../sass/base/_prettify.scss */
+/* line 10, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .pln {
   color: #48484c;
 }
 
-/* line 10, ../sass/base/_prettify.scss */
+/* line 12, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .prettyprint {
   padding: 8px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
 
-/* line 15, ../sass/base/_prettify.scss */
+/* line 17, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 .prettyprint.linenums {
   -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
   -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
@@ -670,13 +670,13 @@ textarea {
 }
 
 /* Specify class=linenums on a pre to get line numbering */
-/* line 22, ../sass/base/_prettify.scss */
+/* line 24, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 ol.linenums {
   margin: 0 0 0 33px;
   /* IE indents via margin-left */
 }
 
-/* line 25, ../sass/base/_prettify.scss */
+/* line 27, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_prettify.scss */
 ol.linenums li {
   padding-left: 12px;
   color: #bebec5;
@@ -685,34 +685,34 @@ ol.linenums li {
 }
 
 /*** Base tags ***/
-/* line 6, ../sass/base/_basics.scss */
+/* line 6, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 7, ../sass/base/_basics.scss */
+/* line 7, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 body em {
   font-style: italic;
 }
 
-/* line 8, ../sass/base/_basics.scss */
+/* line 8, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 body strong {
   font-weight: bold;
 }
 
-/* line 9, ../sass/base/_basics.scss */
+/* line 9, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 body, select, input, textarea {
-  color: #444444;
+  color: #444;
 }
 
-/* line 10, ../sass/base/_basics.scss */
+/* line 10, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 p a {
   text-decoration: underline;
 }
 
 /* Blockquotes */
-/* line 12, ../sass/base/_basics.scss */
+/* line 12, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 blockquote {
   margin: 1.5em 10px;
   padding: .5em 10px;
@@ -722,96 +722,96 @@ blockquote {
   position: relative;
 }
 
-/* line 20, ../sass/base/_basics.scss */
+/* line 20, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 blockquote:before {
   color: #bbb;
   content: "\201C";
   font-size: 3em;
   line-height: .1em;
-  vertical-align: -.4em;
+  vertical-align: -0.4em;
   display: block;
   position: absolute;
   top: 15px;
   left: 1px;
 }
 
-/* line 31, ../sass/base/_basics.scss */
+/* line 31, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 blockquote:after {
   color: #bbb;
   content: "\201D";
   font-size: 3em;
   line-height: .1em;
-  vertical-align: -.45em;
+  vertical-align: -0.45em;
 }
 
-/* line 32, ../sass/base/_basics.scss */
+/* line 32, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 blockquote :first-child {
   display: inline;
 }
 
 /* Links */
-/* line 36, ../sass/base/_basics.scss */
+/* line 36, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 a, a:link {
   color: #336699;
   text-decoration: none;
 }
 
-/* line 37, ../sass/base/_basics.scss */
+/* line 37, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 a:hover {
   color: #002255;
   text-decoration: underline;
 }
 
-/* line 38, ../sass/base/_basics.scss */
+/* line 38, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 a:active {
   color: #c00;
 }
 
-/* line 39, ../sass/base/_basics.scss */
+/* line 39, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 a:visited {
   color: #539;
 }
 
 /* Images */
-/* line 42, ../sass/base/_basics.scss */
+/* line 42, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 img {
   max-width: 100%;
 }
 
 /* Tables */
-/* line 45, ../sass/base/_basics.scss */
+/* line 45, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0 0 9px;
 }
 
-/* line 46, ../sass/base/_basics.scss */
+/* line 46, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 table, td, th {
   border: 1px solid #ddd;
 }
 
-/* line 47, ../sass/base/_basics.scss */
+/* line 47, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 td, th {
   padding: .125em .5em;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 48, ../sass/base/_basics.scss */
+/* line 48, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 td {
   border-left: 1px dotted #eee;
   border-right: 1px dotted #eee;
 }
 
-/* line 49, ../sass/base/_basics.scss */
+/* line 49, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 th {
   background: #f9f9f9;
   border-right: 1px solid #e9e9e9;
   border-left: 1px solid #e9e9e9;
 }
 
-/* line 50, ../sass/base/_basics.scss */
+/* line 50, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 table caption {
   color: #888;
   text-align: left;
@@ -819,118 +819,118 @@ table caption {
   font-style: italic;
 }
 
-/* line 51, ../sass/base/_basics.scss */
+/* line 51, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 tfoot {
   font-weight: bold;
 }
-/* line 52, ../sass/base/_basics.scss */
+/* line 52, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 tfoot td {
   color: #666;
   border-top-color: #666;
 }
 
-/* line 53, ../sass/base/_basics.scss */
+/* line 53, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 td, td img {
   vertical-align: top;
 }
 
 /* Lists */
-/* line 57, ../sass/base/_basics.scss */
+/* line 57, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol {
   list-style-type: decimal;
   margin-left: 2em;
 }
-/* line 58, ../sass/base/_basics.scss */
+/* line 58, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol ol {
   list-style-type: lower-alpha;
 }
-/* line 59, ../sass/base/_basics.scss */
+/* line 59, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol ol ol {
   list-style-type: lower-roman;
 }
-/* line 60, ../sass/base/_basics.scss */
+/* line 60, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol ol ol ol {
   list-style-type: decimal;
 }
-/* line 61, ../sass/base/_basics.scss */
+/* line 61, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol ol ol ol ol {
   list-style-type: lower-alpha;
 }
-/* line 62, ../sass/base/_basics.scss */
+/* line 62, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ol ol ol ol ol ol {
   list-style-type: lower-roman;
 }
 
-/* line 63, ../sass/base/_basics.scss */
+/* line 63, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul {
   list-style-type: disc;
   margin-left: 2em;
 }
-/* line 64, ../sass/base/_basics.scss */
+/* line 64, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul {
   list-style-type: circle;
 }
-/* line 65, ../sass/base/_basics.scss */
+/* line 65, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul ul {
   list-style-type: disc;
 }
-/* line 66, ../sass/base/_basics.scss */
+/* line 66, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul ul ul {
   list-style-type: circle;
 }
-/* line 67, ../sass/base/_basics.scss */
+/* line 67, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul ul ul ul {
   list-style-type: disc;
 }
-/* line 68, ../sass/base/_basics.scss */
+/* line 68, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul ul ul ul ul {
   list-style-type: circle;
 }
 
-/* line 69, ../sass/base/_basics.scss */
+/* line 69, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 ul ul {
   margin-top: .25em;
   margin-bottom: .25em;
 }
 
-/* line 70, ../sass/base/_basics.scss */
+/* line 70, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 nav ul, nav ul ul {
   list-style: none;
 }
 
-/* line 71, ../sass/base/_basics.scss */
+/* line 71, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 nav ul, nav li {
   margin: 0;
 }
 
-/* line 72, ../sass/base/_basics.scss */
+/* line 72, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 73, ../sass/base/_basics.scss */
+/* line 73, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 dd {
-  padding: 0 0 0.75em 1em;
+  padding: 0 0 .75em 1em;
 }
 
-/* line 74, ../sass/base/_basics.scss */
+/* line 74, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_basics.scss */
 dl, menu, ol, ul {
   padding: 0;
 }
 
 /*** Type ***/
 /* Make this the same color as the bottom footer */
-/* line 31, ../sass/base.scss */
+/* line 13, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 html {
   background-color: #dddddd;
 }
 
-/* line 34, ../sass/base.scss */
+/* line 16, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 body {
   background-color: #fff;
 }
 
-/* line 38, ../sass/base.scss */
+/* line 20, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 body, button, input, select, textarea {
   color: #444;
   font-family: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
@@ -939,63 +939,63 @@ body, button, input, select, textarea {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 45, ../sass/base.scss */
+/* line 27, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
   margin: 10px 0;
   line-height: 1.2;
 }
 
-/* line 50, ../sass/base.scss */
+/* line 32, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h2, h3, h4, h5, h6 {
   color: #444;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 33, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h1 {
   font-size: 2em;
   margin: 20px 0 10px;
   line-height: 1.1;
 }
 
-/* line 52, ../sass/base.scss */
+/* line 34, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h2 {
   font-size: 1.65em;
   margin: 15px 0 10px;
   line-height: 1.1;
 }
 
-/* line 53, ../sass/base.scss */
+/* line 35, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 54, ../sass/base.scss */
+/* line 36, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h4 {
   font-size: 1.1em;
 }
 
-/* line 55, ../sass/base.scss */
+/* line 37, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h5 {
   font-size: 1em;
 }
 
-/* line 56, ../sass/base.scss */
+/* line 38, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 h6 {
   font-size: .9em;
 }
 
-/* line 57, ../sass/base.scss */
+/* line 39, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 p, pre {
   margin: 10px 0;
 }
 
-/* line 59, ../sass/base.scss */
+/* line 41, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 code {
   color: #d14;
 }
 
-/* line 61, ../sass/base.scss */
+/* line 43, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_type.scss */
 a {
   -webkit-transition: background 0.1s ease;
   -moz-transition: background 0.1s ease;
@@ -1004,43 +1004,43 @@ a {
 }
 
 /** Positioning **/
-/* line 70, ../sass/base.scss */
+/* line 2, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #main-header, #search-menu, #content, #page-footer, .nav-container {
   position: relative;
 }
 
 /*** Header ***/
-/* line 79, ../sass/base.scss */
+/* line 11, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #main-header {
   background-color: #003366;
   border-bottom: 1px solid #003366;
 }
 
-/* line 85, ../sass/base.scss */
+/* line 17, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #header-top {
   position: relative;
 }
-/* line 87, ../sass/base.scss */
+/* line 19, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #header-top h1 {
   font-size: 2.2em;
   margin: 0 5% .25em;
 }
-/* line 90, ../sass/base.scss */
+/* line 22, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #header-top h1 a {
   color: #fff;
 }
-/* line 92, ../sass/base.scss */
+/* line 24, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #header-top a.sign-in {
   position: absolute;
   top: .35em;
   right: 5%;
 }
 
-/* line 99, ../sass/base.scss */
+/* line 31, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #logo, #byu-bar {
   padding: .35em 0 .45em;
 }
-/* line 102, ../sass/base.scss */
+/* line 34, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #logo a.byu, #logo a.byulink, #byu-bar a.byu, #byu-bar a.byulink {
   display: block;
   text-indent: -999em;
@@ -1051,35 +1051,35 @@ a {
   display: inline-block;
   height: 26px;
   width: 70px;
-  background: transparent url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header-sm.png") 0px 0px no-repeat;
+  background: transparent url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header.png") 0px 0px no-repeat;
 }
-/* line 108, ../sass/base.scss */
+/* line 40, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 .svg #logo a.byu, .svg #logo a.byulink, .svg #byu-bar a.byu, .svg #byu-bar a.byulink {
-  background-image: url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header-sm.svg");
+  background-image: url("//home.byu.edu/home/sites/default/files/global/img/byu-logo-header.svg");
 }
-/* line 113, ../sass/base.scss */
+/* line 45, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #logo a.parentlink, #byu-bar a.parentlink {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   display: inline-block;
-  padding: 3px 0px 2px;
-  color: #d1e4f6;
+  padding: 6px 3px 2px;
+  color: #e0edf9;
   line-height: 1.2;
-  min-height: 26px;
+  letter-spacing: 2px;
   vertical-align: top;
 }
-/* line 123, ../sass/base.scss */
+/* line 56, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #logo h2, #byu-bar h2 {
   margin: 0;
   margin-right: 100px;
   line-height: 26px;
 }
-/* line 128, ../sass/base.scss */
+/* line 61, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 #logo a, #byu-bar a {
   display: block;
 }
 
-/* line 131, ../sass/base.scss */
+/* line 64, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 a.mybyu, a.sign-in, .open #search-button, #search-submit, .search-submit, .gcse-wrapper input.gsc-search-button {
   background-color: #628cb6;
   border: none;
@@ -1093,7 +1093,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit, .search-submit, .gcse-
   -o-border-radius: 14px;
   border-radius: 14px;
 }
-/* line 139, ../sass/base.scss */
+/* line 72, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-button:hover, .open #search-button:active, #search-submit:hover, #search-submit:active, .search-submit:hover, .search-submit:active, .gcse-wrapper input.gsc-search-button:hover, .gcse-wrapper input.gsc-search-button:active {
   margin: -2px;
   background-color: #336699;
@@ -1106,19 +1106,14 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   border-radius: 16px;
 }
 
-/* line 148, ../sass/base.scss */
-#search-submit:hover, #search-submit:active {
-  border: none;
-}
-
-/* line 154, ../sass/base.scss */
+/* line 81, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_header.scss */
 .menu-button {
   display: none;
 }
 
 /*** Search ***/
 /* Search box styling for mobile */
-/* line 179, ../sass/base.scss */
+/* line 8, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-menu {
   width: 100%;
   position: relative;
@@ -1131,7 +1126,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-bottom: 4px;
 }
 
-/* line 198, ../sass/base.scss */
+/* line 27, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container textarea:hover,
 #search-container input:hover,
 #search-container textarea:active,
@@ -1141,17 +1136,17 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   outline: 0px !important;
   -webkit-appearance: none;
 }
-/* line 204, ../sass/base.scss */
+/* line 33, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container #basic-search {
   position: relative;
   padding-right: 77px;
   padding-left: 5px;
 }
-/* line 208, ../sass/base.scss */
+/* line 37, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container #basic-search label {
   color: #fff;
 }
-/* line 214, ../sass/base.scss */
+/* line 43, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container #search-submit {
   background-image: url(../img/search_box_icon.png);
   background-position: 50% 50%;
@@ -1165,11 +1160,11 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   top: 0px;
   right: 5px;
 }
-/* line 226, ../sass/base.scss */
+/* line 55, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container #search-submit:hover, #search-container #search-submit:active {
   right: 7px;
 }
-/* line 232, ../sass/base.scss */
+/* line 61, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_search.scss */
 #search-container #basic-search #search, #search-container input.gsc-input {
   margin-bottom: 0;
   vertical-align: top;
@@ -1186,7 +1181,7 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
 }
 
 /*** Navigation ***/
-/* line 264, ../sass/base.scss */
+/* line 3, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container a {
   font-size: 14px;
   padding: .5em 0;
@@ -1195,135 +1190,169 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 271, ../sass/base.scss */
+/* line 10, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container a:hover, .nav-container a:active {
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 277, ../sass/base.scss */
+/* line 16, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a {
   font-weight: normal;
   padding-left: 10%;
 }
-/* line 282, ../sass/base.scss */
+/* line 21, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container .featured, .nav-container .highlight {
   display: none;
 }
-/* line 286, ../sass/base.scss */
+/* line 25, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container .sublinks {
   list-style: none;
   font-size: 13px;
 }
-/* line 289, ../sass/base.scss */
+/* line 28, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .nav-container .sublinks a {
   padding-left: 15%;
 }
 
-/* line 295, ../sass/base.scss */
+/* line 34, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 #primary-nav, #secondary-nav {
   border-top: 1px solid #ddd;
   padding: 10px 0;
 }
 
 /* Sidebar nav */
-/* line 302, ../sass/base.scss */
+/* line 41, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 nav.sidebar {
   display: none;
 }
 
-/* line 309, ../sass/base.scss */
+/* line 48, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .sidebar-navigation nav.sidebar {
   border-top: 1px solid #ddd;
   display: block;
   padding-top: .5em;
   margin-top: 1em;
 }
-/* line 315, ../sass/base.scss */
+/* line 54, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .sidebar-navigation nav.sidebar a {
   padding: .2em 0;
   display: block;
   color: #003366;
 }
-/* line 319, ../sass/base.scss */
+/* line 58, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .sidebar-navigation nav.sidebar a:hover {
   text-decoration: underline;
   background-color: #eeebe9;
   color: #001948;
 }
-/* line 325, ../sass/base.scss */
+/* line 64, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .sidebar-navigation nav.sidebar .current a {
   color: #666;
 }
-/* line 327, ../sass/base.scss */
+/* line 66, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_nav.scss */
 .sidebar-navigation nav.sidebar .current a:hover {
   text-decoration: none;
 }
 
 /*** Main Content ***/
-/* line 349, ../sass/base.scss */
+/* line 3, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .wrapper {
   margin: 0;
 }
 
-/* line 351, ../sass/base.scss */
+/* line 5, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #content {
   padding: 1em 5% 2em;
 }
-/* line 353, ../sass/base.scss */
+/* line 7, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #content h1 {
   color: #002255;
 }
 
-/* line 357, ../sass/base.scss */
+/* line 13, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#feature {
+  margin: -1em -5.55% 0;
+}
+/* line 15, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#feature ul {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 20px;
+}
+/* line 20, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#feature li {
+  display: none;
+}
+/* line 22, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#feature li.feature {
+  display: block;
+}
+/* line 26, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#feature .feature-image {
+  text-align: center;
+}
+
+/* line 31, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+.feature-description {
+  margin: 0 5%;
+}
+/* line 33, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+.feature-description h2 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0px 10px;
+}
+
+/* line 43, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .breadcrumb {
   display: none;
 }
 
-/* line 363, ../sass/base.scss */
+/* line 52, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #calendar h2 {
   margin-bottom: 0;
 }
 
-/* line 366, ../sass/base.scss */
+/* line 55, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .day a, .day span {
   display: block;
 }
-/* line 367, ../sass/base.scss */
+/* line 56, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .day span.date {
   margin-right: .33em;
   display: inline;
   font-weight: normal;
 }
 
-/* line 373, ../sass/base.scss */
+/* line 62, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #calendars {
   margin: 0;
   padding: .5em 0 0;
 }
 
-/* line 378, ../sass/base.scss */
+/* line 67, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #calendar, #news {
   border-top: 4px solid #f7f7f7;
   margin-top: 1px;
   padding-bottom: 1em;
 }
 
-/* line 383, ../sass/base.scss */
-#calendar, #news {
+/* line 72, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
+#calendar, #news, #feature {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 384, ../sass/base.scss */
+/* line 73, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 ul#calendars {
   list-style: none;
 }
 
-/* line 385, ../sass/base.scss */
+/* line 74, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .day {
   padding: .75em 0 0;
 }
 
-/* line 386, ../sass/base.scss */
+/* line 75, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 a.baseline, #calendar > strong, a.more {
   font-weight: bold;
   margin-top: 1.5em;
@@ -1331,102 +1360,102 @@ a.baseline, #calendar > strong, a.more {
   display: block;
 }
 
-/* line 394, ../sass/base.scss */
+/* line 83, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .news-item {
   padding: .25em 0 0;
 }
 
-/* line 395, ../sass/base.scss */
+/* line 84, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 .briefs-item {
   padding: .1em 0 0;
 }
 
-/* line 396, ../sass/base.scss */
+/* line 85, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #briefs-container {
   border-bottom: 1px solid #eee;
   padding-bottom: .75em;
   margin-bottom: .5em;
 }
 
-/* line 404, ../sass/base.scss */
+/* line 93, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer {
   background-color: #e8e8e8;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-/* line 408, ../sass/base.scss */
+/* line 97, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer a, #page-footer a:link, #page-footer a:visited {
   color: #6b6a69;
   display: block;
   padding: .35em 1%;
   font-size: .95em;
 }
-/* line 413, ../sass/base.scss */
+/* line 102, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer a:hover, #page-footer a:active, #page-footer a:focus {
   color: #595857;
 }
-/* line 415, ../sass/base.scss */
+/* line 104, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer h2 {
   color: #595857;
   margin-top: 1.5em;
   font-size: 1em;
   border-bottom: 1px solid #c7c7c7;
 }
-/* line 420, ../sass/base.scss */
+/* line 109, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer h3 {
   font-weight: normal;
   color: #595857;
   font-size: .95em;
   margin: 1em 0 0;
 }
-/* line 425, ../sass/base.scss */
+/* line 114, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer p {
   color: #6b6a69;
   font-size: .95em;
 }
-/* line 428, ../sass/base.scss */
+/* line 117, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #page-footer .wrapper {
   margin: 9px 5%;
 }
 
-/* line 433, ../sass/base.scss */
+/* line 122, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-links {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5em;
 }
-/* line 436, ../sass/base.scss */
+/* line 125, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-links div.alpha {
   margin-top: 0;
   border-top: none;
 }
-/* line 438, ../sass/base.scss */
+/* line 127, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-links .addthis_default_style a {
   clear: left;
   padding: 0;
 }
-/* line 440, ../sass/base.scss */
+/* line 129, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-links .addthis_toolbox a {
   padding-left: 0;
 }
-/* line 442, ../sass/base.scss */
+/* line 131, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-links .addthis_toolbox a span {
   padding-right: 10px;
   margin: 0;
 }
 
-/* line 446, ../sass/base.scss */
+/* line 135, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-bottom {
   background-color: #dddddd;
   border-top: 1px solid #fff;
   padding-bottom: 1.5em;
 }
-/* line 451, ../sass/base.scss */
+/* line 140, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
 #footer-bottom a, #footer-bottom a:link, #footer-bottom a:visited {
   color: #595857;
 }
 
 @media all and (max-width: 939px) {
-  /* line 460, ../sass/base.scss */
+  /* line 149, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/base/_content.scss */
   .feature-description {
     border-left: none !important;
     background-color: transparent !important;
@@ -1435,8 +1464,7 @@ a.baseline, #calendar > strong, a.more {
     box-shadow: none !important;
   }
 }
-/* Variables */
-/* line 9, ../sass/responsive/_byu-bar.scss */
+/* line 9, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar {
   font-size: 14px;
   font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
@@ -1448,11 +1476,11 @@ a.baseline, #calendar > strong, a.more {
   height: 30px;
   white-space: nowrap;
 }
-/* line 20, ../sass/responsive/_byu-bar.scss */
+/* line 20, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 .svg #byu-bar {
   background-image: url("//home.byu.edu/home/sites/default/files/global//img/byu-header-bg.svg");
 }
-/* line 24, ../sass/responsive/_byu-bar.scss */
+/* line 24, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar h2 {
   margin: 0;
   padding: 0;
@@ -1461,20 +1489,18 @@ a.baseline, #calendar > strong, a.more {
   font-size: 1em;
   width: 100%;
 }
-/* line 33, ../sass/responsive/_byu-bar.scss */
+/* line 33, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar a.byu {
-  background-image: url("//home.byu.edu/home/sites/default/files/global//img/byu-logo.png");
+  background-image: url("//home.byu.edu/home/sites/default/files/global//img/byu-logo-header.png");
+  width: 70px;
 }
-/* line 35, ../sass/responsive/_byu-bar.scss */
+/* line 36, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 .svg #byu-bar a.byu {
-  background-image: url("//home.byu.edu/home/sites/default/files/global//img/byu-logo.svg");
+  background-image: url("//home.byu.edu/home/sites/default/files/global//img/byu-logo-header.svg");
 }
-/* line 40, ../sass/responsive/_byu-bar.scss */
-#byu-bar a.byulink {
-  margin-left: 6px;
-}
-/* line 44, ../sass/responsive/_byu-bar.scss */
+/* line 41, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar a.parentlink {
+  font-family: "Requiem Text A", "Requiem Text B", "Palatino", Georgia, serif;
   width: 100%;
   white-space: nowrap;
   display: block;
@@ -1482,95 +1508,108 @@ a.baseline, #calendar > strong, a.more {
   width: 100%;
   top: 0;
   left: 0;
-  padding-left: 98px;
+  padding-left: 73px;
   padding-right: 6px;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: 2px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 59, ../sass/responsive/_byu-bar.scss */
+/* line 58, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar.button a.parentlink {
   padding-right: 110px;
 }
-/* line 63, ../sass/responsive/_byu-bar.scss */
+/* line 62, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar.search a.parentlink {
   padding-right: 40%;
 }
-/* line 67, ../sass/responsive/_byu-bar.scss */
+/* line 66, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar.search.button a.parentlink {
   width: 65%;
   padding-right: 100px;
 }
-/* line 72, ../sass/responsive/_byu-bar.scss */
+/* line 71, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar #search-container {
   height: 27px;
   position: absolute;
   top: 4px;
   right: 6px;
-  width: 40%;
+  width: 60%;
   min-width: 120px;
   max-width: 400px;
 }
-/* line 82, ../sass/responsive/_byu-bar.scss */
+/* line 81, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar #basic-search #search {
   height: 27px;
 }
-/* line 86, ../sass/responsive/_byu-bar.scss */
+/* line 85, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar #search-submit {
   top: 0;
 }
-/* line 88, ../sass/responsive/_byu-bar.scss */
+/* line 87, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar #search-submit:active, #byu-bar #search-submit:hover {
   right: 5px;
 }
-/* line 93, ../sass/responsive/_byu-bar.scss */
+/* line 92, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar.search .sign-in {
   margin-right: 35%;
 }
-/* line 97, ../sass/responsive/_byu-bar.scss */
+/* line 96, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
 #byu-bar.button #search-container {
   width: 35%;
 }
 
 @media all and (min-width: 400px) {
-  /* line 108, ../sass/responsive/_byu-bar.scss */
+  /* line 107, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar a.byu {
-    width: 345px;
+    width: 350px;
+  }
+  /* line 108, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
+  #byu-bar #search-container {
+    width: 75%;
   }
 
-  /* line 112, ../sass/responsive/_byu-bar.scss */
+  /* line 113, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.search a.byu,
   #byu-bar.button a.byu {
-    width: 80px;
+    width: 70px;
   }
 }
 @media all and (min-width: 500px) {
-  /* line 120, ../sass/responsive/_byu-bar.scss */
+  /* line 121, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.button a.byu {
-    width: 345px;
+    width: 350px;
   }
 
-  /* line 121, ../sass/responsive/_byu-bar.scss */
+  /* line 122, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.search.button a.byu {
-    width: 80px;
+    width: 70px;
   }
 }
 @media all and (min-width: 600px) {
-  /* line 125, ../sass/responsive/_byu-bar.scss */
+  /* line 127, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.search a.byu {
-    width: 345px;
+    width: 350px;
+  }
+  /* line 128, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
+  #byu-bar.search #search-container {
+    width: 40%;
   }
 
-  /* line 126, ../sass/responsive/_byu-bar.scss */
+  /* line 131, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.search.button a.byu {
-    width: 80px;
+    width: 70px;
+  }
+  /* line 132, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
+  #byu-bar.search.button #search-container {
+    width: 35%;
   }
 }
 @media all and (min-width: 720px) {
-  /* line 130, ../sass/responsive/_byu-bar.scss */
+  /* line 138, ../../../../Desktop/HTML-Templates-gh-pages/src/sass/responsive/_byu-bar.scss */
   #byu-bar.search.button a.byu {
-    width: 345px;
+    width: 350px;
   }
 }
