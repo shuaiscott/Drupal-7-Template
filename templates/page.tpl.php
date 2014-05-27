@@ -127,8 +127,8 @@ $sidebar_right = render($page['sidebar_right']);
                 <?php if (theme_get_setting('footer_logos')): ?>
                     <a id="lds"   href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
                     <p>
-                        <a id="byui"  href="http://byui.edu/">BYU- Idaho</a>
-                        <a id="byuh"  href="http://byuh.edu/">BYU- Hawaii</a>
+                        <a id="byui"  href="http://byui.edu/">BYU-Idaho</a>
+                        <a id="byuh"  href="http://byuh.edu/">BYU-Hawaii</a>
                         <a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a> 
                     </p>
                 <?php endif; ?>
